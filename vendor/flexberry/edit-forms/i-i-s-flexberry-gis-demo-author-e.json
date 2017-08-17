@@ -1,0 +1,13 @@
+﻿{
+  "propertyLookup": [],
+  "caption": "Author",
+  "name": "IISFlexberryGisDemoAuthorE",
+  "className": "AuthorE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-flexberry-gis-demo-author",
+      "modelProjection": "AuthorE"
+    }
+  ]
+}

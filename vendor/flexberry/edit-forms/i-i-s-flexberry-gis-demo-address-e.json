@@ -1,0 +1,13 @@
+﻿{
+  "propertyLookup": [],
+  "caption": "Address",
+  "name": "IISFlexberryGisDemoAddressE",
+  "className": "AddressE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-flexberry-gis-demo-address",
+      "modelProjection": "AddressE"
+    }
+  ]
+}

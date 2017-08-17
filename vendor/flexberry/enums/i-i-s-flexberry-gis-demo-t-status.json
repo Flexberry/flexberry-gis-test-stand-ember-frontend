@@ -1,0 +1,8 @@
+﻿{
+  "nameSpace": "IIS.FlexberryGisDemo",
+  "className": "tStatus",
+  "enumObjects": {
+    "Important": null,
+    "NotImportant": null
+  }
+}

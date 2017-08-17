@@ -1,0 +1,9 @@
+﻿{
+  "nameSpace": "IIS.FlexberryGisDemo",
+  "className": "tGender",
+  "enumObjects": {
+    "Male": null,
+    "Female": null,
+    "Unknown": null
+  }
+}

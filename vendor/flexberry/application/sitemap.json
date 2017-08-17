@@ -1,0 +1,36 @@
+﻿{
+  "applicationCaption": "Flexberry gis demo",
+  "applicationTitle": "Flexberry gis demo",
+  "items": [
+    {
+      "link": null,
+      "menuName": "flexberry-gis-demo",
+      "caption": "FlexberryGisDemo",
+      "title": "FlexberryGisDemo",
+      "children": [
+        {
+          "link": "i-i-s-flexberry-gis-demo-request-l",
+          "menuName": null,
+          "caption": "Request",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-flexberry-gis-demo-address-l",
+          "menuName": null,
+          "caption": "Address",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-flexberry-gis-demo-author-l",
+          "menuName": null,
+          "caption": "Author",
+          "title": "",
+          "children": null
+        }
+      ]
+    }
+  ],
+  "mobile": true
+}

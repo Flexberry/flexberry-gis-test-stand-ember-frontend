@@ -1,0 +1,14 @@
+﻿{
+  "newForm": "i-i-s-flexberry-gis-demo-address-e",
+  "editForm": "i-i-s-flexberry-gis-demo-address-e",
+  "caption": "Address",
+  "name": "IISFlexberryGisDemoAddressL",
+  "className": "AddressL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-flexberry-gis-demo-address",
+      "modelProjection": "AddressL"
+    }
+  ]
+}

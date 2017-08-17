@@ -1,0 +1,14 @@
+﻿{
+  "newForm": "i-i-s-flexberry-gis-demo-request-e",
+  "editForm": "i-i-s-flexberry-gis-demo-request-e",
+  "caption": "Request",
+  "name": "IISFlexberryGisDemoRequestL",
+  "className": "RequestL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-flexberry-gis-demo-request",
+      "modelProjection": "RequestL"
+    }
+  ]
+}
