@@ -9,6 +9,22 @@
     "flatpickr-calendar": "git://github.com/chmln/flatpickr.git#2.3.4",
     "blueimp-file-upload": "9.11.2",
     "devicejs": "0.2.7",
-    "semantic-ui": "git://github.com/Flexberry/Semantic-UI.git#fixed-abort"
+    "semantic-ui": "git://github.com/Flexberry/Semantic-UI.git#fixed-abort",
+    "leaflet": "1.0.1",
+    "proj4leaflet": "1.0.1",
+    "Leaflet-WFST": "develop",
+    "leaflet.wms": "gh-pages",
+    "leaflet.editable": "master",
+    "leaflet-history": "https://github.com/Flexberry/leaflet-history.git#master",
+    "leaflet-editable-measures": "0.1.0",
+    "html2canvas": "master",
+    "leaflet-export": "0.1.0",
+    "leaflet-switch-scale-control": "0.1.0",
+    "Leaflet.zoomslider": "Flexberry/Leaflet.zoomslider#leaflet-1.0.1",
+    "leaflet-minimap": "3.4.0",
+    "osmtogeojson": "2.2.12",
+    "seiyria-bootstrap-slider": "~6.0.6",
+    "js-beautify": "1.6.4",
+    "jquery-minicolors": "2.2.6"
   }
 }
