@@ -8,6 +8,7 @@
     "semantic-ui-daterangepicker": "5d46ed2e6e5a0bf398bb6a5df82e06036dfc46be",
     "flatpickr-calendar": "git://github.com/chmln/flatpickr.git#2.3.4",
     "blueimp-file-upload": "9.11.2",
+    "jquery-file-download": "1.4.4",
     "devicejs": "0.2.7",
     "semantic-ui": "git://github.com/Flexberry/Semantic-UI.git#fixed-abort",
     "leaflet": "1.0.1",
@@ -25,6 +26,11 @@
     "osmtogeojson": "2.2.12",
     "seiyria-bootstrap-slider": "~6.0.6",
     "js-beautify": "1.6.4",
-    "jquery-minicolors": "2.2.6"
+    "jquery-minicolors": "2.2.6",
+    "leaflet-plugins": "shramov/leaflet-plugins#master"
+  },
+  "resolutions": {
+    "leaflet": "1.0.1",
+    "semantic-ui": "fixed-abort"
   }
 }
