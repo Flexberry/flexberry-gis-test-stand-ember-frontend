@@ -11,6 +11,7 @@ module.exports = function(environment) {
 
 
   var ENV = {
+    repositoryName: 'ember-flexberry-gis-test-stand',
     modulePrefix: 'ember-app',
     environment: environment,
     baseURL: '/',
@@ -156,7 +157,25 @@ module.exports = function(environment) {
   }
 
   if (environment === 'production') {
+    // Configure production version settings here.
+  }
 
+  // Change paths to application assets if build has been started with the following parameters:
+  // ember build --gh-pages --brunch=<brunch-to-publish-on-gh-pages>.
+  if (process.argv.indexOf('--gh-pages') >= 0) {
+    var brunch;
+
+    // Retrieve brunch name from process arguments.
+    process.argv.forEach(function(value, index) {
+      if (value.indexOf('--brunch=') >=0) {
+        brunch=value.split('=')[1];
+        return;
+      }
+    });
+
+    // Change base URL to force paths to application assets be relative.
+    ENV.baseURL = '/' + ENV.repositoryName + '/' + brunch + '/';
+    ENV.locationType = 'none';
   }
 
   return ENV;
