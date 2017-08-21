@@ -80,7 +80,7 @@ do
     branchDescription="Temporal testing version"
   fi
 
-  branchLink="<a href=\"${branch}\/index.html\">http:\/\/flexberry.github.io\/ember-flexberry-gis\/${branch}\/<\/a>"
+  branchLink="<a href=\"${branch}\/index.html\">http:\/\/flexberry.github.io\/ember-flexberry-gis-test-stand\/${branch}\/<\/a>"
   branchTableRow="<tr>\n<td>${branch}<\/td>\n<td>${branchDescription}<\/td>\n<td>${branchLink}<\/td>\n<\/tr>\n{{branches}}"
   sed -i -e "s/{{branches}}/${branchTableRow}/g" index.html
 done
