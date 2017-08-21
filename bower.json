@@ -24,7 +24,7 @@
     "html2canvas": "0.5.0-beta4",
     "leaflet-export": "0.1.0",
     "leaflet-switch-scale-control": "0.1.0",
-    "Leaflet.zoomslider": "Flexberry/Leaflet.zoomslider#leaflet-1.0.1",
+    "leaflet.zoomslider": "Flexberry/Leaflet.zoomslider#leaflet-1.0.1",
     "leaflet-minimap": "3.4.0",
     "osmtogeojson": "2.2.12",
     "seiyria-bootstrap-slider": "~6.0.6",
