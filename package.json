@@ -46,6 +46,7 @@
     "ember-flexberry-gis": "0.1.1",
     "ember-flexberry-gis-esri": "0.1.1",
     "ember-flexberry-gis-yandex": "0.1.0",
+    "ember-flexberry-security": "0.1.0-beta.21",
     "ember-link-action": "0.0.34",
     "ember-load-initializers": "^0.5.1",
     "ember-localforage-adapter": "git+https://github.com/Flexberry/ember-localforage-adapter.git#9fa5dc18b2598795fba5004df788d3e73c6354e2",

@@ -21,6 +21,7 @@ Router.map(function () {
   { path: 'i-i-s-flexberry-gis-demo-request-e/:id' });
   this.route('i-i-s-flexberry-gis-demo-request-e.new',
   { path: 'i-i-s-flexberry-gis-demo-request-e/new' });
+  this.route('login');
 });
 
 export default Router;

@@ -1,6 +1,22 @@
 import Ember from 'ember';
-
+import config from '../config/environment';
+import { translationMacro as t } from 'ember-i18n';
 export default Ember.Controller.extend({
+
+  /**
+    Currently authenticated user's login.
+
+    @property login
+    @default ''
+  */
+  login: '',
+
+  /**
+    Application sitemap.
+
+    @property sitemap
+    @type Object
+  */
   sitemap: Ember.computed('i18n.locale', function () {
     let i18n = this.get('i18n');
 
@@ -89,6 +105,12 @@ export default Ember.Controller.extend({
   objectlistviewEventsService: Ember.inject.service('objectlistview-events'),
 
   actions: {
+
+    /**
+      Toggles application sitemap's side bar.
+
+      @method actions.toggleSidebar
+    */
     toggleSidebar() {
       let sidebar = Ember.$('.ui.sidebar.main.menu');
       let objectlistviewEventsService = this.get('objectlistviewEventsService');
@@ -141,6 +163,145 @@ export default Ember.Controller.extend({
         Ember.$('.sidebar.icon.text-menu-2').removeClass('hidden-menu');
         Ember.$('.bgw-opacity').removeClass('hidden');
       }
+    },
+
+    /**
+      Close sidebar.
+
+      @method actions.closeSidebar
+    */
+    closeSidebar() {
+      if (Ember.$('.inverted.vertical.main.menu').hasClass('visible')) {
+        this.send('toggleSidebar');
+      }
+    },
+
+    /**
+      logs in.
+
+      @method actions.login
+    */
+    login() {
+      let _this = this;
+      let login = _this.get('loginInput');
+      let password = _this.get('password');
+      if (login && password) {
+        _this._resetLoginErrors();
+        _this.set('tryToLogin', true);
+        Ember.$.ajax({
+          type: 'GET',
+          xhrFields: {
+            withCredentials: true
+          },
+          url: `${config.APP.backendUrls.api}/Login(login='${login}',password='${password}')`,
+          success(result) {
+            _this.set('tryToLogin', false);
+            if (result.value === true) {
+              _this._resetLoginData(login);
+              _this.transitionToRoute('index');
+            } else {
+              _this.set('errorMessage', t('forms.login.errors.incorrect-auth-data'));
+            }
+          },
+          error() {
+            _this.set('tryToLogin', false);
+            _this.set('errorMessage', t('forms.login.errors.server-error'));
+          },
+        });
+      } else {
+        if (!login) {
+          _this.set('emptyLogin', t('forms.login.errors.empty-login'));
+        }
+
+        if (!password) {
+          _this.set('emptyPassword', t('forms.login.errors.empty-password'));
+        }
+      }
+    },
+
+    /**
+      Logs out.
+
+      @method actions.logout
+    */
+    logout() {
+      let _this = this;
+      Ember.$.ajax({
+        type: 'GET',
+        xhrFields: {
+          withCredentials: true
+        },
+        url: `${config.APP.backendUrls.api}/Logout()`,
+        success(result) {
+          if (result.value === true) {
+            _this.set('login', '');
+            _this.send('closeSidebar');
+          } else {
+            _this.set('errorMessage', t('forms.login.errors.unknown-error'));
+          }
+
+          _this.transitionToRoute('index');
+        },
+        error() {
+          _this.set('errorMessage', t('forms.login.errors.server-error'));
+          _this.transitionToRoute('index');
+        },
+      });
+    },
+
+    /**
+      Transits into main page.
+
+      @method actions.goToMainPage
+    */
+    goToMainPage() {
+      this.transitionToRoute('index');
+    },
+
+    /**
+      Transits into login form.
+
+      @method actions.goToLoginForm
+    */
+    goToLoginForm() {
+      this.transitionToRoute('login');
+    },
+
+    /**
+      Closes login form.
+
+      @method. actions.closeLoginForm
+    */
+    closeLoginForm() {
+      this._resetLoginErrors();
+      this.transitionToRoute('index');
     }
+  },
+
+  /**
+    Resets logn errors.
+
+    @method _resetLoginErrors
+  */
+  _resetLoginErrors() {
+    this.setProperties({
+      errorMessage: null,
+      emptyLogin: null,
+      emptyPassword: null,
+    });
+  },
+
+  /**
+    Resets stored login data.
+
+    @method _resetLoginData
+    @param {String} login
+  */
+  _resetLoginData(login) {
+    this.setProperties({
+      login: login,
+      loginInput: null,
+      password: null,
+    });
   }
 });

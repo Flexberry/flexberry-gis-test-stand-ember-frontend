@@ -1,0 +1,51 @@
+{{#if errorMessage}}
+  {{ui-message
+    type='error'
+    closeable=true
+    message=errorMessage
+  }}
+{{/if}}
+<div class="login-form">
+  <h3 class="ui header login-form-header">{{t (if login "forms.login.personalArea" "forms.login.caption")}}</h3>
+
+  <form class="ui form flexberry-vertical-form{{if tryToLogin 'loading'}}" role="form">
+    {{#if login}}
+      {{ui-message
+        type='info'
+        message=(t 'forms.login.you-logged-as' login=login)
+      }}
+    {{else}}
+      <div class="field login-field">
+        {{flexberry-field
+          placeholder=(t 'components.flexberry-field.placeholder')
+          required=true
+          value=loginInput
+          class=(if emptyLogin 'error' '')
+          label=(t 'forms.login.login')
+        }}
+        {{flexberry-validationmessage error=emptyLogin pointing="pointing"}}
+      </div>
+
+      <div class="field{{if emptyPassword ' error' ''}} password-field">
+        <label>{{t "forms.login.password"}}</label>
+        {{input
+          type="password"
+          required=true
+          value=password
+          placeholder=(t 'components.flexberry-field.placeholder')
+          enter='login'
+        }}
+        {{flexberry-validationmessage error=emptyPassword pointing="pointing"}}
+      </div>
+    {{/if}}
+
+    <div class="field login-footer" >
+      <button type="submit" class="ui button login-logout-btn" {{action (if login 'logout' 'login')}}>
+        {{t (if login "forms.login.logout" "forms.login.enter")}}
+      </button>
+      <button type="submit" class="ui button login-close-btn" {{action 'closeLoginForm'}}>
+        {{t "forms.login.back"}}
+      </button>
+    </div>
+  </form>
+</div>
