@@ -16,7 +16,7 @@
     "esri-leaflet": "^2.0.3",
     "jQuery-Tabs": "^1.2.0",
     "localforage": "~1.3.1",
-    "Leaflet-WFST": "develop",
+    "Leaflet-WFST": "2.0.0",
     "leaflet.wms": "gh-pages",
     "leaflet.editable": "master",
     "leaflet-history": "https://github.com/Flexberry/leaflet-history.git#master",

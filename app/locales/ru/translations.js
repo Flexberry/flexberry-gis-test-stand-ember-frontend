@@ -33,6 +33,25 @@ Ember.$.extend(true, translations, {
       greeting: 'Добро пожаловать на тестовый стенд ember-flexberry!'
     },
 
+    login: {
+      caption: 'Войти в систему',
+      personalArea: 'Личный кабинет',
+      logout: 'Выйти',
+      back: 'Назад',
+      login: 'Логин',
+      enter: 'Войти',
+      password: 'Пароль',
+      'you-logged-as': 'Вы вошли как: "{{login}}".',
+      errors: {
+        'empty-login': 'Логин не может быть пустым.',
+        'empty-password': 'Пароль не может быть пустым.',
+        'server-error': 'Не удалось получить ответ от сервера.',
+        'incorrect-auth-data': 'Неверный логин или пароль.',
+        'login-please': 'Пожалуйста, войдите.',
+        'unknown-error': 'Ой, что то пошло не так...',
+      },
+    },
+
     application: {
       header: {
         menu: {
