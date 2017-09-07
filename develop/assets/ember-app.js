@@ -1023,22 +1023,22 @@ define('ember-app/controllers/application', ['exports', 'ember'], function (expo
           children: null
         }, {
           link: null,
-          caption: i18n.t('forms.application.sitemap.flexberry-gis-demo.caption'),
-          title: i18n.t('forms.application.sitemap.flexberry-gis-demo.title'),
+          caption: i18n.t('forms.application.sitemap.flexberry-gis-test-stand.caption'),
+          title: i18n.t('forms.application.sitemap.flexberry-gis-test-stand.title'),
           children: [{
-            link: 'i-i-s-flexberry-gis-demo-request-l',
-            caption: i18n.t('forms.application.sitemap.flexberry-gis-demo.i-i-s-flexberry-gis-demo-request-l.caption'),
-            title: i18n.t('forms.application.sitemap.flexberry-gis-demo.i-i-s-flexberry-gis-demo-request-l.title'),
+            link: 'i-i-s-flexberry-gis-test-stand-request-l',
+            caption: i18n.t('forms.application.sitemap.flexberry-gis-test-stand.i-i-s-flexberry-gis-test-stand-request-l.caption'),
+            title: i18n.t('forms.application.sitemap.flexberry-gis-test-stand.i-i-s-flexberry-gis-test-stand-request-l.title'),
             children: null
           }, {
-            link: 'i-i-s-flexberry-gis-demo-address-l',
-            caption: i18n.t('forms.application.sitemap.flexberry-gis-demo.i-i-s-flexberry-gis-demo-address-l.caption'),
-            title: i18n.t('forms.application.sitemap.flexberry-gis-demo.i-i-s-flexberry-gis-demo-address-l.title'),
+            link: 'i-i-s-flexberry-gis-test-stand-address-l',
+            caption: i18n.t('forms.application.sitemap.flexberry-gis-test-stand.i-i-s-flexberry-gis-test-stand-address-l.caption'),
+            title: i18n.t('forms.application.sitemap.flexberry-gis-test-stand.i-i-s-flexberry-gis-test-stand-address-l.title'),
             children: null
           }, {
-            link: 'i-i-s-flexberry-gis-demo-author-l',
-            caption: i18n.t('forms.application.sitemap.flexberry-gis-demo.i-i-s-flexberry-gis-demo-author-l.caption'),
-            title: i18n.t('forms.application.sitemap.flexberry-gis-demo.i-i-s-flexberry-gis-demo-author-l.title'),
+            link: 'i-i-s-flexberry-gis-test-stand-author-l',
+            caption: i18n.t('forms.application.sitemap.flexberry-gis-test-stand.i-i-s-flexberry-gis-test-stand-author-l.caption'),
+            title: i18n.t('forms.application.sitemap.flexberry-gis-test-stand.i-i-s-flexberry-gis-test-stand-author-l.title'),
             children: null
           }]
         }]
@@ -1192,67 +1192,67 @@ define('ember-app/controllers/i-i-s-caseberry-logging-objects-application-log-l'
     }
   });
 });
-define('ember-app/controllers/i-i-s-flexberry-gis-demo-address-e', ['exports', 'ember-flexberry/controllers/edit-form'], function (exports, _emberFlexberryControllersEditForm) {
+define('ember-app/controllers/i-i-s-flexberry-gis-test-stand-address-e', ['exports', 'ember-flexberry/controllers/edit-form'], function (exports, _emberFlexberryControllersEditForm) {
   exports['default'] = _emberFlexberryControllersEditForm['default'].extend({
-    parentRoute: 'i-i-s-flexberry-gis-demo-address-l'
+    parentRoute: 'i-i-s-flexberry-gis-test-stand-address-l'
   });
 });
-define('ember-app/controllers/i-i-s-flexberry-gis-demo-address-e/new', ['exports', 'ember-app/controllers/i-i-s-flexberry-gis-demo-address-e'], function (exports, _emberAppControllersIISFlexberryGisDemoAddressE) {
+define('ember-app/controllers/i-i-s-flexberry-gis-test-stand-address-e/new', ['exports', 'ember-app/controllers/i-i-s-flexberry-gis-test-stand-address-e'], function (exports, _emberAppControllersIISFlexberryGisTestStandAddressE) {
 
-  var IISFlexberryGisDemoAddressENewController = _emberAppControllersIISFlexberryGisDemoAddressE['default'];
-  exports['default'] = IISFlexberryGisDemoAddressENewController;
+  var IISFlexberryGisTestStandAddressENewController = _emberAppControllersIISFlexberryGisTestStandAddressE['default'];
+  exports['default'] = IISFlexberryGisTestStandAddressENewController;
 });
-define('ember-app/controllers/i-i-s-flexberry-gis-demo-address-l', ['exports', 'ember-flexberry/controllers/list-form'], function (exports, _emberFlexberryControllersListForm) {
+define('ember-app/controllers/i-i-s-flexberry-gis-test-stand-address-l', ['exports', 'ember-flexberry/controllers/list-form'], function (exports, _emberFlexberryControllersListForm) {
   exports['default'] = _emberFlexberryControllersListForm['default'].extend({
     /**
       Name of related edit form route.
        @property editFormRoute
       @type String
-      @default 'i-i-s-flexberry-gis-demo-address-e'
+      @default 'i-i-s-flexberry-gis-test-stand-address-e'
      */
-    editFormRoute: 'i-i-s-flexberry-gis-demo-address-e'
+    editFormRoute: 'i-i-s-flexberry-gis-test-stand-address-e'
   });
 });
-define('ember-app/controllers/i-i-s-flexberry-gis-demo-author-e', ['exports', 'ember-flexberry/controllers/edit-form'], function (exports, _emberFlexberryControllersEditForm) {
+define('ember-app/controllers/i-i-s-flexberry-gis-test-stand-author-e', ['exports', 'ember-flexberry/controllers/edit-form'], function (exports, _emberFlexberryControllersEditForm) {
   exports['default'] = _emberFlexberryControllersEditForm['default'].extend({
-    parentRoute: 'i-i-s-flexberry-gis-demo-author-l'
+    parentRoute: 'i-i-s-flexberry-gis-test-stand-author-l'
   });
 });
-define('ember-app/controllers/i-i-s-flexberry-gis-demo-author-e/new', ['exports', 'ember-app/controllers/i-i-s-flexberry-gis-demo-author-e'], function (exports, _emberAppControllersIISFlexberryGisDemoAuthorE) {
+define('ember-app/controllers/i-i-s-flexberry-gis-test-stand-author-e/new', ['exports', 'ember-app/controllers/i-i-s-flexberry-gis-test-stand-author-e'], function (exports, _emberAppControllersIISFlexberryGisTestStandAuthorE) {
 
-  var IISFlexberryGisDemoAuthorENewController = _emberAppControllersIISFlexberryGisDemoAuthorE['default'];
-  exports['default'] = IISFlexberryGisDemoAuthorENewController;
+  var IISFlexberryGisTestStandAuthorENewController = _emberAppControllersIISFlexberryGisTestStandAuthorE['default'];
+  exports['default'] = IISFlexberryGisTestStandAuthorENewController;
 });
-define('ember-app/controllers/i-i-s-flexberry-gis-demo-author-l', ['exports', 'ember-flexberry/controllers/list-form'], function (exports, _emberFlexberryControllersListForm) {
+define('ember-app/controllers/i-i-s-flexberry-gis-test-stand-author-l', ['exports', 'ember-flexberry/controllers/list-form'], function (exports, _emberFlexberryControllersListForm) {
   exports['default'] = _emberFlexberryControllersListForm['default'].extend({
     /**
       Name of related edit form route.
        @property editFormRoute
       @type String
-      @default 'i-i-s-flexberry-gis-demo-author-e'
+      @default 'i-i-s-flexberry-gis-test-stand-author-e'
      */
-    editFormRoute: 'i-i-s-flexberry-gis-demo-author-e'
+    editFormRoute: 'i-i-s-flexberry-gis-test-stand-author-e'
   });
 });
-define('ember-app/controllers/i-i-s-flexberry-gis-demo-request-e', ['exports', 'ember-flexberry/controllers/edit-form'], function (exports, _emberFlexberryControllersEditForm) {
+define('ember-app/controllers/i-i-s-flexberry-gis-test-stand-request-e', ['exports', 'ember-flexberry/controllers/edit-form'], function (exports, _emberFlexberryControllersEditForm) {
   exports['default'] = _emberFlexberryControllersEditForm['default'].extend({
-    parentRoute: 'i-i-s-flexberry-gis-demo-request-l'
+    parentRoute: 'i-i-s-flexberry-gis-test-stand-request-l'
   });
 });
-define('ember-app/controllers/i-i-s-flexberry-gis-demo-request-e/new', ['exports', 'ember-app/controllers/i-i-s-flexberry-gis-demo-request-e'], function (exports, _emberAppControllersIISFlexberryGisDemoRequestE) {
+define('ember-app/controllers/i-i-s-flexberry-gis-test-stand-request-e/new', ['exports', 'ember-app/controllers/i-i-s-flexberry-gis-test-stand-request-e'], function (exports, _emberAppControllersIISFlexberryGisTestStandRequestE) {
 
-  var IISFlexberryGisDemoRequestENewController = _emberAppControllersIISFlexberryGisDemoRequestE['default'];
-  exports['default'] = IISFlexberryGisDemoRequestENewController;
+  var IISFlexberryGisTestStandRequestENewController = _emberAppControllersIISFlexberryGisTestStandRequestE['default'];
+  exports['default'] = IISFlexberryGisTestStandRequestENewController;
 });
-define('ember-app/controllers/i-i-s-flexberry-gis-demo-request-l', ['exports', 'ember-flexberry/controllers/list-form'], function (exports, _emberFlexberryControllersListForm) {
+define('ember-app/controllers/i-i-s-flexberry-gis-test-stand-request-l', ['exports', 'ember-flexberry/controllers/list-form'], function (exports, _emberFlexberryControllersListForm) {
   exports['default'] = _emberFlexberryControllersListForm['default'].extend({
     /**
       Name of related edit form route.
        @property editFormRoute
       @type String
-      @default 'i-i-s-flexberry-gis-demo-request-e'
+      @default 'i-i-s-flexberry-gis-test-stand-request-e'
      */
-    editFormRoute: 'i-i-s-flexberry-gis-demo-request-e'
+    editFormRoute: 'i-i-s-flexberry-gis-test-stand-request-e'
   });
 });
 define('ember-app/controllers/list-form', ['exports', 'ember-flexberry/controllers/list-form'], function (exports, _emberFlexberryControllersListForm) {
@@ -1367,14 +1367,14 @@ define('ember-app/enums/i-c-s-soft-s-t-o-r-m-n-e-t-business-audit-objects-t-type
     }
   });
 });
-define('ember-app/enums/i-i-s-flexberry-gis-demo-t-gender', ['exports', 'ember-flexberry-data/utils/enum-functions'], function (exports, _emberFlexberryDataUtilsEnumFunctions) {
+define('ember-app/enums/i-i-s-flexberry-gis-test-stand-t-gender', ['exports', 'ember-flexberry-data/utils/enum-functions'], function (exports, _emberFlexberryDataUtilsEnumFunctions) {
   exports['default'] = (0, _emberFlexberryDataUtilsEnumFunctions.createEnum)({
     Male: 'Male',
     Female: 'Female',
     Unknown: 'Unknown'
   });
 });
-define('ember-app/enums/i-i-s-flexberry-gis-demo-t-status', ['exports', 'ember-flexberry-data/utils/enum-functions'], function (exports, _emberFlexberryDataUtilsEnumFunctions) {
+define('ember-app/enums/i-i-s-flexberry-gis-test-stand-t-status', ['exports', 'ember-flexberry-data/utils/enum-functions'], function (exports, _emberFlexberryDataUtilsEnumFunctions) {
   exports['default'] = (0, _emberFlexberryDataUtilsEnumFunctions.createEnum)({
     Important: 'Important',
     NotImportant: 'NotImportant'
@@ -2526,21 +2526,21 @@ define('ember-app/layers/wms', ['exports', 'ember-flexberry-gis/layers/wms'], fu
     }
   });
 });
-define('ember-app/locales/en/forms/i-i-s-flexberry-gis-demo-address-e', ['exports'], function (exports) {
+define('ember-app/locales/en/forms/i-i-s-flexberry-gis-test-stand-address-e', ['exports'], function (exports) {
   exports['default'] = {
-    caption: 'IISFlexberryGisDemoAddressE',
+    caption: 'IISFlexberryGisTestStandAddressE',
     'place-caption': 'place',
     'location-caption': 'location'
   };
 });
-define('ember-app/locales/en/forms/i-i-s-flexberry-gis-demo-address-l', ['exports'], function (exports) {
+define('ember-app/locales/en/forms/i-i-s-flexberry-gis-test-stand-address-l', ['exports'], function (exports) {
   exports['default'] = {
-    caption: 'IISFlexberryGisDemoAddressL'
+    caption: 'IISFlexberryGisTestStandAddressL'
   };
 });
-define('ember-app/locales/en/forms/i-i-s-flexberry-gis-demo-author-e', ['exports'], function (exports) {
+define('ember-app/locales/en/forms/i-i-s-flexberry-gis-test-stand-author-e', ['exports'], function (exports) {
   exports['default'] = {
-    caption: 'IISFlexberryGisDemoAuthorE',
+    caption: 'IISFlexberryGisTestStandAuthorE',
     'name-caption': 'name',
     'phone-caption': 'phone',
     'email-caption': 'email',
@@ -2549,14 +2549,14 @@ define('ember-app/locales/en/forms/i-i-s-flexberry-gis-demo-author-e', ['exports
     'vip-caption': 'vip'
   };
 });
-define('ember-app/locales/en/forms/i-i-s-flexberry-gis-demo-author-l', ['exports'], function (exports) {
+define('ember-app/locales/en/forms/i-i-s-flexberry-gis-test-stand-author-l', ['exports'], function (exports) {
   exports['default'] = {
-    caption: 'IISFlexberryGisDemoAuthorL'
+    caption: 'IISFlexberryGisTestStandAuthorL'
   };
 });
-define('ember-app/locales/en/forms/i-i-s-flexberry-gis-demo-request-e', ['exports'], function (exports) {
+define('ember-app/locales/en/forms/i-i-s-flexberry-gis-test-stand-request-e', ['exports'], function (exports) {
   exports['default'] = {
-    caption: 'IISFlexberryGisDemoRequestE',
+    caption: 'IISFlexberryGisTestStandRequestE',
     'date-caption': 'date',
     'urgently-caption': 'urgently',
     'task-caption': 'task',
@@ -2567,12 +2567,12 @@ define('ember-app/locales/en/forms/i-i-s-flexberry-gis-demo-request-e', ['export
     'comment-caption': 'comment'
   };
 });
-define('ember-app/locales/en/forms/i-i-s-flexberry-gis-demo-request-l', ['exports'], function (exports) {
+define('ember-app/locales/en/forms/i-i-s-flexberry-gis-test-stand-request-l', ['exports'], function (exports) {
   exports['default'] = {
-    caption: 'IISFlexberryGisDemoRequestL'
+    caption: 'IISFlexberryGisTestStandRequestL'
   };
 });
-define('ember-app/locales/en/models/i-i-s-flexberry-gis-demo-address', ['exports'], function (exports) {
+define('ember-app/locales/en/models/i-i-s-flexberry-gis-test-stand-address', ['exports'], function (exports) {
   exports['default'] = {
     projections: {
       AddressE: {
@@ -2594,7 +2594,7 @@ define('ember-app/locales/en/models/i-i-s-flexberry-gis-demo-address', ['exports
     }
   };
 });
-define('ember-app/locales/en/models/i-i-s-flexberry-gis-demo-author', ['exports'], function (exports) {
+define('ember-app/locales/en/models/i-i-s-flexberry-gis-test-stand-author', ['exports'], function (exports) {
   exports['default'] = {
     projections: {
       AuthorE: {
@@ -2640,7 +2640,7 @@ define('ember-app/locales/en/models/i-i-s-flexberry-gis-demo-author', ['exports'
     }
   };
 });
-define('ember-app/locales/en/models/i-i-s-flexberry-gis-demo-comment', ['exports'], function (exports) {
+define('ember-app/locales/en/models/i-i-s-flexberry-gis-test-stand-comment', ['exports'], function (exports) {
   exports['default'] = {
     projections: {
       CommentE: {
@@ -2654,7 +2654,7 @@ define('ember-app/locales/en/models/i-i-s-flexberry-gis-demo-comment', ['exports
     }
   };
 });
-define('ember-app/locales/en/models/i-i-s-flexberry-gis-demo-request', ['exports'], function (exports) {
+define('ember-app/locales/en/models/i-i-s-flexberry-gis-test-stand-request', ['exports'], function (exports) {
   exports['default'] = {
     projections: {
       RequestE: {
@@ -2715,17 +2715,17 @@ define('ember-app/locales/en/models/i-i-s-flexberry-gis-demo-request', ['exports
     }
   };
 });
-define('ember-app/locales/en/translations', ['exports', 'ember', 'ember-flexberry/locales/en/translations', 'ember-app/locales/en/forms/i-i-s-flexberry-gis-demo-address-l', 'ember-app/locales/en/forms/i-i-s-flexberry-gis-demo-author-l', 'ember-app/locales/en/forms/i-i-s-flexberry-gis-demo-request-l', 'ember-app/locales/en/forms/i-i-s-flexberry-gis-demo-address-e', 'ember-app/locales/en/forms/i-i-s-flexberry-gis-demo-author-e', 'ember-app/locales/en/forms/i-i-s-flexberry-gis-demo-request-e', 'ember-app/locales/en/models/i-i-s-flexberry-gis-demo-address', 'ember-app/locales/en/models/i-i-s-flexberry-gis-demo-author', 'ember-app/locales/en/models/i-i-s-flexberry-gis-demo-comment', 'ember-app/locales/en/models/i-i-s-flexberry-gis-demo-request'], function (exports, _ember, _emberFlexberryLocalesEnTranslations, _emberAppLocalesEnFormsIISFlexberryGisDemoAddressL, _emberAppLocalesEnFormsIISFlexberryGisDemoAuthorL, _emberAppLocalesEnFormsIISFlexberryGisDemoRequestL, _emberAppLocalesEnFormsIISFlexberryGisDemoAddressE, _emberAppLocalesEnFormsIISFlexberryGisDemoAuthorE, _emberAppLocalesEnFormsIISFlexberryGisDemoRequestE, _emberAppLocalesEnModelsIISFlexberryGisDemoAddress, _emberAppLocalesEnModelsIISFlexberryGisDemoAuthor, _emberAppLocalesEnModelsIISFlexberryGisDemoComment, _emberAppLocalesEnModelsIISFlexberryGisDemoRequest) {
+define('ember-app/locales/en/translations', ['exports', 'ember', 'ember-flexberry/locales/en/translations', 'ember-app/locales/en/forms/i-i-s-flexberry-gis-test-stand-address-l', 'ember-app/locales/en/forms/i-i-s-flexberry-gis-test-stand-author-l', 'ember-app/locales/en/forms/i-i-s-flexberry-gis-test-stand-request-l', 'ember-app/locales/en/forms/i-i-s-flexberry-gis-test-stand-address-e', 'ember-app/locales/en/forms/i-i-s-flexberry-gis-test-stand-author-e', 'ember-app/locales/en/forms/i-i-s-flexberry-gis-test-stand-request-e', 'ember-app/locales/en/models/i-i-s-flexberry-gis-test-stand-address', 'ember-app/locales/en/models/i-i-s-flexberry-gis-test-stand-author', 'ember-app/locales/en/models/i-i-s-flexberry-gis-test-stand-comment', 'ember-app/locales/en/models/i-i-s-flexberry-gis-test-stand-request'], function (exports, _ember, _emberFlexberryLocalesEnTranslations, _emberAppLocalesEnFormsIISFlexberryGisTestStandAddressL, _emberAppLocalesEnFormsIISFlexberryGisTestStandAuthorL, _emberAppLocalesEnFormsIISFlexberryGisTestStandRequestL, _emberAppLocalesEnFormsIISFlexberryGisTestStandAddressE, _emberAppLocalesEnFormsIISFlexberryGisTestStandAuthorE, _emberAppLocalesEnFormsIISFlexberryGisTestStandRequestE, _emberAppLocalesEnModelsIISFlexberryGisTestStandAddress, _emberAppLocalesEnModelsIISFlexberryGisTestStandAuthor, _emberAppLocalesEnModelsIISFlexberryGisTestStandComment, _emberAppLocalesEnModelsIISFlexberryGisTestStandRequest) {
 
   var translations = {};
   _ember['default'].$.extend(true, translations, _emberFlexberryLocalesEnTranslations['default']);
 
   _ember['default'].$.extend(true, translations, {
     models: {
-      'i-i-s-flexberry-gis-demo-address': _emberAppLocalesEnModelsIISFlexberryGisDemoAddress['default'],
-      'i-i-s-flexberry-gis-demo-author': _emberAppLocalesEnModelsIISFlexberryGisDemoAuthor['default'],
-      'i-i-s-flexberry-gis-demo-comment': _emberAppLocalesEnModelsIISFlexberryGisDemoComment['default'],
-      'i-i-s-flexberry-gis-demo-request': _emberAppLocalesEnModelsIISFlexberryGisDemoRequest['default']
+      'i-i-s-flexberry-gis-test-stand-address': _emberAppLocalesEnModelsIISFlexberryGisTestStandAddress['default'],
+      'i-i-s-flexberry-gis-test-stand-author': _emberAppLocalesEnModelsIISFlexberryGisTestStandAuthor['default'],
+      'i-i-s-flexberry-gis-test-stand-comment': _emberAppLocalesEnModelsIISFlexberryGisTestStandComment['default'],
+      'i-i-s-flexberry-gis-test-stand-request': _emberAppLocalesEnModelsIISFlexberryGisTestStandRequest['default']
     },
 
     'application-name': 'Application caption',
@@ -2788,22 +2788,22 @@ define('ember-app/locales/en/translations', ['exports', 'ember', 'ember-flexberr
             caption: 'Home',
             title: ''
           },
-          'flexberry-gis-demo': {
-            caption: 'flexberry-gis-demo',
-            title: 'flexberry-gis-demo',
-            'i-i-s-flexberry-gis-demo-request-l': {
-              caption: 'i-i-s-flexberry-gis-demo-request-l',
-              title: 'i-i-s-flexberry-gis-demo-request-l'
+          'flexberry-gis-test-stand': {
+            caption: 'flexberry-gis-test-stand',
+            title: 'flexberry-gis-test-stand',
+            'i-i-s-flexberry-gis-test-stand-request-l': {
+              caption: 'i-i-s-flexberry-gis-test-stand-request-l',
+              title: 'i-i-s-flexberry-gis-test-stand-request-l'
 
             },
-            'i-i-s-flexberry-gis-demo-address-l': {
-              caption: 'i-i-s-flexberry-gis-demo-address-l',
-              title: 'i-i-s-flexberry-gis-demo-address-l'
+            'i-i-s-flexberry-gis-test-stand-address-l': {
+              caption: 'i-i-s-flexberry-gis-test-stand-address-l',
+              title: 'i-i-s-flexberry-gis-test-stand-address-l'
 
             },
-            'i-i-s-flexberry-gis-demo-author-l': {
-              caption: 'i-i-s-flexberry-gis-demo-author-l',
-              title: 'i-i-s-flexberry-gis-demo-author-l'
+            'i-i-s-flexberry-gis-test-stand-author-l': {
+              caption: 'i-i-s-flexberry-gis-test-stand-author-l',
+              title: 'i-i-s-flexberry-gis-test-stand-author-l'
 
             }
           }
@@ -2818,31 +2818,31 @@ define('ember-app/locales/en/translations', ['exports', 'ember', 'ember-flexberr
         'delete-success-message': 'Object deleted',
         'delete-error-message-caption': 'Delete operation failed'
       },
-      'i-i-s-flexberry-gis-demo-address-l': _emberAppLocalesEnFormsIISFlexberryGisDemoAddressL['default'],
-      'i-i-s-flexberry-gis-demo-author-l': _emberAppLocalesEnFormsIISFlexberryGisDemoAuthorL['default'],
-      'i-i-s-flexberry-gis-demo-request-l': _emberAppLocalesEnFormsIISFlexberryGisDemoRequestL['default'],
-      'i-i-s-flexberry-gis-demo-address-e': _emberAppLocalesEnFormsIISFlexberryGisDemoAddressE['default'],
-      'i-i-s-flexberry-gis-demo-author-e': _emberAppLocalesEnFormsIISFlexberryGisDemoAuthorE['default'],
-      'i-i-s-flexberry-gis-demo-request-e': _emberAppLocalesEnFormsIISFlexberryGisDemoRequestE['default']
+      'i-i-s-flexberry-gis-test-stand-address-l': _emberAppLocalesEnFormsIISFlexberryGisTestStandAddressL['default'],
+      'i-i-s-flexberry-gis-test-stand-author-l': _emberAppLocalesEnFormsIISFlexberryGisTestStandAuthorL['default'],
+      'i-i-s-flexberry-gis-test-stand-request-l': _emberAppLocalesEnFormsIISFlexberryGisTestStandRequestL['default'],
+      'i-i-s-flexberry-gis-test-stand-address-e': _emberAppLocalesEnFormsIISFlexberryGisTestStandAddressE['default'],
+      'i-i-s-flexberry-gis-test-stand-author-e': _emberAppLocalesEnFormsIISFlexberryGisTestStandAuthorE['default'],
+      'i-i-s-flexberry-gis-test-stand-request-e': _emberAppLocalesEnFormsIISFlexberryGisTestStandRequestE['default']
     }
 
   });
 
   exports['default'] = translations;
 });
-define('ember-app/locales/ru/forms/i-i-s-flexberry-gis-demo-address-e', ['exports'], function (exports) {
+define('ember-app/locales/ru/forms/i-i-s-flexberry-gis-test-stand-address-e', ['exports'], function (exports) {
   exports['default'] = {
     caption: 'Address',
     'place-caption': 'Place',
     'location-caption': 'Location'
   };
 });
-define('ember-app/locales/ru/forms/i-i-s-flexberry-gis-demo-address-l', ['exports'], function (exports) {
+define('ember-app/locales/ru/forms/i-i-s-flexberry-gis-test-stand-address-l', ['exports'], function (exports) {
   exports['default'] = {
     caption: 'Address'
   };
 });
-define('ember-app/locales/ru/forms/i-i-s-flexberry-gis-demo-author-e', ['exports'], function (exports) {
+define('ember-app/locales/ru/forms/i-i-s-flexberry-gis-test-stand-author-e', ['exports'], function (exports) {
   exports['default'] = {
     caption: 'Author',
     'name-caption': 'Name',
@@ -2853,12 +2853,12 @@ define('ember-app/locales/ru/forms/i-i-s-flexberry-gis-demo-author-e', ['exports
     'vip-caption': 'Vip'
   };
 });
-define('ember-app/locales/ru/forms/i-i-s-flexberry-gis-demo-author-l', ['exports'], function (exports) {
+define('ember-app/locales/ru/forms/i-i-s-flexberry-gis-test-stand-author-l', ['exports'], function (exports) {
   exports['default'] = {
     caption: 'Author'
   };
 });
-define('ember-app/locales/ru/forms/i-i-s-flexberry-gis-demo-request-e', ['exports'], function (exports) {
+define('ember-app/locales/ru/forms/i-i-s-flexberry-gis-test-stand-request-e', ['exports'], function (exports) {
   exports['default'] = {
     caption: 'Request',
     'date-caption': 'Date',
@@ -2871,12 +2871,12 @@ define('ember-app/locales/ru/forms/i-i-s-flexberry-gis-demo-request-e', ['export
     'comment-caption': 'Comment'
   };
 });
-define('ember-app/locales/ru/forms/i-i-s-flexberry-gis-demo-request-l', ['exports'], function (exports) {
+define('ember-app/locales/ru/forms/i-i-s-flexberry-gis-test-stand-request-l', ['exports'], function (exports) {
   exports['default'] = {
     caption: 'Request'
   };
 });
-define('ember-app/locales/ru/models/i-i-s-flexberry-gis-demo-address', ['exports'], function (exports) {
+define('ember-app/locales/ru/models/i-i-s-flexberry-gis-test-stand-address', ['exports'], function (exports) {
   exports['default'] = {
     projections: {
       AddressE: {
@@ -2898,7 +2898,7 @@ define('ember-app/locales/ru/models/i-i-s-flexberry-gis-demo-address', ['exports
     }
   };
 });
-define('ember-app/locales/ru/models/i-i-s-flexberry-gis-demo-author', ['exports'], function (exports) {
+define('ember-app/locales/ru/models/i-i-s-flexberry-gis-test-stand-author', ['exports'], function (exports) {
   exports['default'] = {
     projections: {
       AuthorE: {
@@ -2944,7 +2944,7 @@ define('ember-app/locales/ru/models/i-i-s-flexberry-gis-demo-author', ['exports'
     }
   };
 });
-define('ember-app/locales/ru/models/i-i-s-flexberry-gis-demo-comment', ['exports'], function (exports) {
+define('ember-app/locales/ru/models/i-i-s-flexberry-gis-test-stand-comment', ['exports'], function (exports) {
   exports['default'] = {
     projections: {
       CommentE: {
@@ -2958,7 +2958,7 @@ define('ember-app/locales/ru/models/i-i-s-flexberry-gis-demo-comment', ['exports
     }
   };
 });
-define('ember-app/locales/ru/models/i-i-s-flexberry-gis-demo-request', ['exports'], function (exports) {
+define('ember-app/locales/ru/models/i-i-s-flexberry-gis-test-stand-request', ['exports'], function (exports) {
   exports['default'] = {
     projections: {
       RequestE: {
@@ -3019,20 +3019,20 @@ define('ember-app/locales/ru/models/i-i-s-flexberry-gis-demo-request', ['exports
     }
   };
 });
-define('ember-app/locales/ru/translations', ['exports', 'ember', 'ember-flexberry/locales/ru/translations', 'ember-app/locales/ru/forms/i-i-s-flexberry-gis-demo-address-l', 'ember-app/locales/ru/forms/i-i-s-flexberry-gis-demo-author-l', 'ember-app/locales/ru/forms/i-i-s-flexberry-gis-demo-request-l', 'ember-app/locales/ru/forms/i-i-s-flexberry-gis-demo-address-e', 'ember-app/locales/ru/forms/i-i-s-flexberry-gis-demo-author-e', 'ember-app/locales/ru/forms/i-i-s-flexberry-gis-demo-request-e', 'ember-app/locales/ru/models/i-i-s-flexberry-gis-demo-address', 'ember-app/locales/ru/models/i-i-s-flexberry-gis-demo-author', 'ember-app/locales/ru/models/i-i-s-flexberry-gis-demo-comment', 'ember-app/locales/ru/models/i-i-s-flexberry-gis-demo-request'], function (exports, _ember, _emberFlexberryLocalesRuTranslations, _emberAppLocalesRuFormsIISFlexberryGisDemoAddressL, _emberAppLocalesRuFormsIISFlexberryGisDemoAuthorL, _emberAppLocalesRuFormsIISFlexberryGisDemoRequestL, _emberAppLocalesRuFormsIISFlexberryGisDemoAddressE, _emberAppLocalesRuFormsIISFlexberryGisDemoAuthorE, _emberAppLocalesRuFormsIISFlexberryGisDemoRequestE, _emberAppLocalesRuModelsIISFlexberryGisDemoAddress, _emberAppLocalesRuModelsIISFlexberryGisDemoAuthor, _emberAppLocalesRuModelsIISFlexberryGisDemoComment, _emberAppLocalesRuModelsIISFlexberryGisDemoRequest) {
+define('ember-app/locales/ru/translations', ['exports', 'ember', 'ember-flexberry/locales/ru/translations', 'ember-app/locales/ru/forms/i-i-s-flexberry-gis-test-stand-address-l', 'ember-app/locales/ru/forms/i-i-s-flexberry-gis-test-stand-author-l', 'ember-app/locales/ru/forms/i-i-s-flexberry-gis-test-stand-request-l', 'ember-app/locales/ru/forms/i-i-s-flexberry-gis-test-stand-address-e', 'ember-app/locales/ru/forms/i-i-s-flexberry-gis-test-stand-author-e', 'ember-app/locales/ru/forms/i-i-s-flexberry-gis-test-stand-request-e', 'ember-app/locales/ru/models/i-i-s-flexberry-gis-test-stand-address', 'ember-app/locales/ru/models/i-i-s-flexberry-gis-test-stand-author', 'ember-app/locales/ru/models/i-i-s-flexberry-gis-test-stand-comment', 'ember-app/locales/ru/models/i-i-s-flexberry-gis-test-stand-request'], function (exports, _ember, _emberFlexberryLocalesRuTranslations, _emberAppLocalesRuFormsIISFlexberryGisTestStandAddressL, _emberAppLocalesRuFormsIISFlexberryGisTestStandAuthorL, _emberAppLocalesRuFormsIISFlexberryGisTestStandRequestL, _emberAppLocalesRuFormsIISFlexberryGisTestStandAddressE, _emberAppLocalesRuFormsIISFlexberryGisTestStandAuthorE, _emberAppLocalesRuFormsIISFlexberryGisTestStandRequestE, _emberAppLocalesRuModelsIISFlexberryGisTestStandAddress, _emberAppLocalesRuModelsIISFlexberryGisTestStandAuthor, _emberAppLocalesRuModelsIISFlexberryGisTestStandComment, _emberAppLocalesRuModelsIISFlexberryGisTestStandRequest) {
 
   var translations = {};
   _ember['default'].$.extend(true, translations, _emberFlexberryLocalesRuTranslations['default']);
 
   _ember['default'].$.extend(true, translations, {
     models: {
-      'i-i-s-flexberry-gis-demo-address': _emberAppLocalesRuModelsIISFlexberryGisDemoAddress['default'],
-      'i-i-s-flexberry-gis-demo-author': _emberAppLocalesRuModelsIISFlexberryGisDemoAuthor['default'],
-      'i-i-s-flexberry-gis-demo-comment': _emberAppLocalesRuModelsIISFlexberryGisDemoComment['default'],
-      'i-i-s-flexberry-gis-demo-request': _emberAppLocalesRuModelsIISFlexberryGisDemoRequest['default']
+      'i-i-s-flexberry-gis-test-stand-address': _emberAppLocalesRuModelsIISFlexberryGisTestStandAddress['default'],
+      'i-i-s-flexberry-gis-test-stand-author': _emberAppLocalesRuModelsIISFlexberryGisTestStandAuthor['default'],
+      'i-i-s-flexberry-gis-test-stand-comment': _emberAppLocalesRuModelsIISFlexberryGisTestStandComment['default'],
+      'i-i-s-flexberry-gis-test-stand-request': _emberAppLocalesRuModelsIISFlexberryGisTestStandRequest['default']
     },
 
-    'application-name': 'Flexberry gis demo',
+    'application-name': 'Flexberry gis test stand',
 
     forms: {
       loading: {
@@ -3072,7 +3072,7 @@ define('ember-app/locales/ru/translations', ['exports', 'ember', 'ember-flexberr
         },
 
         footer: {
-          'application-name': 'Flexberry gis demo',
+          'application-name': 'Flexberry gis test stand',
           'application-version': {
             caption: 'Версия аддона {{version}}',
             title: 'Это версия аддона ember-flexberry, которая сейчас используется в этом тестовом приложении ' + '(версия npm-пакета + хэш коммита). ' + 'Кликните, чтобы перейти на GitHub.'
@@ -3081,8 +3081,8 @@ define('ember-app/locales/ru/translations', ['exports', 'ember', 'ember-flexberr
 
         sitemap: {
           'application-name': {
-            caption: 'Flexberry gis demo',
-            title: 'Flexberry gis demo'
+            caption: 'Flexberry gis test stand',
+            title: 'Flexberry gis test stand'
           },
           'application-version': {
             caption: 'Версия аддона {{version}}',
@@ -3092,20 +3092,20 @@ define('ember-app/locales/ru/translations', ['exports', 'ember', 'ember-flexberr
             caption: 'Главная',
             title: ''
           },
-          'flexberry-gis-demo': {
-            caption: 'FlexberryGisDemo',
-            title: 'FlexberryGisDemo',
-            'i-i-s-flexberry-gis-demo-request-l': {
+          'flexberry-gis-test-stand': {
+            caption: 'FlexberryGisTestStand',
+            title: 'FlexberryGisTestStand',
+            'i-i-s-flexberry-gis-test-stand-request-l': {
               caption: 'Request',
               title: ''
 
             },
-            'i-i-s-flexberry-gis-demo-address-l': {
+            'i-i-s-flexberry-gis-test-stand-address-l': {
               caption: 'Address',
               title: ''
 
             },
-            'i-i-s-flexberry-gis-demo-author-l': {
+            'i-i-s-flexberry-gis-test-stand-author-l': {
               caption: 'Author',
               title: ''
 
@@ -3122,12 +3122,12 @@ define('ember-app/locales/ru/translations', ['exports', 'ember', 'ember-flexberr
         'delete-success-message': 'Объект удален',
         'delete-error-message-caption': 'Ошибка удаления'
       },
-      'i-i-s-flexberry-gis-demo-address-l': _emberAppLocalesRuFormsIISFlexberryGisDemoAddressL['default'],
-      'i-i-s-flexberry-gis-demo-author-l': _emberAppLocalesRuFormsIISFlexberryGisDemoAuthorL['default'],
-      'i-i-s-flexberry-gis-demo-request-l': _emberAppLocalesRuFormsIISFlexberryGisDemoRequestL['default'],
-      'i-i-s-flexberry-gis-demo-address-e': _emberAppLocalesRuFormsIISFlexberryGisDemoAddressE['default'],
-      'i-i-s-flexberry-gis-demo-author-e': _emberAppLocalesRuFormsIISFlexberryGisDemoAuthorE['default'],
-      'i-i-s-flexberry-gis-demo-request-e': _emberAppLocalesRuFormsIISFlexberryGisDemoRequestE['default']
+      'i-i-s-flexberry-gis-test-stand-address-l': _emberAppLocalesRuFormsIISFlexberryGisTestStandAddressL['default'],
+      'i-i-s-flexberry-gis-test-stand-author-l': _emberAppLocalesRuFormsIISFlexberryGisTestStandAuthorL['default'],
+      'i-i-s-flexberry-gis-test-stand-request-l': _emberAppLocalesRuFormsIISFlexberryGisTestStandRequestL['default'],
+      'i-i-s-flexberry-gis-test-stand-address-e': _emberAppLocalesRuFormsIISFlexberryGisTestStandAddressE['default'],
+      'i-i-s-flexberry-gis-test-stand-author-e': _emberAppLocalesRuFormsIISFlexberryGisTestStandAuthorE['default'],
+      'i-i-s-flexberry-gis-test-stand-request-e': _emberAppLocalesRuFormsIISFlexberryGisTestStandRequestE['default']
     }
 
   });
@@ -3430,7 +3430,7 @@ define('ember-app/mixins/link-action', ['exports', 'ember-link-action/mixins/lin
     }
   });
 });
-define('ember-app/mixins/regenerated/models/i-i-s-flexberry-gis-demo-address', ['exports', 'ember', 'ember-data', 'ember-flexberry-data'], function (exports, _ember, _emberData, _emberFlexberryData) {
+define('ember-app/mixins/regenerated/models/i-i-s-flexberry-gis-test-stand-address', ['exports', 'ember', 'ember-data', 'ember-flexberry-data'], function (exports, _ember, _emberData, _emberFlexberryData) {
   var Model = _ember['default'].Mixin.create({
     place: _emberData['default'].attr('string'),
     location: _emberData['default'].attr('string'),
@@ -3446,24 +3446,24 @@ define('ember-app/mixins/regenerated/models/i-i-s-flexberry-gis-demo-address', [
   });
   exports.Model = Model;
   var defineProjections = function defineProjections(modelClass) {
-    modelClass.defineProjection('AddressE', 'i-i-s-flexberry-gis-demo-address', {
+    modelClass.defineProjection('AddressE', 'i-i-s-flexberry-gis-test-stand-address', {
       place: _emberFlexberryData.Projection.attr('Place'),
       location: _emberFlexberryData.Projection.attr('Location')
     });
-    modelClass.defineProjection('AddressL', 'i-i-s-flexberry-gis-demo-address', {
+    modelClass.defineProjection('AddressL', 'i-i-s-flexberry-gis-test-stand-address', {
       place: _emberFlexberryData.Projection.attr('Place'),
       location: _emberFlexberryData.Projection.attr('Location')
     });
   };
   exports.defineProjections = defineProjections;
 });
-define('ember-app/mixins/regenerated/models/i-i-s-flexberry-gis-demo-author', ['exports', 'ember', 'ember-data', 'ember-flexberry-data'], function (exports, _ember, _emberData, _emberFlexberryData) {
+define('ember-app/mixins/regenerated/models/i-i-s-flexberry-gis-test-stand-author', ['exports', 'ember', 'ember-data', 'ember-flexberry-data'], function (exports, _ember, _emberData, _emberFlexberryData) {
   var Model = _ember['default'].Mixin.create({
     name: _emberData['default'].attr('string'),
     phone: _emberData['default'].attr('number'),
     email: _emberData['default'].attr('string'),
     birthday: _emberData['default'].attr('date'),
-    gender: _emberData['default'].attr('i-i-s-flexberry-gis-demo-t-gender'),
+    gender: _emberData['default'].attr('i-i-s-flexberry-gis-test-stand-t-gender'),
     vip: _emberData['default'].attr('boolean'),
     getValidations: function getValidations() {
       var parentValidations = this._super();
@@ -3477,7 +3477,7 @@ define('ember-app/mixins/regenerated/models/i-i-s-flexberry-gis-demo-author', ['
   });
   exports.Model = Model;
   var defineProjections = function defineProjections(modelClass) {
-    modelClass.defineProjection('AuthorE', 'i-i-s-flexberry-gis-demo-author', {
+    modelClass.defineProjection('AuthorE', 'i-i-s-flexberry-gis-test-stand-author', {
       name: _emberFlexberryData.Projection.attr('Name'),
       phone: _emberFlexberryData.Projection.attr('Phone'),
       email: _emberFlexberryData.Projection.attr('Email'),
@@ -3485,7 +3485,7 @@ define('ember-app/mixins/regenerated/models/i-i-s-flexberry-gis-demo-author', ['
       gender: _emberFlexberryData.Projection.attr('Gender'),
       vip: _emberFlexberryData.Projection.attr('Vip')
     });
-    modelClass.defineProjection('AuthorL', 'i-i-s-flexberry-gis-demo-author', {
+    modelClass.defineProjection('AuthorL', 'i-i-s-flexberry-gis-test-stand-author', {
       name: _emberFlexberryData.Projection.attr('Name'),
       phone: _emberFlexberryData.Projection.attr('Phone'),
       email: _emberFlexberryData.Projection.attr('Email'),
@@ -3496,11 +3496,11 @@ define('ember-app/mixins/regenerated/models/i-i-s-flexberry-gis-demo-author', ['
   };
   exports.defineProjections = defineProjections;
 });
-define('ember-app/mixins/regenerated/models/i-i-s-flexberry-gis-demo-comment', ['exports', 'ember', 'ember-data', 'ember-flexberry-data'], function (exports, _ember, _emberData, _emberFlexberryData) {
+define('ember-app/mixins/regenerated/models/i-i-s-flexberry-gis-test-stand-comment', ['exports', 'ember', 'ember-data', 'ember-flexberry-data'], function (exports, _ember, _emberData, _emberFlexberryData) {
   var Model = _ember['default'].Mixin.create({
     text: _emberData['default'].attr('string'),
-    type: _emberData['default'].attr('i-i-s-flexberry-gis-demo-t-status'),
-    request: _emberData['default'].belongsTo('i-i-s-flexberry-gis-demo-request', { inverse: 'comment', async: false }),
+    type: _emberData['default'].attr('i-i-s-flexberry-gis-test-stand-t-status'),
+    request: _emberData['default'].belongsTo('i-i-s-flexberry-gis-test-stand-request', { inverse: 'comment', async: false }),
     getValidations: function getValidations() {
       var parentValidations = this._super();
       var thisValidations = {
@@ -3515,21 +3515,21 @@ define('ember-app/mixins/regenerated/models/i-i-s-flexberry-gis-demo-comment', [
   });
   exports.Model = Model;
   var defineProjections = function defineProjections(modelClass) {
-    modelClass.defineProjection('CommentE', 'i-i-s-flexberry-gis-demo-comment', {
+    modelClass.defineProjection('CommentE', 'i-i-s-flexberry-gis-test-stand-comment', {
       text: _emberFlexberryData.Projection.attr('Text'),
       type: _emberFlexberryData.Projection.attr('Type')
     });
   };
   exports.defineProjections = defineProjections;
 });
-define('ember-app/mixins/regenerated/models/i-i-s-flexberry-gis-demo-request', ['exports', 'ember', 'ember-data', 'ember-flexberry-data'], function (exports, _ember, _emberData, _emberFlexberryData) {
+define('ember-app/mixins/regenerated/models/i-i-s-flexberry-gis-test-stand-request', ['exports', 'ember', 'ember-data', 'ember-flexberry-data'], function (exports, _ember, _emberData, _emberFlexberryData) {
   var Model = _ember['default'].Mixin.create({
     date: _emberData['default'].attr('date'),
     urgently: _emberData['default'].attr('boolean'),
     task: _emberData['default'].attr('string'),
-    author: _emberData['default'].belongsTo('i-i-s-flexberry-gis-demo-author', { inverse: null, async: false }),
-    address: _emberData['default'].belongsTo('i-i-s-flexberry-gis-demo-address', { inverse: null, async: false }),
-    comment: _emberData['default'].hasMany('i-i-s-flexberry-gis-demo-comment', { inverse: 'request', async: false }),
+    author: _emberData['default'].belongsTo('i-i-s-flexberry-gis-test-stand-author', { inverse: null, async: false }),
+    address: _emberData['default'].belongsTo('i-i-s-flexberry-gis-test-stand-address', { inverse: null, async: false }),
+    comment: _emberData['default'].hasMany('i-i-s-flexberry-gis-test-stand-comment', { inverse: 'request', async: false }),
     getValidations: function getValidations() {
       var parentValidations = this._super();
       var thisValidations = {
@@ -3545,36 +3545,36 @@ define('ember-app/mixins/regenerated/models/i-i-s-flexberry-gis-demo-request', [
   });
   exports.Model = Model;
   var defineProjections = function defineProjections(modelClass) {
-    modelClass.defineProjection('RequestE', 'i-i-s-flexberry-gis-demo-request', {
+    modelClass.defineProjection('RequestE', 'i-i-s-flexberry-gis-test-stand-request', {
       date: _emberFlexberryData.Projection.attr('Date'),
       urgently: _emberFlexberryData.Projection.attr('Urgently'),
       task: _emberFlexberryData.Projection.attr('Task'),
-      author: _emberFlexberryData.Projection.belongsTo('i-i-s-flexberry-gis-demo-author', 'Author', {
+      author: _emberFlexberryData.Projection.belongsTo('i-i-s-flexberry-gis-test-stand-author', 'Author', {
         name: _emberFlexberryData.Projection.attr('Name')
       }, { displayMemberPath: 'name' }),
-      address: _emberFlexberryData.Projection.belongsTo('i-i-s-flexberry-gis-demo-address', 'Address', {
+      address: _emberFlexberryData.Projection.belongsTo('i-i-s-flexberry-gis-test-stand-address', 'Address', {
         place: _emberFlexberryData.Projection.attr('Place')
       }, { displayMemberPath: 'place' }),
-      comment: _emberFlexberryData.Projection.hasMany('i-i-s-flexberry-gis-demo-comment', 'Comment', {
+      comment: _emberFlexberryData.Projection.hasMany('i-i-s-flexberry-gis-test-stand-comment', 'Comment', {
         text: _emberFlexberryData.Projection.attr('Text'),
         type: _emberFlexberryData.Projection.attr('Type')
       })
     });
-    modelClass.defineProjection('RequestL', 'i-i-s-flexberry-gis-demo-request', {
+    modelClass.defineProjection('RequestL', 'i-i-s-flexberry-gis-test-stand-request', {
       date: _emberFlexberryData.Projection.attr('Date'),
       urgently: _emberFlexberryData.Projection.attr('Urgently'),
       task: _emberFlexberryData.Projection.attr('Task'),
-      author: _emberFlexberryData.Projection.belongsTo('i-i-s-flexberry-gis-demo-author', 'Name', {
+      author: _emberFlexberryData.Projection.belongsTo('i-i-s-flexberry-gis-test-stand-author', 'Name', {
         name: _emberFlexberryData.Projection.attr('Name')
       }, { hidden: true }),
-      address: _emberFlexberryData.Projection.belongsTo('i-i-s-flexberry-gis-demo-address', 'Place', {
+      address: _emberFlexberryData.Projection.belongsTo('i-i-s-flexberry-gis-test-stand-address', 'Place', {
         place: _emberFlexberryData.Projection.attr('Place')
       }, { hidden: true })
     });
   };
   exports.defineProjections = defineProjections;
 });
-define('ember-app/mixins/regenerated/serializers/i-i-s-flexberry-gis-demo-address-offline', ['exports', 'ember'], function (exports, _ember) {
+define('ember-app/mixins/regenerated/serializers/i-i-s-flexberry-gis-test-stand-address-offline', ['exports', 'ember'], function (exports, _ember) {
   var OfflineSerializer = _ember['default'].Mixin.create({
     getAttrs: function getAttrs() {
       var parentAttrs = this._super();
@@ -3589,7 +3589,7 @@ define('ember-app/mixins/regenerated/serializers/i-i-s-flexberry-gis-demo-addres
   });
   exports.OfflineSerializer = OfflineSerializer;
 });
-define('ember-app/mixins/regenerated/serializers/i-i-s-flexberry-gis-demo-address', ['exports', 'ember'], function (exports, _ember) {
+define('ember-app/mixins/regenerated/serializers/i-i-s-flexberry-gis-test-stand-address', ['exports', 'ember'], function (exports, _ember) {
   var Serializer = _ember['default'].Mixin.create({
     getAttrs: function getAttrs() {
       var parentAttrs = this._super();
@@ -3604,7 +3604,7 @@ define('ember-app/mixins/regenerated/serializers/i-i-s-flexberry-gis-demo-addres
   });
   exports.Serializer = Serializer;
 });
-define('ember-app/mixins/regenerated/serializers/i-i-s-flexberry-gis-demo-author-offline', ['exports', 'ember'], function (exports, _ember) {
+define('ember-app/mixins/regenerated/serializers/i-i-s-flexberry-gis-test-stand-author-offline', ['exports', 'ember'], function (exports, _ember) {
   var OfflineSerializer = _ember['default'].Mixin.create({
     getAttrs: function getAttrs() {
       var parentAttrs = this._super();
@@ -3619,7 +3619,7 @@ define('ember-app/mixins/regenerated/serializers/i-i-s-flexberry-gis-demo-author
   });
   exports.OfflineSerializer = OfflineSerializer;
 });
-define('ember-app/mixins/regenerated/serializers/i-i-s-flexberry-gis-demo-author', ['exports', 'ember'], function (exports, _ember) {
+define('ember-app/mixins/regenerated/serializers/i-i-s-flexberry-gis-test-stand-author', ['exports', 'ember'], function (exports, _ember) {
   var Serializer = _ember['default'].Mixin.create({
     getAttrs: function getAttrs() {
       var parentAttrs = this._super();
@@ -3634,7 +3634,7 @@ define('ember-app/mixins/regenerated/serializers/i-i-s-flexberry-gis-demo-author
   });
   exports.Serializer = Serializer;
 });
-define('ember-app/mixins/regenerated/serializers/i-i-s-flexberry-gis-demo-comment-offline', ['exports', 'ember'], function (exports, _ember) {
+define('ember-app/mixins/regenerated/serializers/i-i-s-flexberry-gis-test-stand-comment-offline', ['exports', 'ember'], function (exports, _ember) {
   var OfflineSerializer = _ember['default'].Mixin.create({
     getAttrs: function getAttrs() {
       var parentAttrs = this._super();
@@ -3651,7 +3651,7 @@ define('ember-app/mixins/regenerated/serializers/i-i-s-flexberry-gis-demo-commen
   });
   exports.OfflineSerializer = OfflineSerializer;
 });
-define('ember-app/mixins/regenerated/serializers/i-i-s-flexberry-gis-demo-comment', ['exports', 'ember'], function (exports, _ember) {
+define('ember-app/mixins/regenerated/serializers/i-i-s-flexberry-gis-test-stand-comment', ['exports', 'ember'], function (exports, _ember) {
   var Serializer = _ember['default'].Mixin.create({
     getAttrs: function getAttrs() {
       var parentAttrs = this._super();
@@ -3668,7 +3668,7 @@ define('ember-app/mixins/regenerated/serializers/i-i-s-flexberry-gis-demo-commen
   });
   exports.Serializer = Serializer;
 });
-define('ember-app/mixins/regenerated/serializers/i-i-s-flexberry-gis-demo-request-offline', ['exports', 'ember'], function (exports, _ember) {
+define('ember-app/mixins/regenerated/serializers/i-i-s-flexberry-gis-test-stand-request-offline', ['exports', 'ember'], function (exports, _ember) {
   var OfflineSerializer = _ember['default'].Mixin.create({
     getAttrs: function getAttrs() {
       var parentAttrs = this._super();
@@ -3687,7 +3687,7 @@ define('ember-app/mixins/regenerated/serializers/i-i-s-flexberry-gis-demo-reques
   });
   exports.OfflineSerializer = OfflineSerializer;
 });
-define('ember-app/mixins/regenerated/serializers/i-i-s-flexberry-gis-demo-request', ['exports', 'ember'], function (exports, _ember) {
+define('ember-app/mixins/regenerated/serializers/i-i-s-flexberry-gis-test-stand-request', ['exports', 'ember'], function (exports, _ember) {
   var Serializer = _ember['default'].Mixin.create({
     getAttrs: function getAttrs() {
       var parentAttrs = this._super();
@@ -3776,24 +3776,24 @@ define('ember-app/models/i-i-s-caseberry-logging-objects-application-log', ['exp
     }
   });
 });
-define('ember-app/models/i-i-s-flexberry-gis-demo-address', ['exports', 'ember-app/mixins/regenerated/models/i-i-s-flexberry-gis-demo-address', 'ember-flexberry-data'], function (exports, _emberAppMixinsRegeneratedModelsIISFlexberryGisDemoAddress, _emberFlexberryData) {
-  var Model = _emberFlexberryData.Projection.Model.extend(_emberFlexberryData.Offline.ModelMixin, _emberAppMixinsRegeneratedModelsIISFlexberryGisDemoAddress.Model, {});
-  (0, _emberAppMixinsRegeneratedModelsIISFlexberryGisDemoAddress.defineProjections)(Model);
+define('ember-app/models/i-i-s-flexberry-gis-test-stand-address', ['exports', 'ember-app/mixins/regenerated/models/i-i-s-flexberry-gis-test-stand-address', 'ember-flexberry-data'], function (exports, _emberAppMixinsRegeneratedModelsIISFlexberryGisTestStandAddress, _emberFlexberryData) {
+  var Model = _emberFlexberryData.Projection.Model.extend(_emberFlexberryData.Offline.ModelMixin, _emberAppMixinsRegeneratedModelsIISFlexberryGisTestStandAddress.Model, {});
+  (0, _emberAppMixinsRegeneratedModelsIISFlexberryGisTestStandAddress.defineProjections)(Model);
   exports['default'] = Model;
 });
-define('ember-app/models/i-i-s-flexberry-gis-demo-author', ['exports', 'ember-app/mixins/regenerated/models/i-i-s-flexberry-gis-demo-author', 'ember-flexberry-data'], function (exports, _emberAppMixinsRegeneratedModelsIISFlexberryGisDemoAuthor, _emberFlexberryData) {
-  var Model = _emberFlexberryData.Projection.Model.extend(_emberFlexberryData.Offline.ModelMixin, _emberAppMixinsRegeneratedModelsIISFlexberryGisDemoAuthor.Model, {});
-  (0, _emberAppMixinsRegeneratedModelsIISFlexberryGisDemoAuthor.defineProjections)(Model);
+define('ember-app/models/i-i-s-flexberry-gis-test-stand-author', ['exports', 'ember-app/mixins/regenerated/models/i-i-s-flexberry-gis-test-stand-author', 'ember-flexberry-data'], function (exports, _emberAppMixinsRegeneratedModelsIISFlexberryGisTestStandAuthor, _emberFlexberryData) {
+  var Model = _emberFlexberryData.Projection.Model.extend(_emberFlexberryData.Offline.ModelMixin, _emberAppMixinsRegeneratedModelsIISFlexberryGisTestStandAuthor.Model, {});
+  (0, _emberAppMixinsRegeneratedModelsIISFlexberryGisTestStandAuthor.defineProjections)(Model);
   exports['default'] = Model;
 });
-define('ember-app/models/i-i-s-flexberry-gis-demo-comment', ['exports', 'ember-app/mixins/regenerated/models/i-i-s-flexberry-gis-demo-comment', 'ember-flexberry-data'], function (exports, _emberAppMixinsRegeneratedModelsIISFlexberryGisDemoComment, _emberFlexberryData) {
-  var Model = _emberFlexberryData.Projection.Model.extend(_emberFlexberryData.Offline.ModelMixin, _emberAppMixinsRegeneratedModelsIISFlexberryGisDemoComment.Model, {});
-  (0, _emberAppMixinsRegeneratedModelsIISFlexberryGisDemoComment.defineProjections)(Model);
+define('ember-app/models/i-i-s-flexberry-gis-test-stand-comment', ['exports', 'ember-app/mixins/regenerated/models/i-i-s-flexberry-gis-test-stand-comment', 'ember-flexberry-data'], function (exports, _emberAppMixinsRegeneratedModelsIISFlexberryGisTestStandComment, _emberFlexberryData) {
+  var Model = _emberFlexberryData.Projection.Model.extend(_emberFlexberryData.Offline.ModelMixin, _emberAppMixinsRegeneratedModelsIISFlexberryGisTestStandComment.Model, {});
+  (0, _emberAppMixinsRegeneratedModelsIISFlexberryGisTestStandComment.defineProjections)(Model);
   exports['default'] = Model;
 });
-define('ember-app/models/i-i-s-flexberry-gis-demo-request', ['exports', 'ember-app/mixins/regenerated/models/i-i-s-flexberry-gis-demo-request', 'ember-flexberry-data'], function (exports, _emberAppMixinsRegeneratedModelsIISFlexberryGisDemoRequest, _emberFlexberryData) {
-  var Model = _emberFlexberryData.Projection.Model.extend(_emberFlexberryData.Offline.ModelMixin, _emberAppMixinsRegeneratedModelsIISFlexberryGisDemoRequest.Model, {});
-  (0, _emberAppMixinsRegeneratedModelsIISFlexberryGisDemoRequest.defineProjections)(Model);
+define('ember-app/models/i-i-s-flexberry-gis-test-stand-request', ['exports', 'ember-app/mixins/regenerated/models/i-i-s-flexberry-gis-test-stand-request', 'ember-flexberry-data'], function (exports, _emberAppMixinsRegeneratedModelsIISFlexberryGisTestStandRequest, _emberFlexberryData) {
+  var Model = _emberFlexberryData.Projection.Model.extend(_emberFlexberryData.Offline.ModelMixin, _emberAppMixinsRegeneratedModelsIISFlexberryGisTestStandRequest.Model, {});
+  (0, _emberAppMixinsRegeneratedModelsIISFlexberryGisTestStandRequest.defineProjections)(Model);
   exports['default'] = Model;
 });
 define('ember-app/models/model', ['exports', 'ember-flexberry-data/models/model'], function (exports, _emberFlexberryDataModelsModel) {
@@ -3886,15 +3886,15 @@ define('ember-app/router', ['exports', 'ember', 'ember-app/config/environment'],
   });
 
   Router.map(function () {
-    this.route('i-i-s-flexberry-gis-demo-address-l');
-    this.route('i-i-s-flexberry-gis-demo-address-e', { path: 'i-i-s-flexberry-gis-demo-address-e/:id' });
-    this.route('i-i-s-flexberry-gis-demo-address-e.new', { path: 'i-i-s-flexberry-gis-demo-address-e/new' });
-    this.route('i-i-s-flexberry-gis-demo-author-l');
-    this.route('i-i-s-flexberry-gis-demo-author-e', { path: 'i-i-s-flexberry-gis-demo-author-e/:id' });
-    this.route('i-i-s-flexberry-gis-demo-author-e.new', { path: 'i-i-s-flexberry-gis-demo-author-e/new' });
-    this.route('i-i-s-flexberry-gis-demo-request-l');
-    this.route('i-i-s-flexberry-gis-demo-request-e', { path: 'i-i-s-flexberry-gis-demo-request-e/:id' });
-    this.route('i-i-s-flexberry-gis-demo-request-e.new', { path: 'i-i-s-flexberry-gis-demo-request-e/new' });
+    this.route('i-i-s-flexberry-gis-test-stand-address-l');
+    this.route('i-i-s-flexberry-gis-test-stand-address-e', { path: 'i-i-s-flexberry-gis-test-stand-address-e/:id' });
+    this.route('i-i-s-flexberry-gis-test-stand-address-e.new', { path: 'i-i-s-flexberry-gis-test-stand-address-e/new' });
+    this.route('i-i-s-flexberry-gis-test-stand-author-l');
+    this.route('i-i-s-flexberry-gis-test-stand-author-e', { path: 'i-i-s-flexberry-gis-test-stand-author-e/:id' });
+    this.route('i-i-s-flexberry-gis-test-stand-author-e.new', { path: 'i-i-s-flexberry-gis-test-stand-author-e/new' });
+    this.route('i-i-s-flexberry-gis-test-stand-request-l');
+    this.route('i-i-s-flexberry-gis-test-stand-request-e', { path: 'i-i-s-flexberry-gis-test-stand-request-e/:id' });
+    this.route('i-i-s-flexberry-gis-test-stand-request-e.new', { path: 'i-i-s-flexberry-gis-test-stand-request-e/new' });
   });
 
   exports['default'] = Router;
@@ -3926,20 +3926,20 @@ define('ember-app/routes/i-i-s-caseberry-logging-objects-application-log-l', ['e
     }
   });
 });
-define('ember-app/routes/i-i-s-flexberry-gis-demo-address-e', ['exports', 'ember-flexberry/routes/edit-form'], function (exports, _emberFlexberryRoutesEditForm) {
+define('ember-app/routes/i-i-s-flexberry-gis-test-stand-address-e', ['exports', 'ember-flexberry/routes/edit-form'], function (exports, _emberFlexberryRoutesEditForm) {
   exports['default'] = _emberFlexberryRoutesEditForm['default'].extend({
     modelProjection: 'AddressE',
-    modelName: 'i-i-s-flexberry-gis-demo-address'
+    modelName: 'i-i-s-flexberry-gis-test-stand-address'
   });
 });
-define('ember-app/routes/i-i-s-flexberry-gis-demo-address-e/new', ['exports', 'ember-flexberry/routes/edit-form-new'], function (exports, _emberFlexberryRoutesEditFormNew) {
+define('ember-app/routes/i-i-s-flexberry-gis-test-stand-address-e/new', ['exports', 'ember-flexberry/routes/edit-form-new'], function (exports, _emberFlexberryRoutesEditFormNew) {
   exports['default'] = _emberFlexberryRoutesEditFormNew['default'].extend({
     modelProjection: 'AddressE',
-    modelName: 'i-i-s-flexberry-gis-demo-address',
-    templateName: 'i-i-s-flexberry-gis-demo-address-e'
+    modelName: 'i-i-s-flexberry-gis-test-stand-address',
+    templateName: 'i-i-s-flexberry-gis-test-stand-address-e'
   });
 });
-define('ember-app/routes/i-i-s-flexberry-gis-demo-address-l', ['exports', 'ember-flexberry/routes/list-form'], function (exports, _emberFlexberryRoutesListForm) {
+define('ember-app/routes/i-i-s-flexberry-gis-test-stand-address-l', ['exports', 'ember-flexberry/routes/list-form'], function (exports, _emberFlexberryRoutesListForm) {
   exports['default'] = _emberFlexberryRoutesListForm['default'].extend({
     /**
       Name of model projection to be used as record's properties limitation.
@@ -3953,9 +3953,9 @@ define('ember-app/routes/i-i-s-flexberry-gis-demo-address-l', ['exports', 'ember
       Name of model to be used as list's records types.
        @property modelName
       @type String
-      @default 'i-i-s-flexberry-gis-demo-address'
+      @default 'i-i-s-flexberry-gis-test-stand-address'
     */
-    modelName: 'i-i-s-flexberry-gis-demo-address',
+    modelName: 'i-i-s-flexberry-gis-test-stand-address',
 
     /**
       Defined user settings developer.
@@ -3978,23 +3978,23 @@ define('ember-app/routes/i-i-s-flexberry-gis-demo-address-l', ['exports', 'ember
       @type Object
       @default {}
     */
-    developerUserSettings: { IISFlexberryGisDemoAddressL: {} }
+    developerUserSettings: { IISFlexberryGisTestStandAddressL: {} }
   });
 });
-define('ember-app/routes/i-i-s-flexberry-gis-demo-author-e', ['exports', 'ember-flexberry/routes/edit-form'], function (exports, _emberFlexberryRoutesEditForm) {
+define('ember-app/routes/i-i-s-flexberry-gis-test-stand-author-e', ['exports', 'ember-flexberry/routes/edit-form'], function (exports, _emberFlexberryRoutesEditForm) {
   exports['default'] = _emberFlexberryRoutesEditForm['default'].extend({
     modelProjection: 'AuthorE',
-    modelName: 'i-i-s-flexberry-gis-demo-author'
+    modelName: 'i-i-s-flexberry-gis-test-stand-author'
   });
 });
-define('ember-app/routes/i-i-s-flexberry-gis-demo-author-e/new', ['exports', 'ember-flexberry/routes/edit-form-new'], function (exports, _emberFlexberryRoutesEditFormNew) {
+define('ember-app/routes/i-i-s-flexberry-gis-test-stand-author-e/new', ['exports', 'ember-flexberry/routes/edit-form-new'], function (exports, _emberFlexberryRoutesEditFormNew) {
   exports['default'] = _emberFlexberryRoutesEditFormNew['default'].extend({
     modelProjection: 'AuthorE',
-    modelName: 'i-i-s-flexberry-gis-demo-author',
-    templateName: 'i-i-s-flexberry-gis-demo-author-e'
+    modelName: 'i-i-s-flexberry-gis-test-stand-author',
+    templateName: 'i-i-s-flexberry-gis-test-stand-author-e'
   });
 });
-define('ember-app/routes/i-i-s-flexberry-gis-demo-author-l', ['exports', 'ember-flexberry/routes/list-form'], function (exports, _emberFlexberryRoutesListForm) {
+define('ember-app/routes/i-i-s-flexberry-gis-test-stand-author-l', ['exports', 'ember-flexberry/routes/list-form'], function (exports, _emberFlexberryRoutesListForm) {
   exports['default'] = _emberFlexberryRoutesListForm['default'].extend({
     /**
       Name of model projection to be used as record's properties limitation.
@@ -4008,9 +4008,9 @@ define('ember-app/routes/i-i-s-flexberry-gis-demo-author-l', ['exports', 'ember-
       Name of model to be used as list's records types.
        @property modelName
       @type String
-      @default 'i-i-s-flexberry-gis-demo-author'
+      @default 'i-i-s-flexberry-gis-test-stand-author'
     */
-    modelName: 'i-i-s-flexberry-gis-demo-author',
+    modelName: 'i-i-s-flexberry-gis-test-stand-author',
 
     /**
       Defined user settings developer.
@@ -4033,23 +4033,23 @@ define('ember-app/routes/i-i-s-flexberry-gis-demo-author-l', ['exports', 'ember-
       @type Object
       @default {}
     */
-    developerUserSettings: { IISFlexberryGisDemoAuthorL: {} }
+    developerUserSettings: { IISFlexberryGisTestStandAuthorL: {} }
   });
 });
-define('ember-app/routes/i-i-s-flexberry-gis-demo-request-e', ['exports', 'ember-flexberry/routes/edit-form'], function (exports, _emberFlexberryRoutesEditForm) {
+define('ember-app/routes/i-i-s-flexberry-gis-test-stand-request-e', ['exports', 'ember-flexberry/routes/edit-form'], function (exports, _emberFlexberryRoutesEditForm) {
   exports['default'] = _emberFlexberryRoutesEditForm['default'].extend({
     modelProjection: 'RequestE',
-    modelName: 'i-i-s-flexberry-gis-demo-request'
+    modelName: 'i-i-s-flexberry-gis-test-stand-request'
   });
 });
-define('ember-app/routes/i-i-s-flexberry-gis-demo-request-e/new', ['exports', 'ember-flexberry/routes/edit-form-new'], function (exports, _emberFlexberryRoutesEditFormNew) {
+define('ember-app/routes/i-i-s-flexberry-gis-test-stand-request-e/new', ['exports', 'ember-flexberry/routes/edit-form-new'], function (exports, _emberFlexberryRoutesEditFormNew) {
   exports['default'] = _emberFlexberryRoutesEditFormNew['default'].extend({
     modelProjection: 'RequestE',
-    modelName: 'i-i-s-flexberry-gis-demo-request',
-    templateName: 'i-i-s-flexberry-gis-demo-request-e'
+    modelName: 'i-i-s-flexberry-gis-test-stand-request',
+    templateName: 'i-i-s-flexberry-gis-test-stand-request-e'
   });
 });
-define('ember-app/routes/i-i-s-flexberry-gis-demo-request-l', ['exports', 'ember-flexberry/routes/list-form'], function (exports, _emberFlexberryRoutesListForm) {
+define('ember-app/routes/i-i-s-flexberry-gis-test-stand-request-l', ['exports', 'ember-flexberry/routes/list-form'], function (exports, _emberFlexberryRoutesListForm) {
   exports['default'] = _emberFlexberryRoutesListForm['default'].extend({
     /**
       Name of model projection to be used as record's properties limitation.
@@ -4063,9 +4063,9 @@ define('ember-app/routes/i-i-s-flexberry-gis-demo-request-l', ['exports', 'ember
       Name of model to be used as list's records types.
        @property modelName
       @type String
-      @default 'i-i-s-flexberry-gis-demo-request'
+      @default 'i-i-s-flexberry-gis-test-stand-request'
     */
-    modelName: 'i-i-s-flexberry-gis-demo-request',
+    modelName: 'i-i-s-flexberry-gis-test-stand-request',
 
     /**
       Defined user settings developer.
@@ -4088,7 +4088,7 @@ define('ember-app/routes/i-i-s-flexberry-gis-demo-request-l', ['exports', 'ember
       @type Object
       @default {}
     */
-    developerUserSettings: { IISFlexberryGisDemoRequestL: {} }
+    developerUserSettings: { IISFlexberryGisTestStandRequestL: {} }
   });
 });
 define('ember-app/routes/index', ['exports', 'ember'], function (exports, _ember) {
@@ -4214,44 +4214,44 @@ define('ember-app/serializers/i-i-s-caseberry-logging-objects-application-log', 
     }
   });
 });
-define('ember-app/serializers/i-i-s-flexberry-gis-demo-address-offline', ['exports', 'ember-app/mixins/regenerated/serializers/i-i-s-flexberry-gis-demo-address-offline', 'ember-app/serializers/application-offline'], function (exports, _emberAppMixinsRegeneratedSerializersIISFlexberryGisDemoAddressOffline, _emberAppSerializersApplicationOffline) {
-  exports['default'] = _emberAppSerializersApplicationOffline['default'].extend(_emberAppMixinsRegeneratedSerializersIISFlexberryGisDemoAddressOffline.OfflineSerializer, {});
+define('ember-app/serializers/i-i-s-flexberry-gis-test-stand-address-offline', ['exports', 'ember-app/mixins/regenerated/serializers/i-i-s-flexberry-gis-test-stand-address-offline', 'ember-app/serializers/application-offline'], function (exports, _emberAppMixinsRegeneratedSerializersIISFlexberryGisTestStandAddressOffline, _emberAppSerializersApplicationOffline) {
+  exports['default'] = _emberAppSerializersApplicationOffline['default'].extend(_emberAppMixinsRegeneratedSerializersIISFlexberryGisTestStandAddressOffline.OfflineSerializer, {});
 });
-define('ember-app/serializers/i-i-s-flexberry-gis-demo-address', ['exports', 'ember-app/mixins/regenerated/serializers/i-i-s-flexberry-gis-demo-address', 'ember-app/serializers/application'], function (exports, _emberAppMixinsRegeneratedSerializersIISFlexberryGisDemoAddress, _emberAppSerializersApplication) {
-  exports['default'] = _emberAppSerializersApplication['default'].extend(_emberAppMixinsRegeneratedSerializersIISFlexberryGisDemoAddress.Serializer, {
+define('ember-app/serializers/i-i-s-flexberry-gis-test-stand-address', ['exports', 'ember-app/mixins/regenerated/serializers/i-i-s-flexberry-gis-test-stand-address', 'ember-app/serializers/application'], function (exports, _emberAppMixinsRegeneratedSerializersIISFlexberryGisTestStandAddress, _emberAppSerializersApplication) {
+  exports['default'] = _emberAppSerializersApplication['default'].extend(_emberAppMixinsRegeneratedSerializersIISFlexberryGisTestStandAddress.Serializer, {
     /**
     * Field name where object identifier is kept.
     */
     primaryKey: '__PrimaryKey'
   });
 });
-define('ember-app/serializers/i-i-s-flexberry-gis-demo-author-offline', ['exports', 'ember-app/mixins/regenerated/serializers/i-i-s-flexberry-gis-demo-author-offline', 'ember-app/serializers/application-offline'], function (exports, _emberAppMixinsRegeneratedSerializersIISFlexberryGisDemoAuthorOffline, _emberAppSerializersApplicationOffline) {
-  exports['default'] = _emberAppSerializersApplicationOffline['default'].extend(_emberAppMixinsRegeneratedSerializersIISFlexberryGisDemoAuthorOffline.OfflineSerializer, {});
+define('ember-app/serializers/i-i-s-flexberry-gis-test-stand-author-offline', ['exports', 'ember-app/mixins/regenerated/serializers/i-i-s-flexberry-gis-test-stand-author-offline', 'ember-app/serializers/application-offline'], function (exports, _emberAppMixinsRegeneratedSerializersIISFlexberryGisTestStandAuthorOffline, _emberAppSerializersApplicationOffline) {
+  exports['default'] = _emberAppSerializersApplicationOffline['default'].extend(_emberAppMixinsRegeneratedSerializersIISFlexberryGisTestStandAuthorOffline.OfflineSerializer, {});
 });
-define('ember-app/serializers/i-i-s-flexberry-gis-demo-author', ['exports', 'ember-app/mixins/regenerated/serializers/i-i-s-flexberry-gis-demo-author', 'ember-app/serializers/application'], function (exports, _emberAppMixinsRegeneratedSerializersIISFlexberryGisDemoAuthor, _emberAppSerializersApplication) {
-  exports['default'] = _emberAppSerializersApplication['default'].extend(_emberAppMixinsRegeneratedSerializersIISFlexberryGisDemoAuthor.Serializer, {
+define('ember-app/serializers/i-i-s-flexberry-gis-test-stand-author', ['exports', 'ember-app/mixins/regenerated/serializers/i-i-s-flexberry-gis-test-stand-author', 'ember-app/serializers/application'], function (exports, _emberAppMixinsRegeneratedSerializersIISFlexberryGisTestStandAuthor, _emberAppSerializersApplication) {
+  exports['default'] = _emberAppSerializersApplication['default'].extend(_emberAppMixinsRegeneratedSerializersIISFlexberryGisTestStandAuthor.Serializer, {
     /**
     * Field name where object identifier is kept.
     */
     primaryKey: '__PrimaryKey'
   });
 });
-define('ember-app/serializers/i-i-s-flexberry-gis-demo-comment-offline', ['exports', 'ember-app/mixins/regenerated/serializers/i-i-s-flexberry-gis-demo-comment-offline', 'ember-app/serializers/application-offline'], function (exports, _emberAppMixinsRegeneratedSerializersIISFlexberryGisDemoCommentOffline, _emberAppSerializersApplicationOffline) {
-  exports['default'] = _emberAppSerializersApplicationOffline['default'].extend(_emberAppMixinsRegeneratedSerializersIISFlexberryGisDemoCommentOffline.OfflineSerializer, {});
+define('ember-app/serializers/i-i-s-flexberry-gis-test-stand-comment-offline', ['exports', 'ember-app/mixins/regenerated/serializers/i-i-s-flexberry-gis-test-stand-comment-offline', 'ember-app/serializers/application-offline'], function (exports, _emberAppMixinsRegeneratedSerializersIISFlexberryGisTestStandCommentOffline, _emberAppSerializersApplicationOffline) {
+  exports['default'] = _emberAppSerializersApplicationOffline['default'].extend(_emberAppMixinsRegeneratedSerializersIISFlexberryGisTestStandCommentOffline.OfflineSerializer, {});
 });
-define('ember-app/serializers/i-i-s-flexberry-gis-demo-comment', ['exports', 'ember-app/mixins/regenerated/serializers/i-i-s-flexberry-gis-demo-comment', 'ember-app/serializers/application'], function (exports, _emberAppMixinsRegeneratedSerializersIISFlexberryGisDemoComment, _emberAppSerializersApplication) {
-  exports['default'] = _emberAppSerializersApplication['default'].extend(_emberAppMixinsRegeneratedSerializersIISFlexberryGisDemoComment.Serializer, {
+define('ember-app/serializers/i-i-s-flexberry-gis-test-stand-comment', ['exports', 'ember-app/mixins/regenerated/serializers/i-i-s-flexberry-gis-test-stand-comment', 'ember-app/serializers/application'], function (exports, _emberAppMixinsRegeneratedSerializersIISFlexberryGisTestStandComment, _emberAppSerializersApplication) {
+  exports['default'] = _emberAppSerializersApplication['default'].extend(_emberAppMixinsRegeneratedSerializersIISFlexberryGisTestStandComment.Serializer, {
     /**
     * Field name where object identifier is kept.
     */
     primaryKey: '__PrimaryKey'
   });
 });
-define('ember-app/serializers/i-i-s-flexberry-gis-demo-request-offline', ['exports', 'ember-app/mixins/regenerated/serializers/i-i-s-flexberry-gis-demo-request-offline', 'ember-app/serializers/application-offline'], function (exports, _emberAppMixinsRegeneratedSerializersIISFlexberryGisDemoRequestOffline, _emberAppSerializersApplicationOffline) {
-  exports['default'] = _emberAppSerializersApplicationOffline['default'].extend(_emberAppMixinsRegeneratedSerializersIISFlexberryGisDemoRequestOffline.OfflineSerializer, {});
+define('ember-app/serializers/i-i-s-flexberry-gis-test-stand-request-offline', ['exports', 'ember-app/mixins/regenerated/serializers/i-i-s-flexberry-gis-test-stand-request-offline', 'ember-app/serializers/application-offline'], function (exports, _emberAppMixinsRegeneratedSerializersIISFlexberryGisTestStandRequestOffline, _emberAppSerializersApplicationOffline) {
+  exports['default'] = _emberAppSerializersApplicationOffline['default'].extend(_emberAppMixinsRegeneratedSerializersIISFlexberryGisTestStandRequestOffline.OfflineSerializer, {});
 });
-define('ember-app/serializers/i-i-s-flexberry-gis-demo-request', ['exports', 'ember-app/mixins/regenerated/serializers/i-i-s-flexberry-gis-demo-request', 'ember-app/serializers/application'], function (exports, _emberAppMixinsRegeneratedSerializersIISFlexberryGisDemoRequest, _emberAppSerializersApplication) {
-  exports['default'] = _emberAppSerializersApplication['default'].extend(_emberAppMixinsRegeneratedSerializersIISFlexberryGisDemoRequest.Serializer, {
+define('ember-app/serializers/i-i-s-flexberry-gis-test-stand-request', ['exports', 'ember-app/mixins/regenerated/serializers/i-i-s-flexberry-gis-test-stand-request', 'ember-app/serializers/application'], function (exports, _emberAppMixinsRegeneratedSerializersIISFlexberryGisTestStandRequest, _emberAppSerializersApplication) {
+  exports['default'] = _emberAppSerializersApplication['default'].extend(_emberAppMixinsRegeneratedSerializersIISFlexberryGisTestStandRequest.Serializer, {
     /**
     * Field name where object identifier is kept.
     */
@@ -4606,7 +4606,7 @@ define("ember-app/templates/application-with-submenu", ["exports"], function (ex
           var el2 = dom.createElement("a");
           dom.setAttribute(el2, "class", "brand");
           dom.setAttribute(el2, "href", "#");
-          var el3 = dom.createTextNode("Flexberry Ember Demo");
+          var el3 = dom.createTextNode("Flexberry Gis Test Stand");
           dom.appendChild(el2, el3);
           dom.appendChild(el1, el2);
           var el2 = dom.createTextNode("\n  ");
@@ -15144,7 +15144,7 @@ define("ember-app/templates/i-i-s-caseberry-logging-objects-application-log-l/lo
     };
   })());
 });
-define("ember-app/templates/i-i-s-flexberry-gis-demo-address-e", ["exports"], function (exports) {
+define("ember-app/templates/i-i-s-flexberry-gis-test-stand-address-e", ["exports"], function (exports) {
   exports["default"] = Ember.HTMLBars.template((function () {
     var child0 = (function () {
       var child0 = (function () {
@@ -15163,7 +15163,7 @@ define("ember-app/templates/i-i-s-flexberry-gis-demo-address-e", ["exports"], fu
                 "column": 2
               }
             },
-            "moduleName": "ember-app/templates/i-i-s-flexberry-gis-demo-address-e.hbs"
+            "moduleName": "ember-app/templates/i-i-s-flexberry-gis-test-stand-address-e.hbs"
           },
           isEmpty: false,
           arity: 1,
@@ -15204,7 +15204,7 @@ define("ember-app/templates/i-i-s-flexberry-gis-demo-address-e", ["exports"], fu
               "column": 0
             }
           },
-          "moduleName": "ember-app/templates/i-i-s-flexberry-gis-demo-address-e.hbs"
+          "moduleName": "ember-app/templates/i-i-s-flexberry-gis-test-stand-address-e.hbs"
         },
         isEmpty: false,
         arity: 0,
@@ -15245,7 +15245,7 @@ define("ember-app/templates/i-i-s-flexberry-gis-demo-address-e", ["exports"], fu
                 "column": 8
               }
             },
-            "moduleName": "ember-app/templates/i-i-s-flexberry-gis-demo-address-e.hbs"
+            "moduleName": "ember-app/templates/i-i-s-flexberry-gis-test-stand-address-e.hbs"
           },
           isEmpty: false,
           arity: 0,
@@ -15296,7 +15296,7 @@ define("ember-app/templates/i-i-s-flexberry-gis-demo-address-e", ["exports"], fu
               "column": 6
             }
           },
-          "moduleName": "ember-app/templates/i-i-s-flexberry-gis-demo-address-e.hbs"
+          "moduleName": "ember-app/templates/i-i-s-flexberry-gis-test-stand-address-e.hbs"
         },
         isEmpty: false,
         arity: 0,
@@ -15354,7 +15354,7 @@ define("ember-app/templates/i-i-s-flexberry-gis-demo-address-e", ["exports"], fu
             "column": 0
           }
         },
-        "moduleName": "ember-app/templates/i-i-s-flexberry-gis-demo-address-e.hbs"
+        "moduleName": "ember-app/templates/i-i-s-flexberry-gis-test-stand-address-e.hbs"
       },
       isEmpty: false,
       arity: 0,
@@ -15478,13 +15478,13 @@ define("ember-app/templates/i-i-s-flexberry-gis-demo-address-e", ["exports"], fu
         morphs[10] = dom.createMorphAt(element6, 3, 3);
         return morphs;
       },
-      statements: [["inline", "t", ["forms.i-i-s-flexberry-gis-demo-address-e.caption"], [], ["loc", [null, [1, 22], [1, 78]]]], ["block", "if", [["get", "errorMessages", ["loc", [null, [3, 6], [3, 19]]]]], [], 0, null, ["loc", [null, [3, 0], [13, 7]]]], ["attribute", "class", ["concat", ["ui ", ["get", "state", ["loc", [null, [14, 18], [14, 23]]]], " form flexberry-vertical-form"]]], ["inline", "flexberry-validationsummary", [], ["errors", ["subexpr", "@mut", [["get", "model.errors", ["loc", [null, [17, 43], [17, 55]]]]], [], []]], ["loc", [null, [17, 6], [17, 57]]]], ["block", "unless", [["get", "readonly", ["loc", [null, [22, 16], [22, 24]]]]], [], 1, null, ["loc", [null, [22, 6], [31, 17]]]], ["element", "action", ["close"], [], ["loc", [null, [32, 59], [32, 77]]]], ["inline", "t", ["forms.edit-form.close-button-text"], [], ["loc", [null, [33, 8], [33, 49]]]], ["inline", "flexberry-field", [], ["placeholder", ["subexpr", "t", ["components.flexberry-field.placeholder"], [], ["loc", [null, [40, 16], [40, 60]]]], "readonly", ["subexpr", "@mut", [["get", "readonly", ["loc", [null, [41, 13], [41, 21]]]]], [], []], "required", true, "value", ["subexpr", "@mut", [["get", "model.place", ["loc", [null, [43, 10], [43, 21]]]]], [], []], "class", ["subexpr", "if", [["get", "model.errors.place", ["loc", [null, [44, 14], [44, 32]]]], "error", ""], [], ["loc", [null, [44, 10], [44, 44]]]], "label", ["subexpr", "t", ["forms.i-i-s-flexberry-gis-demo-address-e.place-caption"], [], ["loc", [null, [45, 10], [45, 70]]]]], ["loc", [null, [38, 2], [46, 4]]]], ["inline", "flexberry-validationmessage", [], ["error", ["subexpr", "@mut", [["get", "model.errors.place", ["loc", [null, [47, 38], [47, 56]]]]], [], []], "pointing", "pointing"], ["loc", [null, [47, 2], [47, 78]]]], ["inline", "flexberry-field", [], ["placeholder", ["subexpr", "t", ["components.flexberry-field.placeholder"], [], ["loc", [null, [53, 16], [53, 60]]]], "readonly", ["subexpr", "@mut", [["get", "readonly", ["loc", [null, [54, 13], [54, 21]]]]], [], []], "required", true, "value", ["subexpr", "@mut", [["get", "model.location", ["loc", [null, [56, 10], [56, 24]]]]], [], []], "class", ["subexpr", "if", [["get", "model.errors.location", ["loc", [null, [57, 14], [57, 35]]]], "error", ""], [], ["loc", [null, [57, 10], [57, 47]]]], "label", ["subexpr", "t", ["forms.i-i-s-flexberry-gis-demo-address-e.location-caption"], [], ["loc", [null, [58, 10], [58, 73]]]]], ["loc", [null, [51, 2], [59, 4]]]], ["inline", "flexberry-validationmessage", [], ["error", ["subexpr", "@mut", [["get", "model.errors.location", ["loc", [null, [60, 38], [60, 59]]]]], [], []], "pointing", "pointing"], ["loc", [null, [60, 2], [60, 81]]]]],
+      statements: [["inline", "t", ["forms.i-i-s-flexberry-gis-test-stand-address-e.caption"], [], ["loc", [null, [1, 22], [1, 84]]]], ["block", "if", [["get", "errorMessages", ["loc", [null, [3, 6], [3, 19]]]]], [], 0, null, ["loc", [null, [3, 0], [13, 7]]]], ["attribute", "class", ["concat", ["ui ", ["get", "state", ["loc", [null, [14, 18], [14, 23]]]], " form flexberry-vertical-form"]]], ["inline", "flexberry-validationsummary", [], ["errors", ["subexpr", "@mut", [["get", "model.errors", ["loc", [null, [17, 43], [17, 55]]]]], [], []]], ["loc", [null, [17, 6], [17, 57]]]], ["block", "unless", [["get", "readonly", ["loc", [null, [22, 16], [22, 24]]]]], [], 1, null, ["loc", [null, [22, 6], [31, 17]]]], ["element", "action", ["close"], [], ["loc", [null, [32, 59], [32, 77]]]], ["inline", "t", ["forms.edit-form.close-button-text"], [], ["loc", [null, [33, 8], [33, 49]]]], ["inline", "flexberry-field", [], ["placeholder", ["subexpr", "t", ["components.flexberry-field.placeholder"], [], ["loc", [null, [40, 16], [40, 60]]]], "readonly", ["subexpr", "@mut", [["get", "readonly", ["loc", [null, [41, 13], [41, 21]]]]], [], []], "required", true, "value", ["subexpr", "@mut", [["get", "model.place", ["loc", [null, [43, 10], [43, 21]]]]], [], []], "class", ["subexpr", "if", [["get", "model.errors.place", ["loc", [null, [44, 14], [44, 32]]]], "error", ""], [], ["loc", [null, [44, 10], [44, 44]]]], "label", ["subexpr", "t", ["forms.i-i-s-flexberry-gis-test-stand-address-e.place-caption"], [], ["loc", [null, [45, 10], [45, 76]]]]], ["loc", [null, [38, 2], [46, 4]]]], ["inline", "flexberry-validationmessage", [], ["error", ["subexpr", "@mut", [["get", "model.errors.place", ["loc", [null, [47, 38], [47, 56]]]]], [], []], "pointing", "pointing"], ["loc", [null, [47, 2], [47, 78]]]], ["inline", "flexberry-field", [], ["placeholder", ["subexpr", "t", ["components.flexberry-field.placeholder"], [], ["loc", [null, [53, 16], [53, 60]]]], "readonly", ["subexpr", "@mut", [["get", "readonly", ["loc", [null, [54, 13], [54, 21]]]]], [], []], "required", true, "value", ["subexpr", "@mut", [["get", "model.location", ["loc", [null, [56, 10], [56, 24]]]]], [], []], "class", ["subexpr", "if", [["get", "model.errors.location", ["loc", [null, [57, 14], [57, 35]]]], "error", ""], [], ["loc", [null, [57, 10], [57, 47]]]], "label", ["subexpr", "t", ["forms.i-i-s-flexberry-gis-test-stand-address-e.location-caption"], [], ["loc", [null, [58, 10], [58, 79]]]]], ["loc", [null, [51, 2], [59, 4]]]], ["inline", "flexberry-validationmessage", [], ["error", ["subexpr", "@mut", [["get", "model.errors.location", ["loc", [null, [60, 38], [60, 59]]]]], [], []], "pointing", "pointing"], ["loc", [null, [60, 2], [60, 81]]]]],
       locals: [],
       templates: [child0, child1]
     };
   })());
 });
-define("ember-app/templates/i-i-s-flexberry-gis-demo-address-l", ["exports"], function (exports) {
+define("ember-app/templates/i-i-s-flexberry-gis-test-stand-address-l", ["exports"], function (exports) {
   exports["default"] = Ember.HTMLBars.template((function () {
     return {
       meta: {
@@ -15504,7 +15504,7 @@ define("ember-app/templates/i-i-s-flexberry-gis-demo-address-l", ["exports"], fu
             "column": 0
           }
         },
-        "moduleName": "ember-app/templates/i-i-s-flexberry-gis-demo-address-l.hbs"
+        "moduleName": "ember-app/templates/i-i-s-flexberry-gis-test-stand-address-l.hbs"
       },
       isEmpty: false,
       arity: 0,
@@ -15538,13 +15538,13 @@ define("ember-app/templates/i-i-s-flexberry-gis-demo-address-l", ["exports"], fu
         morphs[2] = dom.createMorphAt(element0, 1, 1);
         return morphs;
       },
-      statements: [["inline", "t", ["forms.i-i-s-flexberry-gis-demo-address-l.caption"], [], ["loc", [null, [1, 4], [1, 60]]]], ["attribute", "class", ["concat", ["ui ", ["get", "state", ["loc", [null, [2, 17], [2, 22]]]], " row form"]]], ["inline", "flexberry-objectlistview", [], ["modelName", "i-i-s-flexberry-gis-demo-address", "modelProjection", ["subexpr", "@mut", [["get", "modelProjection", ["loc", [null, [5, 20], [5, 35]]]]], [], []], "editFormRoute", ["subexpr", "@mut", [["get", "editFormRoute", ["loc", [null, [6, 18], [6, 31]]]]], [], []], "content", ["subexpr", "@mut", [["get", "model", ["loc", [null, [7, 12], [7, 17]]]]], [], []], "createNewButton", true, "refreshButton", true, "sorting", ["subexpr", "@mut", [["get", "computedSorting", ["loc", [null, [10, 12], [10, 27]]]]], [], []], "orderable", true, "sortByColumn", ["subexpr", "action", ["sortByColumn"], [], ["loc", [null, [12, 17], [12, 40]]]], "addColumnToSorting", ["subexpr", "action", ["addColumnToSorting"], [], ["loc", [null, [13, 23], [13, 52]]]], "pages", ["subexpr", "@mut", [["get", "pages", ["loc", [null, [14, 10], [14, 15]]]]], [], []], "perPageValue", ["subexpr", "@mut", [["get", "perPageValue", ["loc", [null, [15, 17], [15, 29]]]]], [], []], "perPageValues", ["subexpr", "@mut", [["get", "perPageValues", ["loc", [null, [16, 18], [16, 31]]]]], [], []], "recordsTotalCount", ["subexpr", "@mut", [["get", "recordsTotalCount", ["loc", [null, [17, 22], [17, 39]]]]], [], []], "hasPreviousPage", ["subexpr", "@mut", [["get", "hasPreviousPage", ["loc", [null, [18, 20], [18, 35]]]]], [], []], "hasNextPage", ["subexpr", "@mut", [["get", "hasNextPage", ["loc", [null, [19, 16], [19, 27]]]]], [], []], "previousPage", ["subexpr", "action", ["previousPage"], [], ["loc", [null, [20, 17], [20, 40]]]], "gotoPage", ["subexpr", "action", ["gotoPage"], [], ["loc", [null, [21, 13], [21, 32]]]], "nextPage", ["subexpr", "action", ["nextPage"], [], ["loc", [null, [22, 13], [22, 32]]]], "componentName", "IISFlexberryGisDemoAddressL"], ["loc", [null, [3, 2], [24, 4]]]]],
+      statements: [["inline", "t", ["forms.i-i-s-flexberry-gis-test-stand-address-l.caption"], [], ["loc", [null, [1, 4], [1, 66]]]], ["attribute", "class", ["concat", ["ui ", ["get", "state", ["loc", [null, [2, 17], [2, 22]]]], " row form"]]], ["inline", "flexberry-objectlistview", [], ["modelName", "i-i-s-flexberry-gis-test-stand-address", "modelProjection", ["subexpr", "@mut", [["get", "modelProjection", ["loc", [null, [5, 20], [5, 35]]]]], [], []], "editFormRoute", ["subexpr", "@mut", [["get", "editFormRoute", ["loc", [null, [6, 18], [6, 31]]]]], [], []], "content", ["subexpr", "@mut", [["get", "model", ["loc", [null, [7, 12], [7, 17]]]]], [], []], "createNewButton", true, "refreshButton", true, "sorting", ["subexpr", "@mut", [["get", "computedSorting", ["loc", [null, [10, 12], [10, 27]]]]], [], []], "orderable", true, "sortByColumn", ["subexpr", "action", ["sortByColumn"], [], ["loc", [null, [12, 17], [12, 40]]]], "addColumnToSorting", ["subexpr", "action", ["addColumnToSorting"], [], ["loc", [null, [13, 23], [13, 52]]]], "pages", ["subexpr", "@mut", [["get", "pages", ["loc", [null, [14, 10], [14, 15]]]]], [], []], "perPageValue", ["subexpr", "@mut", [["get", "perPageValue", ["loc", [null, [15, 17], [15, 29]]]]], [], []], "perPageValues", ["subexpr", "@mut", [["get", "perPageValues", ["loc", [null, [16, 18], [16, 31]]]]], [], []], "recordsTotalCount", ["subexpr", "@mut", [["get", "recordsTotalCount", ["loc", [null, [17, 22], [17, 39]]]]], [], []], "hasPreviousPage", ["subexpr", "@mut", [["get", "hasPreviousPage", ["loc", [null, [18, 20], [18, 35]]]]], [], []], "hasNextPage", ["subexpr", "@mut", [["get", "hasNextPage", ["loc", [null, [19, 16], [19, 27]]]]], [], []], "previousPage", ["subexpr", "action", ["previousPage"], [], ["loc", [null, [20, 17], [20, 40]]]], "gotoPage", ["subexpr", "action", ["gotoPage"], [], ["loc", [null, [21, 13], [21, 32]]]], "nextPage", ["subexpr", "action", ["nextPage"], [], ["loc", [null, [22, 13], [22, 32]]]], "componentName", "IISFlexberryGisTestStandAddressL"], ["loc", [null, [3, 2], [24, 4]]]]],
       locals: [],
       templates: []
     };
   })());
 });
-define("ember-app/templates/i-i-s-flexberry-gis-demo-address-l/loading", ["exports"], function (exports) {
+define("ember-app/templates/i-i-s-flexberry-gis-test-stand-address-l/loading", ["exports"], function (exports) {
   exports["default"] = Ember.HTMLBars.template((function () {
     return {
       meta: {
@@ -15563,7 +15563,7 @@ define("ember-app/templates/i-i-s-flexberry-gis-demo-address-l/loading", ["expor
             "column": 0
           }
         },
-        "moduleName": "ember-app/templates/i-i-s-flexberry-gis-demo-address-l/loading.hbs"
+        "moduleName": "ember-app/templates/i-i-s-flexberry-gis-test-stand-address-l/loading.hbs"
       },
       isEmpty: false,
       arity: 0,
@@ -15601,7 +15601,7 @@ define("ember-app/templates/i-i-s-flexberry-gis-demo-address-l/loading", ["expor
     };
   })());
 });
-define("ember-app/templates/i-i-s-flexberry-gis-demo-author-e", ["exports"], function (exports) {
+define("ember-app/templates/i-i-s-flexberry-gis-test-stand-author-e", ["exports"], function (exports) {
   exports["default"] = Ember.HTMLBars.template((function () {
     var child0 = (function () {
       var child0 = (function () {
@@ -15620,7 +15620,7 @@ define("ember-app/templates/i-i-s-flexberry-gis-demo-author-e", ["exports"], fun
                 "column": 2
               }
             },
-            "moduleName": "ember-app/templates/i-i-s-flexberry-gis-demo-author-e.hbs"
+            "moduleName": "ember-app/templates/i-i-s-flexberry-gis-test-stand-author-e.hbs"
           },
           isEmpty: false,
           arity: 1,
@@ -15661,7 +15661,7 @@ define("ember-app/templates/i-i-s-flexberry-gis-demo-author-e", ["exports"], fun
               "column": 0
             }
           },
-          "moduleName": "ember-app/templates/i-i-s-flexberry-gis-demo-author-e.hbs"
+          "moduleName": "ember-app/templates/i-i-s-flexberry-gis-test-stand-author-e.hbs"
         },
         isEmpty: false,
         arity: 0,
@@ -15702,7 +15702,7 @@ define("ember-app/templates/i-i-s-flexberry-gis-demo-author-e", ["exports"], fun
                 "column": 8
               }
             },
-            "moduleName": "ember-app/templates/i-i-s-flexberry-gis-demo-author-e.hbs"
+            "moduleName": "ember-app/templates/i-i-s-flexberry-gis-test-stand-author-e.hbs"
           },
           isEmpty: false,
           arity: 0,
@@ -15753,7 +15753,7 @@ define("ember-app/templates/i-i-s-flexberry-gis-demo-author-e", ["exports"], fun
               "column": 6
             }
           },
-          "moduleName": "ember-app/templates/i-i-s-flexberry-gis-demo-author-e.hbs"
+          "moduleName": "ember-app/templates/i-i-s-flexberry-gis-test-stand-author-e.hbs"
         },
         isEmpty: false,
         arity: 0,
@@ -15811,7 +15811,7 @@ define("ember-app/templates/i-i-s-flexberry-gis-demo-author-e", ["exports"], fun
             "column": 0
           }
         },
-        "moduleName": "ember-app/templates/i-i-s-flexberry-gis-demo-author-e.hbs"
+        "moduleName": "ember-app/templates/i-i-s-flexberry-gis-test-stand-author-e.hbs"
       },
       isEmpty: false,
       arity: 0,
@@ -16028,13 +16028,13 @@ define("ember-app/templates/i-i-s-flexberry-gis-demo-author-e", ["exports"], fun
         morphs[21] = dom.createMorphAt(element10, 5, 5);
         return morphs;
       },
-      statements: [["inline", "t", ["forms.i-i-s-flexberry-gis-demo-author-e.caption"], [], ["loc", [null, [1, 22], [1, 77]]]], ["block", "if", [["get", "errorMessages", ["loc", [null, [3, 6], [3, 19]]]]], [], 0, null, ["loc", [null, [3, 0], [13, 7]]]], ["attribute", "class", ["concat", ["ui ", ["get", "state", ["loc", [null, [14, 18], [14, 23]]]], " form flexberry-vertical-form"]]], ["inline", "flexberry-validationsummary", [], ["errors", ["subexpr", "@mut", [["get", "model.errors", ["loc", [null, [17, 43], [17, 55]]]]], [], []]], ["loc", [null, [17, 6], [17, 57]]]], ["block", "unless", [["get", "readonly", ["loc", [null, [22, 16], [22, 24]]]]], [], 1, null, ["loc", [null, [22, 6], [31, 17]]]], ["element", "action", ["close"], [], ["loc", [null, [32, 59], [32, 77]]]], ["inline", "t", ["forms.edit-form.close-button-text"], [], ["loc", [null, [33, 8], [33, 49]]]], ["inline", "flexberry-field", [], ["placeholder", ["subexpr", "t", ["components.flexberry-field.placeholder"], [], ["loc", [null, [40, 16], [40, 60]]]], "readonly", ["subexpr", "@mut", [["get", "readonly", ["loc", [null, [41, 13], [41, 21]]]]], [], []], "required", true, "value", ["subexpr", "@mut", [["get", "model.name", ["loc", [null, [43, 10], [43, 20]]]]], [], []], "class", ["subexpr", "if", [["get", "model.errors.name", ["loc", [null, [44, 14], [44, 31]]]], "error", ""], [], ["loc", [null, [44, 10], [44, 43]]]], "label", ["subexpr", "t", ["forms.i-i-s-flexberry-gis-demo-author-e.name-caption"], [], ["loc", [null, [45, 10], [45, 68]]]]], ["loc", [null, [38, 2], [46, 4]]]], ["inline", "flexberry-validationmessage", [], ["error", ["subexpr", "@mut", [["get", "model.errors.name", ["loc", [null, [47, 38], [47, 55]]]]], [], []], "pointing", "pointing"], ["loc", [null, [47, 2], [47, 77]]]], ["inline", "flexberry-field", [], ["placeholder", ["subexpr", "t", ["components.flexberry-field.placeholder"], [], ["loc", [null, [53, 16], [53, 60]]]], "readonly", ["subexpr", "@mut", [["get", "readonly", ["loc", [null, [54, 13], [54, 21]]]]], [], []], "required", true, "value", ["subexpr", "@mut", [["get", "model.phone", ["loc", [null, [56, 10], [56, 21]]]]], [], []], "class", ["subexpr", "if", [["get", "model.errors.phone", ["loc", [null, [57, 14], [57, 32]]]], "error", ""], [], ["loc", [null, [57, 10], [57, 44]]]], "label", ["subexpr", "t", ["forms.i-i-s-flexberry-gis-demo-author-e.phone-caption"], [], ["loc", [null, [58, 10], [58, 69]]]]], ["loc", [null, [51, 2], [59, 4]]]], ["inline", "flexberry-validationmessage", [], ["error", ["subexpr", "@mut", [["get", "model.errors.phone", ["loc", [null, [60, 38], [60, 56]]]]], [], []], "pointing", "pointing"], ["loc", [null, [60, 2], [60, 78]]]], ["inline", "flexberry-field", [], ["placeholder", ["subexpr", "t", ["components.flexberry-field.placeholder"], [], ["loc", [null, [66, 16], [66, 60]]]], "readonly", ["subexpr", "@mut", [["get", "readonly", ["loc", [null, [67, 13], [67, 21]]]]], [], []], "required", true, "value", ["subexpr", "@mut", [["get", "model.email", ["loc", [null, [69, 10], [69, 21]]]]], [], []], "class", ["subexpr", "if", [["get", "model.errors.email", ["loc", [null, [70, 14], [70, 32]]]], "error", ""], [], ["loc", [null, [70, 10], [70, 44]]]], "label", ["subexpr", "t", ["forms.i-i-s-flexberry-gis-demo-author-e.email-caption"], [], ["loc", [null, [71, 10], [71, 69]]]]], ["loc", [null, [64, 2], [72, 4]]]], ["inline", "flexberry-validationmessage", [], ["error", ["subexpr", "@mut", [["get", "model.errors.email", ["loc", [null, [73, 38], [73, 56]]]]], [], []], "pointing", "pointing"], ["loc", [null, [73, 2], [73, 78]]]], ["inline", "t", ["forms.i-i-s-flexberry-gis-demo-author-e.birthday-caption"], [], ["loc", [null, [77, 9], [77, 73]]]], ["inline", "flexberry-datepicker", [], ["placeholder", "(no value)", "readonly", ["subexpr", "@mut", [["get", "readonly", ["loc", [null, [81, 13], [81, 21]]]]], [], []], "value", ["subexpr", "@mut", [["get", "model.birthday", ["loc", [null, [82, 10], [82, 24]]]]], [], []], "class", ["subexpr", "if", [["get", "model.errors.birthday", ["loc", [null, [83, 14], [83, 35]]]], "error", ""], [], ["loc", [null, [83, 10], [83, 47]]]]], ["loc", [null, [78, 2], [84, 4]]]], ["inline", "flexberry-validationmessage", [], ["error", ["subexpr", "@mut", [["get", "model.errors.birthday", ["loc", [null, [85, 38], [85, 59]]]]], [], []], "pointing", "pointing"], ["loc", [null, [85, 2], [85, 81]]]], ["inline", "t", ["forms.i-i-s-flexberry-gis-demo-author-e.gender-caption"], [], ["loc", [null, [89, 9], [89, 71]]]], ["inline", "flexberry-dropdown", [], ["items", ["subexpr", "flexberry-enum", ["i-i-s-flexberry-gis-demo-t-gender"], [], ["loc", [null, [92, 10], [92, 62]]]], "value", ["subexpr", "@mut", [["get", "model.gender", ["loc", [null, [93, 10], [93, 22]]]]], [], []], "readonly", ["subexpr", "@mut", [["get", "readonly", ["loc", [null, [94, 13], [94, 21]]]]], [], []]], ["loc", [null, [90, 2], [95, 4]]]], ["inline", "flexberry-validationmessage", [], ["error", ["subexpr", "@mut", [["get", "model.errors.gender", ["loc", [null, [96, 38], [96, 57]]]]], [], []], "pointing", "pointing"], ["loc", [null, [96, 2], [96, 79]]]], ["inline", "t", ["forms.i-i-s-flexberry-gis-demo-author-e.vip-caption"], [], ["loc", [null, [100, 9], [100, 68]]]], ["inline", "flexberry-checkbox", [], ["readonly", ["subexpr", "@mut", [["get", "readonly", ["loc", [null, [103, 13], [103, 21]]]]], [], []], "value", ["subexpr", "@mut", [["get", "model.vip", ["loc", [null, [104, 10], [104, 19]]]]], [], []]], ["loc", [null, [101, 2], [105, 4]]]], ["inline", "flexberry-validationmessage", [], ["error", ["subexpr", "@mut", [["get", "model.errors.vip", ["loc", [null, [106, 38], [106, 54]]]]], [], []], "pointing", "pointing"], ["loc", [null, [106, 2], [106, 76]]]]],
+      statements: [["inline", "t", ["forms.i-i-s-flexberry-gis-test-stand-author-e.caption"], [], ["loc", [null, [1, 22], [1, 83]]]], ["block", "if", [["get", "errorMessages", ["loc", [null, [3, 6], [3, 19]]]]], [], 0, null, ["loc", [null, [3, 0], [13, 7]]]], ["attribute", "class", ["concat", ["ui ", ["get", "state", ["loc", [null, [14, 18], [14, 23]]]], " form flexberry-vertical-form"]]], ["inline", "flexberry-validationsummary", [], ["errors", ["subexpr", "@mut", [["get", "model.errors", ["loc", [null, [17, 43], [17, 55]]]]], [], []]], ["loc", [null, [17, 6], [17, 57]]]], ["block", "unless", [["get", "readonly", ["loc", [null, [22, 16], [22, 24]]]]], [], 1, null, ["loc", [null, [22, 6], [31, 17]]]], ["element", "action", ["close"], [], ["loc", [null, [32, 59], [32, 77]]]], ["inline", "t", ["forms.edit-form.close-button-text"], [], ["loc", [null, [33, 8], [33, 49]]]], ["inline", "flexberry-field", [], ["placeholder", ["subexpr", "t", ["components.flexberry-field.placeholder"], [], ["loc", [null, [40, 16], [40, 60]]]], "readonly", ["subexpr", "@mut", [["get", "readonly", ["loc", [null, [41, 13], [41, 21]]]]], [], []], "required", true, "value", ["subexpr", "@mut", [["get", "model.name", ["loc", [null, [43, 10], [43, 20]]]]], [], []], "class", ["subexpr", "if", [["get", "model.errors.name", ["loc", [null, [44, 14], [44, 31]]]], "error", ""], [], ["loc", [null, [44, 10], [44, 43]]]], "label", ["subexpr", "t", ["forms.i-i-s-flexberry-gis-test-stand-author-e.name-caption"], [], ["loc", [null, [45, 10], [45, 74]]]]], ["loc", [null, [38, 2], [46, 4]]]], ["inline", "flexberry-validationmessage", [], ["error", ["subexpr", "@mut", [["get", "model.errors.name", ["loc", [null, [47, 38], [47, 55]]]]], [], []], "pointing", "pointing"], ["loc", [null, [47, 2], [47, 77]]]], ["inline", "flexberry-field", [], ["placeholder", ["subexpr", "t", ["components.flexberry-field.placeholder"], [], ["loc", [null, [53, 16], [53, 60]]]], "readonly", ["subexpr", "@mut", [["get", "readonly", ["loc", [null, [54, 13], [54, 21]]]]], [], []], "required", true, "value", ["subexpr", "@mut", [["get", "model.phone", ["loc", [null, [56, 10], [56, 21]]]]], [], []], "class", ["subexpr", "if", [["get", "model.errors.phone", ["loc", [null, [57, 14], [57, 32]]]], "error", ""], [], ["loc", [null, [57, 10], [57, 44]]]], "label", ["subexpr", "t", ["forms.i-i-s-flexberry-gis-test-stand-author-e.phone-caption"], [], ["loc", [null, [58, 10], [58, 75]]]]], ["loc", [null, [51, 2], [59, 4]]]], ["inline", "flexberry-validationmessage", [], ["error", ["subexpr", "@mut", [["get", "model.errors.phone", ["loc", [null, [60, 38], [60, 56]]]]], [], []], "pointing", "pointing"], ["loc", [null, [60, 2], [60, 78]]]], ["inline", "flexberry-field", [], ["placeholder", ["subexpr", "t", ["components.flexberry-field.placeholder"], [], ["loc", [null, [66, 16], [66, 60]]]], "readonly", ["subexpr", "@mut", [["get", "readonly", ["loc", [null, [67, 13], [67, 21]]]]], [], []], "required", true, "value", ["subexpr", "@mut", [["get", "model.email", ["loc", [null, [69, 10], [69, 21]]]]], [], []], "class", ["subexpr", "if", [["get", "model.errors.email", ["loc", [null, [70, 14], [70, 32]]]], "error", ""], [], ["loc", [null, [70, 10], [70, 44]]]], "label", ["subexpr", "t", ["forms.i-i-s-flexberry-gis-test-stand-author-e.email-caption"], [], ["loc", [null, [71, 10], [71, 75]]]]], ["loc", [null, [64, 2], [72, 4]]]], ["inline", "flexberry-validationmessage", [], ["error", ["subexpr", "@mut", [["get", "model.errors.email", ["loc", [null, [73, 38], [73, 56]]]]], [], []], "pointing", "pointing"], ["loc", [null, [73, 2], [73, 78]]]], ["inline", "t", ["forms.i-i-s-flexberry-gis-test-stand-author-e.birthday-caption"], [], ["loc", [null, [77, 9], [77, 79]]]], ["inline", "flexberry-datepicker", [], ["placeholder", "(no value)", "readonly", ["subexpr", "@mut", [["get", "readonly", ["loc", [null, [81, 13], [81, 21]]]]], [], []], "value", ["subexpr", "@mut", [["get", "model.birthday", ["loc", [null, [82, 10], [82, 24]]]]], [], []], "class", ["subexpr", "if", [["get", "model.errors.birthday", ["loc", [null, [83, 14], [83, 35]]]], "error", ""], [], ["loc", [null, [83, 10], [83, 47]]]]], ["loc", [null, [78, 2], [84, 4]]]], ["inline", "flexberry-validationmessage", [], ["error", ["subexpr", "@mut", [["get", "model.errors.birthday", ["loc", [null, [85, 38], [85, 59]]]]], [], []], "pointing", "pointing"], ["loc", [null, [85, 2], [85, 81]]]], ["inline", "t", ["forms.i-i-s-flexberry-gis-test-stand-author-e.gender-caption"], [], ["loc", [null, [89, 9], [89, 77]]]], ["inline", "flexberry-dropdown", [], ["items", ["subexpr", "flexberry-enum", ["i-i-s-flexberry-gis-test-stand-t-gender"], [], ["loc", [null, [92, 10], [92, 68]]]], "value", ["subexpr", "@mut", [["get", "model.gender", ["loc", [null, [93, 10], [93, 22]]]]], [], []], "readonly", ["subexpr", "@mut", [["get", "readonly", ["loc", [null, [94, 13], [94, 21]]]]], [], []]], ["loc", [null, [90, 2], [95, 4]]]], ["inline", "flexberry-validationmessage", [], ["error", ["subexpr", "@mut", [["get", "model.errors.gender", ["loc", [null, [96, 38], [96, 57]]]]], [], []], "pointing", "pointing"], ["loc", [null, [96, 2], [96, 79]]]], ["inline", "t", ["forms.i-i-s-flexberry-gis-test-stand-author-e.vip-caption"], [], ["loc", [null, [100, 9], [100, 74]]]], ["inline", "flexberry-checkbox", [], ["readonly", ["subexpr", "@mut", [["get", "readonly", ["loc", [null, [103, 13], [103, 21]]]]], [], []], "value", ["subexpr", "@mut", [["get", "model.vip", ["loc", [null, [104, 10], [104, 19]]]]], [], []]], ["loc", [null, [101, 2], [105, 4]]]], ["inline", "flexberry-validationmessage", [], ["error", ["subexpr", "@mut", [["get", "model.errors.vip", ["loc", [null, [106, 38], [106, 54]]]]], [], []], "pointing", "pointing"], ["loc", [null, [106, 2], [106, 76]]]]],
       locals: [],
       templates: [child0, child1]
     };
   })());
 });
-define("ember-app/templates/i-i-s-flexberry-gis-demo-author-l", ["exports"], function (exports) {
+define("ember-app/templates/i-i-s-flexberry-gis-test-stand-author-l", ["exports"], function (exports) {
   exports["default"] = Ember.HTMLBars.template((function () {
     return {
       meta: {
@@ -16054,7 +16054,7 @@ define("ember-app/templates/i-i-s-flexberry-gis-demo-author-l", ["exports"], fun
             "column": 0
           }
         },
-        "moduleName": "ember-app/templates/i-i-s-flexberry-gis-demo-author-l.hbs"
+        "moduleName": "ember-app/templates/i-i-s-flexberry-gis-test-stand-author-l.hbs"
       },
       isEmpty: false,
       arity: 0,
@@ -16088,13 +16088,13 @@ define("ember-app/templates/i-i-s-flexberry-gis-demo-author-l", ["exports"], fun
         morphs[2] = dom.createMorphAt(element0, 1, 1);
         return morphs;
       },
-      statements: [["inline", "t", ["forms.i-i-s-flexberry-gis-demo-author-l.caption"], [], ["loc", [null, [1, 4], [1, 59]]]], ["attribute", "class", ["concat", ["ui ", ["get", "state", ["loc", [null, [2, 17], [2, 22]]]], " row form"]]], ["inline", "flexberry-objectlistview", [], ["modelName", "i-i-s-flexberry-gis-demo-author", "modelProjection", ["subexpr", "@mut", [["get", "modelProjection", ["loc", [null, [5, 20], [5, 35]]]]], [], []], "editFormRoute", ["subexpr", "@mut", [["get", "editFormRoute", ["loc", [null, [6, 18], [6, 31]]]]], [], []], "content", ["subexpr", "@mut", [["get", "model", ["loc", [null, [7, 12], [7, 17]]]]], [], []], "createNewButton", true, "refreshButton", true, "sorting", ["subexpr", "@mut", [["get", "computedSorting", ["loc", [null, [10, 12], [10, 27]]]]], [], []], "orderable", true, "sortByColumn", ["subexpr", "action", ["sortByColumn"], [], ["loc", [null, [12, 17], [12, 40]]]], "addColumnToSorting", ["subexpr", "action", ["addColumnToSorting"], [], ["loc", [null, [13, 23], [13, 52]]]], "pages", ["subexpr", "@mut", [["get", "pages", ["loc", [null, [14, 10], [14, 15]]]]], [], []], "perPageValue", ["subexpr", "@mut", [["get", "perPageValue", ["loc", [null, [15, 17], [15, 29]]]]], [], []], "perPageValues", ["subexpr", "@mut", [["get", "perPageValues", ["loc", [null, [16, 18], [16, 31]]]]], [], []], "recordsTotalCount", ["subexpr", "@mut", [["get", "recordsTotalCount", ["loc", [null, [17, 22], [17, 39]]]]], [], []], "hasPreviousPage", ["subexpr", "@mut", [["get", "hasPreviousPage", ["loc", [null, [18, 20], [18, 35]]]]], [], []], "hasNextPage", ["subexpr", "@mut", [["get", "hasNextPage", ["loc", [null, [19, 16], [19, 27]]]]], [], []], "previousPage", ["subexpr", "action", ["previousPage"], [], ["loc", [null, [20, 17], [20, 40]]]], "gotoPage", ["subexpr", "action", ["gotoPage"], [], ["loc", [null, [21, 13], [21, 32]]]], "nextPage", ["subexpr", "action", ["nextPage"], [], ["loc", [null, [22, 13], [22, 32]]]], "componentName", "IISFlexberryGisDemoAuthorL"], ["loc", [null, [3, 2], [24, 4]]]]],
+      statements: [["inline", "t", ["forms.i-i-s-flexberry-gis-test-stand-author-l.caption"], [], ["loc", [null, [1, 4], [1, 65]]]], ["attribute", "class", ["concat", ["ui ", ["get", "state", ["loc", [null, [2, 17], [2, 22]]]], " row form"]]], ["inline", "flexberry-objectlistview", [], ["modelName", "i-i-s-flexberry-gis-test-stand-author", "modelProjection", ["subexpr", "@mut", [["get", "modelProjection", ["loc", [null, [5, 20], [5, 35]]]]], [], []], "editFormRoute", ["subexpr", "@mut", [["get", "editFormRoute", ["loc", [null, [6, 18], [6, 31]]]]], [], []], "content", ["subexpr", "@mut", [["get", "model", ["loc", [null, [7, 12], [7, 17]]]]], [], []], "createNewButton", true, "refreshButton", true, "sorting", ["subexpr", "@mut", [["get", "computedSorting", ["loc", [null, [10, 12], [10, 27]]]]], [], []], "orderable", true, "sortByColumn", ["subexpr", "action", ["sortByColumn"], [], ["loc", [null, [12, 17], [12, 40]]]], "addColumnToSorting", ["subexpr", "action", ["addColumnToSorting"], [], ["loc", [null, [13, 23], [13, 52]]]], "pages", ["subexpr", "@mut", [["get", "pages", ["loc", [null, [14, 10], [14, 15]]]]], [], []], "perPageValue", ["subexpr", "@mut", [["get", "perPageValue", ["loc", [null, [15, 17], [15, 29]]]]], [], []], "perPageValues", ["subexpr", "@mut", [["get", "perPageValues", ["loc", [null, [16, 18], [16, 31]]]]], [], []], "recordsTotalCount", ["subexpr", "@mut", [["get", "recordsTotalCount", ["loc", [null, [17, 22], [17, 39]]]]], [], []], "hasPreviousPage", ["subexpr", "@mut", [["get", "hasPreviousPage", ["loc", [null, [18, 20], [18, 35]]]]], [], []], "hasNextPage", ["subexpr", "@mut", [["get", "hasNextPage", ["loc", [null, [19, 16], [19, 27]]]]], [], []], "previousPage", ["subexpr", "action", ["previousPage"], [], ["loc", [null, [20, 17], [20, 40]]]], "gotoPage", ["subexpr", "action", ["gotoPage"], [], ["loc", [null, [21, 13], [21, 32]]]], "nextPage", ["subexpr", "action", ["nextPage"], [], ["loc", [null, [22, 13], [22, 32]]]], "componentName", "IISFlexberryGisTestStandAuthorL"], ["loc", [null, [3, 2], [24, 4]]]]],
       locals: [],
       templates: []
     };
   })());
 });
-define("ember-app/templates/i-i-s-flexberry-gis-demo-author-l/loading", ["exports"], function (exports) {
+define("ember-app/templates/i-i-s-flexberry-gis-test-stand-author-l/loading", ["exports"], function (exports) {
   exports["default"] = Ember.HTMLBars.template((function () {
     return {
       meta: {
@@ -16113,7 +16113,7 @@ define("ember-app/templates/i-i-s-flexberry-gis-demo-author-l/loading", ["export
             "column": 0
           }
         },
-        "moduleName": "ember-app/templates/i-i-s-flexberry-gis-demo-author-l/loading.hbs"
+        "moduleName": "ember-app/templates/i-i-s-flexberry-gis-test-stand-author-l/loading.hbs"
       },
       isEmpty: false,
       arity: 0,
@@ -16151,7 +16151,7 @@ define("ember-app/templates/i-i-s-flexberry-gis-demo-author-l/loading", ["export
     };
   })());
 });
-define("ember-app/templates/i-i-s-flexberry-gis-demo-request-e", ["exports"], function (exports) {
+define("ember-app/templates/i-i-s-flexberry-gis-test-stand-request-e", ["exports"], function (exports) {
   exports["default"] = Ember.HTMLBars.template((function () {
     var child0 = (function () {
       var child0 = (function () {
@@ -16170,7 +16170,7 @@ define("ember-app/templates/i-i-s-flexberry-gis-demo-request-e", ["exports"], fu
                 "column": 2
               }
             },
-            "moduleName": "ember-app/templates/i-i-s-flexberry-gis-demo-request-e.hbs"
+            "moduleName": "ember-app/templates/i-i-s-flexberry-gis-test-stand-request-e.hbs"
           },
           isEmpty: false,
           arity: 1,
@@ -16211,7 +16211,7 @@ define("ember-app/templates/i-i-s-flexberry-gis-demo-request-e", ["exports"], fu
               "column": 0
             }
           },
-          "moduleName": "ember-app/templates/i-i-s-flexberry-gis-demo-request-e.hbs"
+          "moduleName": "ember-app/templates/i-i-s-flexberry-gis-test-stand-request-e.hbs"
         },
         isEmpty: false,
         arity: 0,
@@ -16252,7 +16252,7 @@ define("ember-app/templates/i-i-s-flexberry-gis-demo-request-e", ["exports"], fu
                 "column": 8
               }
             },
-            "moduleName": "ember-app/templates/i-i-s-flexberry-gis-demo-request-e.hbs"
+            "moduleName": "ember-app/templates/i-i-s-flexberry-gis-test-stand-request-e.hbs"
           },
           isEmpty: false,
           arity: 0,
@@ -16303,7 +16303,7 @@ define("ember-app/templates/i-i-s-flexberry-gis-demo-request-e", ["exports"], fu
               "column": 6
             }
           },
-          "moduleName": "ember-app/templates/i-i-s-flexberry-gis-demo-request-e.hbs"
+          "moduleName": "ember-app/templates/i-i-s-flexberry-gis-test-stand-request-e.hbs"
         },
         isEmpty: false,
         arity: 0,
@@ -16361,7 +16361,7 @@ define("ember-app/templates/i-i-s-flexberry-gis-demo-request-e", ["exports"], fu
             "column": 0
           }
         },
-        "moduleName": "ember-app/templates/i-i-s-flexberry-gis-demo-request-e.hbs"
+        "moduleName": "ember-app/templates/i-i-s-flexberry-gis-test-stand-request-e.hbs"
       },
       isEmpty: false,
       arity: 0,
@@ -16628,13 +16628,13 @@ define("ember-app/templates/i-i-s-flexberry-gis-demo-request-e", ["exports"], fu
         morphs[27] = dom.createMorphAt(element12, 5, 5);
         return morphs;
       },
-      statements: [["inline", "t", ["forms.i-i-s-flexberry-gis-demo-request-e.caption"], [], ["loc", [null, [1, 22], [1, 78]]]], ["block", "if", [["get", "errorMessages", ["loc", [null, [3, 6], [3, 19]]]]], [], 0, null, ["loc", [null, [3, 0], [13, 7]]]], ["attribute", "class", ["concat", ["ui ", ["get", "state", ["loc", [null, [14, 18], [14, 23]]]], " form flexberry-vertical-form"]]], ["inline", "flexberry-validationsummary", [], ["errors", ["subexpr", "@mut", [["get", "model.errors", ["loc", [null, [17, 43], [17, 55]]]]], [], []]], ["loc", [null, [17, 6], [17, 57]]]], ["block", "unless", [["get", "readonly", ["loc", [null, [22, 16], [22, 24]]]]], [], 1, null, ["loc", [null, [22, 6], [31, 17]]]], ["element", "action", ["close"], [], ["loc", [null, [32, 59], [32, 77]]]], ["inline", "t", ["forms.edit-form.close-button-text"], [], ["loc", [null, [33, 8], [33, 49]]]], ["inline", "t", ["forms.i-i-s-flexberry-gis-demo-request-e.date-caption"], [], ["loc", [null, [38, 9], [38, 70]]]], ["inline", "flexberry-datepicker", [], ["placeholder", "(no value)", "readonly", ["subexpr", "@mut", [["get", "readonly", ["loc", [null, [42, 13], [42, 21]]]]], [], []], "value", ["subexpr", "@mut", [["get", "model.date", ["loc", [null, [43, 10], [43, 20]]]]], [], []], "class", ["subexpr", "if", [["get", "model.errors.date", ["loc", [null, [44, 14], [44, 31]]]], "error", ""], [], ["loc", [null, [44, 10], [44, 43]]]]], ["loc", [null, [39, 2], [45, 4]]]], ["inline", "flexberry-validationmessage", [], ["error", ["subexpr", "@mut", [["get", "model.errors.date", ["loc", [null, [46, 38], [46, 55]]]]], [], []], "pointing", "pointing"], ["loc", [null, [46, 2], [46, 77]]]], ["inline", "t", ["forms.i-i-s-flexberry-gis-demo-request-e.urgently-caption"], [], ["loc", [null, [50, 9], [50, 74]]]], ["inline", "flexberry-checkbox", [], ["readonly", ["subexpr", "@mut", [["get", "readonly", ["loc", [null, [53, 13], [53, 21]]]]], [], []], "value", ["subexpr", "@mut", [["get", "model.urgently", ["loc", [null, [54, 10], [54, 24]]]]], [], []]], ["loc", [null, [51, 2], [55, 4]]]], ["inline", "flexberry-validationmessage", [], ["error", ["subexpr", "@mut", [["get", "model.errors.urgently", ["loc", [null, [56, 38], [56, 59]]]]], [], []], "pointing", "pointing"], ["loc", [null, [56, 2], [56, 81]]]], ["inline", "flexberry-field", [], ["placeholder", ["subexpr", "t", ["components.flexberry-field.placeholder"], [], ["loc", [null, [62, 16], [62, 60]]]], "readonly", ["subexpr", "@mut", [["get", "readonly", ["loc", [null, [63, 13], [63, 21]]]]], [], []], "required", true, "value", ["subexpr", "@mut", [["get", "model.task", ["loc", [null, [65, 10], [65, 20]]]]], [], []], "class", ["subexpr", "if", [["get", "model.errors.task", ["loc", [null, [66, 14], [66, 31]]]], "error", ""], [], ["loc", [null, [66, 10], [66, 43]]]], "label", ["subexpr", "t", ["forms.i-i-s-flexberry-gis-demo-request-e.task-caption"], [], ["loc", [null, [67, 10], [67, 69]]]]], ["loc", [null, [60, 2], [68, 4]]]], ["inline", "flexberry-validationmessage", [], ["error", ["subexpr", "@mut", [["get", "model.errors.task", ["loc", [null, [69, 38], [69, 55]]]]], [], []], "pointing", "pointing"], ["loc", [null, [69, 2], [69, 77]]]], ["inline", "t", ["forms.i-i-s-flexberry-gis-demo-request-e.author-caption"], [], ["loc", [null, [73, 9], [73, 72]]]], ["inline", "flexberry-lookup", [], ["choose", "showLookupDialog", "remove", "removeLookupValue", "value", ["subexpr", "@mut", [["get", "model.author", ["loc", [null, [78, 10], [78, 22]]]]], [], []], "displayAttributeName", "name", "relationName", "author", "projection", "AuthorL", "title", ["subexpr", "t", ["forms.i-i-s-flexberry-gis-demo-request-e.author-caption"], [], ["loc", [null, [82, 10], [82, 71]]]], "readonly", ["subexpr", "@mut", [["get", "readonly", ["loc", [null, [83, 13], [83, 21]]]]], [], []]], ["loc", [null, [74, 2], [84, 4]]]], ["inline", "flexberry-validationmessage", [], ["error", ["subexpr", "@mut", [["get", "model.errors.author", ["loc", [null, [85, 38], [85, 57]]]]], [], []], "pointing", "pointing"], ["loc", [null, [85, 2], [85, 79]]]], ["inline", "flexberry-field", [], ["placeholder", ["subexpr", "t", ["components.flexberry-field.placeholder"], [], ["loc", [null, [91, 16], [91, 60]]]], "readonly", true, "required", true, "value", ["subexpr", "@mut", [["get", "model.author.name", ["loc", [null, [94, 10], [94, 27]]]]], [], []], "class", ["subexpr", "if", [["get", "model.errors.author.name", ["loc", [null, [95, 14], [95, 38]]]], "error", ""], [], ["loc", [null, [95, 10], [95, 50]]]], "label", ["subexpr", "t", ["forms.i-i-s-flexberry-gis-demo-request-e.author.name-caption"], [], ["loc", [null, [96, 10], [96, 76]]]]], ["loc", [null, [89, 2], [97, 4]]]], ["inline", "flexberry-validationmessage", [], ["error", ["subexpr", "@mut", [["get", "model.errors.author.name", ["loc", [null, [98, 38], [98, 62]]]]], [], []], "pointing", "pointing"], ["loc", [null, [98, 2], [98, 84]]]], ["inline", "t", ["forms.i-i-s-flexberry-gis-demo-request-e.address-caption"], [], ["loc", [null, [102, 9], [102, 73]]]], ["inline", "flexberry-lookup", [], ["choose", "showLookupDialog", "remove", "removeLookupValue", "value", ["subexpr", "@mut", [["get", "model.address", ["loc", [null, [107, 10], [107, 23]]]]], [], []], "displayAttributeName", "place", "relationName", "address", "projection", "AddressL", "title", ["subexpr", "t", ["forms.i-i-s-flexberry-gis-demo-request-e.address-caption"], [], ["loc", [null, [111, 10], [111, 72]]]], "readonly", ["subexpr", "@mut", [["get", "readonly", ["loc", [null, [112, 13], [112, 21]]]]], [], []]], ["loc", [null, [103, 2], [113, 4]]]], ["inline", "flexberry-validationmessage", [], ["error", ["subexpr", "@mut", [["get", "model.errors.address", ["loc", [null, [114, 38], [114, 58]]]]], [], []], "pointing", "pointing"], ["loc", [null, [114, 2], [114, 80]]]], ["inline", "flexberry-field", [], ["placeholder", ["subexpr", "t", ["components.flexberry-field.placeholder"], [], ["loc", [null, [120, 16], [120, 60]]]], "readonly", true, "required", true, "value", ["subexpr", "@mut", [["get", "model.address.place", ["loc", [null, [123, 10], [123, 29]]]]], [], []], "class", ["subexpr", "if", [["get", "model.errors.address.place", ["loc", [null, [124, 14], [124, 40]]]], "error", ""], [], ["loc", [null, [124, 10], [124, 52]]]], "label", ["subexpr", "t", ["forms.i-i-s-flexberry-gis-demo-request-e.address.place-caption"], [], ["loc", [null, [125, 10], [125, 78]]]]], ["loc", [null, [118, 2], [126, 4]]]], ["inline", "flexberry-validationmessage", [], ["error", ["subexpr", "@mut", [["get", "model.errors.address.place", ["loc", [null, [127, 38], [127, 64]]]]], [], []], "pointing", "pointing"], ["loc", [null, [127, 2], [127, 86]]]], ["inline", "t", ["forms.i-i-s-flexberry-gis-demo-request-e.comment-caption"], [], ["loc", [null, [131, 9], [131, 73]]]], ["inline", "flexberry-groupedit", [], ["componentName", "commentGroupEdit", "modelProjection", ["subexpr", "@mut", [["get", "modelProjection.attributes.comment", ["loc", [null, [135, 20], [135, 54]]]]], [], []], "content", ["subexpr", "@mut", [["get", "model.comment", ["loc", [null, [136, 12], [136, 25]]]]], [], []], "readonly", ["subexpr", "@mut", [["get", "readonly", ["loc", [null, [137, 13], [137, 21]]]]], [], []], "orderable", false, "class", ["subexpr", "if", [["get", "model.errors.comment", ["loc", [null, [139, 14], [139, 34]]]], "error", ""], [], ["loc", [null, [139, 10], [139, 46]]]]], ["loc", [null, [132, 2], [140, 4]]]], ["inline", "flexberry-validationmessage", [], ["error", ["subexpr", "@mut", [["get", "model.errors.comment", ["loc", [null, [141, 38], [141, 58]]]]], [], []], "pointing", "pointing"], ["loc", [null, [141, 2], [141, 80]]]]],
+      statements: [["inline", "t", ["forms.i-i-s-flexberry-gis-test-stand-request-e.caption"], [], ["loc", [null, [1, 22], [1, 84]]]], ["block", "if", [["get", "errorMessages", ["loc", [null, [3, 6], [3, 19]]]]], [], 0, null, ["loc", [null, [3, 0], [13, 7]]]], ["attribute", "class", ["concat", ["ui ", ["get", "state", ["loc", [null, [14, 18], [14, 23]]]], " form flexberry-vertical-form"]]], ["inline", "flexberry-validationsummary", [], ["errors", ["subexpr", "@mut", [["get", "model.errors", ["loc", [null, [17, 43], [17, 55]]]]], [], []]], ["loc", [null, [17, 6], [17, 57]]]], ["block", "unless", [["get", "readonly", ["loc", [null, [22, 16], [22, 24]]]]], [], 1, null, ["loc", [null, [22, 6], [31, 17]]]], ["element", "action", ["close"], [], ["loc", [null, [32, 59], [32, 77]]]], ["inline", "t", ["forms.edit-form.close-button-text"], [], ["loc", [null, [33, 8], [33, 49]]]], ["inline", "t", ["forms.i-i-s-flexberry-gis-test-stand-request-e.date-caption"], [], ["loc", [null, [38, 9], [38, 76]]]], ["inline", "flexberry-datepicker", [], ["placeholder", "(no value)", "readonly", ["subexpr", "@mut", [["get", "readonly", ["loc", [null, [42, 13], [42, 21]]]]], [], []], "value", ["subexpr", "@mut", [["get", "model.date", ["loc", [null, [43, 10], [43, 20]]]]], [], []], "class", ["subexpr", "if", [["get", "model.errors.date", ["loc", [null, [44, 14], [44, 31]]]], "error", ""], [], ["loc", [null, [44, 10], [44, 43]]]]], ["loc", [null, [39, 2], [45, 4]]]], ["inline", "flexberry-validationmessage", [], ["error", ["subexpr", "@mut", [["get", "model.errors.date", ["loc", [null, [46, 38], [46, 55]]]]], [], []], "pointing", "pointing"], ["loc", [null, [46, 2], [46, 77]]]], ["inline", "t", ["forms.i-i-s-flexberry-gis-test-stand-request-e.urgently-caption"], [], ["loc", [null, [50, 9], [50, 80]]]], ["inline", "flexberry-checkbox", [], ["readonly", ["subexpr", "@mut", [["get", "readonly", ["loc", [null, [53, 13], [53, 21]]]]], [], []], "value", ["subexpr", "@mut", [["get", "model.urgently", ["loc", [null, [54, 10], [54, 24]]]]], [], []]], ["loc", [null, [51, 2], [55, 4]]]], ["inline", "flexberry-validationmessage", [], ["error", ["subexpr", "@mut", [["get", "model.errors.urgently", ["loc", [null, [56, 38], [56, 59]]]]], [], []], "pointing", "pointing"], ["loc", [null, [56, 2], [56, 81]]]], ["inline", "flexberry-field", [], ["placeholder", ["subexpr", "t", ["components.flexberry-field.placeholder"], [], ["loc", [null, [62, 16], [62, 60]]]], "readonly", ["subexpr", "@mut", [["get", "readonly", ["loc", [null, [63, 13], [63, 21]]]]], [], []], "required", true, "value", ["subexpr", "@mut", [["get", "model.task", ["loc", [null, [65, 10], [65, 20]]]]], [], []], "class", ["subexpr", "if", [["get", "model.errors.task", ["loc", [null, [66, 14], [66, 31]]]], "error", ""], [], ["loc", [null, [66, 10], [66, 43]]]], "label", ["subexpr", "t", ["forms.i-i-s-flexberry-gis-test-stand-request-e.task-caption"], [], ["loc", [null, [67, 10], [67, 75]]]]], ["loc", [null, [60, 2], [68, 4]]]], ["inline", "flexberry-validationmessage", [], ["error", ["subexpr", "@mut", [["get", "model.errors.task", ["loc", [null, [69, 38], [69, 55]]]]], [], []], "pointing", "pointing"], ["loc", [null, [69, 2], [69, 77]]]], ["inline", "t", ["forms.i-i-s-flexberry-gis-test-stand-request-e.author-caption"], [], ["loc", [null, [73, 9], [73, 78]]]], ["inline", "flexberry-lookup", [], ["choose", "showLookupDialog", "remove", "removeLookupValue", "value", ["subexpr", "@mut", [["get", "model.author", ["loc", [null, [78, 10], [78, 22]]]]], [], []], "displayAttributeName", "name", "relationName", "author", "projection", "AuthorL", "title", ["subexpr", "t", ["forms.i-i-s-flexberry-gis-test-stand-request-e.author-caption"], [], ["loc", [null, [82, 10], [82, 77]]]], "readonly", ["subexpr", "@mut", [["get", "readonly", ["loc", [null, [83, 13], [83, 21]]]]], [], []]], ["loc", [null, [74, 2], [84, 4]]]], ["inline", "flexberry-validationmessage", [], ["error", ["subexpr", "@mut", [["get", "model.errors.author", ["loc", [null, [85, 38], [85, 57]]]]], [], []], "pointing", "pointing"], ["loc", [null, [85, 2], [85, 79]]]], ["inline", "flexberry-field", [], ["placeholder", ["subexpr", "t", ["components.flexberry-field.placeholder"], [], ["loc", [null, [91, 16], [91, 60]]]], "readonly", true, "required", true, "value", ["subexpr", "@mut", [["get", "model.author.name", ["loc", [null, [94, 10], [94, 27]]]]], [], []], "class", ["subexpr", "if", [["get", "model.errors.author.name", ["loc", [null, [95, 14], [95, 38]]]], "error", ""], [], ["loc", [null, [95, 10], [95, 50]]]], "label", ["subexpr", "t", ["forms.i-i-s-flexberry-gis-test-stand-request-e.author.name-caption"], [], ["loc", [null, [96, 10], [96, 82]]]]], ["loc", [null, [89, 2], [97, 4]]]], ["inline", "flexberry-validationmessage", [], ["error", ["subexpr", "@mut", [["get", "model.errors.author.name", ["loc", [null, [98, 38], [98, 62]]]]], [], []], "pointing", "pointing"], ["loc", [null, [98, 2], [98, 84]]]], ["inline", "t", ["forms.i-i-s-flexberry-gis-test-stand-request-e.address-caption"], [], ["loc", [null, [102, 9], [102, 79]]]], ["inline", "flexberry-lookup", [], ["choose", "showLookupDialog", "remove", "removeLookupValue", "value", ["subexpr", "@mut", [["get", "model.address", ["loc", [null, [107, 10], [107, 23]]]]], [], []], "displayAttributeName", "place", "relationName", "address", "projection", "AddressL", "title", ["subexpr", "t", ["forms.i-i-s-flexberry-gis-test-stand-request-e.address-caption"], [], ["loc", [null, [111, 10], [111, 78]]]], "readonly", ["subexpr", "@mut", [["get", "readonly", ["loc", [null, [112, 13], [112, 21]]]]], [], []]], ["loc", [null, [103, 2], [113, 4]]]], ["inline", "flexberry-validationmessage", [], ["error", ["subexpr", "@mut", [["get", "model.errors.address", ["loc", [null, [114, 38], [114, 58]]]]], [], []], "pointing", "pointing"], ["loc", [null, [114, 2], [114, 80]]]], ["inline", "flexberry-field", [], ["placeholder", ["subexpr", "t", ["components.flexberry-field.placeholder"], [], ["loc", [null, [120, 16], [120, 60]]]], "readonly", true, "required", true, "value", ["subexpr", "@mut", [["get", "model.address.place", ["loc", [null, [123, 10], [123, 29]]]]], [], []], "class", ["subexpr", "if", [["get", "model.errors.address.place", ["loc", [null, [124, 14], [124, 40]]]], "error", ""], [], ["loc", [null, [124, 10], [124, 52]]]], "label", ["subexpr", "t", ["forms.i-i-s-flexberry-gis-test-stand-request-e.address.place-caption"], [], ["loc", [null, [125, 10], [125, 84]]]]], ["loc", [null, [118, 2], [126, 4]]]], ["inline", "flexberry-validationmessage", [], ["error", ["subexpr", "@mut", [["get", "model.errors.address.place", ["loc", [null, [127, 38], [127, 64]]]]], [], []], "pointing", "pointing"], ["loc", [null, [127, 2], [127, 86]]]], ["inline", "t", ["forms.i-i-s-flexberry-gis-test-stand-request-e.comment-caption"], [], ["loc", [null, [131, 9], [131, 79]]]], ["inline", "flexberry-groupedit", [], ["componentName", "commentGroupEdit", "modelProjection", ["subexpr", "@mut", [["get", "modelProjection.attributes.comment", ["loc", [null, [135, 20], [135, 54]]]]], [], []], "content", ["subexpr", "@mut", [["get", "model.comment", ["loc", [null, [136, 12], [136, 25]]]]], [], []], "readonly", ["subexpr", "@mut", [["get", "readonly", ["loc", [null, [137, 13], [137, 21]]]]], [], []], "orderable", false, "class", ["subexpr", "if", [["get", "model.errors.comment", ["loc", [null, [139, 14], [139, 34]]]], "error", ""], [], ["loc", [null, [139, 10], [139, 46]]]]], ["loc", [null, [132, 2], [140, 4]]]], ["inline", "flexberry-validationmessage", [], ["error", ["subexpr", "@mut", [["get", "model.errors.comment", ["loc", [null, [141, 38], [141, 58]]]]], [], []], "pointing", "pointing"], ["loc", [null, [141, 2], [141, 80]]]]],
       locals: [],
       templates: [child0, child1]
     };
   })());
 });
-define("ember-app/templates/i-i-s-flexberry-gis-demo-request-l", ["exports"], function (exports) {
+define("ember-app/templates/i-i-s-flexberry-gis-test-stand-request-l", ["exports"], function (exports) {
   exports["default"] = Ember.HTMLBars.template((function () {
     return {
       meta: {
@@ -16654,7 +16654,7 @@ define("ember-app/templates/i-i-s-flexberry-gis-demo-request-l", ["exports"], fu
             "column": 0
           }
         },
-        "moduleName": "ember-app/templates/i-i-s-flexberry-gis-demo-request-l.hbs"
+        "moduleName": "ember-app/templates/i-i-s-flexberry-gis-test-stand-request-l.hbs"
       },
       isEmpty: false,
       arity: 0,
@@ -16688,13 +16688,13 @@ define("ember-app/templates/i-i-s-flexberry-gis-demo-request-l", ["exports"], fu
         morphs[2] = dom.createMorphAt(element0, 1, 1);
         return morphs;
       },
-      statements: [["inline", "t", ["forms.i-i-s-flexberry-gis-demo-request-l.caption"], [], ["loc", [null, [1, 4], [1, 60]]]], ["attribute", "class", ["concat", ["ui ", ["get", "state", ["loc", [null, [2, 17], [2, 22]]]], " row form"]]], ["inline", "flexberry-objectlistview", [], ["modelName", "i-i-s-flexberry-gis-demo-request", "modelProjection", ["subexpr", "@mut", [["get", "modelProjection", ["loc", [null, [5, 20], [5, 35]]]]], [], []], "editFormRoute", ["subexpr", "@mut", [["get", "editFormRoute", ["loc", [null, [6, 18], [6, 31]]]]], [], []], "content", ["subexpr", "@mut", [["get", "model", ["loc", [null, [7, 12], [7, 17]]]]], [], []], "createNewButton", true, "refreshButton", true, "sorting", ["subexpr", "@mut", [["get", "computedSorting", ["loc", [null, [10, 12], [10, 27]]]]], [], []], "orderable", true, "sortByColumn", ["subexpr", "action", ["sortByColumn"], [], ["loc", [null, [12, 17], [12, 40]]]], "addColumnToSorting", ["subexpr", "action", ["addColumnToSorting"], [], ["loc", [null, [13, 23], [13, 52]]]], "pages", ["subexpr", "@mut", [["get", "pages", ["loc", [null, [14, 10], [14, 15]]]]], [], []], "perPageValue", ["subexpr", "@mut", [["get", "perPageValue", ["loc", [null, [15, 17], [15, 29]]]]], [], []], "perPageValues", ["subexpr", "@mut", [["get", "perPageValues", ["loc", [null, [16, 18], [16, 31]]]]], [], []], "recordsTotalCount", ["subexpr", "@mut", [["get", "recordsTotalCount", ["loc", [null, [17, 22], [17, 39]]]]], [], []], "hasPreviousPage", ["subexpr", "@mut", [["get", "hasPreviousPage", ["loc", [null, [18, 20], [18, 35]]]]], [], []], "hasNextPage", ["subexpr", "@mut", [["get", "hasNextPage", ["loc", [null, [19, 16], [19, 27]]]]], [], []], "previousPage", ["subexpr", "action", ["previousPage"], [], ["loc", [null, [20, 17], [20, 40]]]], "gotoPage", ["subexpr", "action", ["gotoPage"], [], ["loc", [null, [21, 13], [21, 32]]]], "nextPage", ["subexpr", "action", ["nextPage"], [], ["loc", [null, [22, 13], [22, 32]]]], "componentName", "IISFlexberryGisDemoRequestL"], ["loc", [null, [3, 2], [24, 4]]]]],
+      statements: [["inline", "t", ["forms.i-i-s-flexberry-gis-test-stand-request-l.caption"], [], ["loc", [null, [1, 4], [1, 66]]]], ["attribute", "class", ["concat", ["ui ", ["get", "state", ["loc", [null, [2, 17], [2, 22]]]], " row form"]]], ["inline", "flexberry-objectlistview", [], ["modelName", "i-i-s-flexberry-gis-test-stand-request", "modelProjection", ["subexpr", "@mut", [["get", "modelProjection", ["loc", [null, [5, 20], [5, 35]]]]], [], []], "editFormRoute", ["subexpr", "@mut", [["get", "editFormRoute", ["loc", [null, [6, 18], [6, 31]]]]], [], []], "content", ["subexpr", "@mut", [["get", "model", ["loc", [null, [7, 12], [7, 17]]]]], [], []], "createNewButton", true, "refreshButton", true, "sorting", ["subexpr", "@mut", [["get", "computedSorting", ["loc", [null, [10, 12], [10, 27]]]]], [], []], "orderable", true, "sortByColumn", ["subexpr", "action", ["sortByColumn"], [], ["loc", [null, [12, 17], [12, 40]]]], "addColumnToSorting", ["subexpr", "action", ["addColumnToSorting"], [], ["loc", [null, [13, 23], [13, 52]]]], "pages", ["subexpr", "@mut", [["get", "pages", ["loc", [null, [14, 10], [14, 15]]]]], [], []], "perPageValue", ["subexpr", "@mut", [["get", "perPageValue", ["loc", [null, [15, 17], [15, 29]]]]], [], []], "perPageValues", ["subexpr", "@mut", [["get", "perPageValues", ["loc", [null, [16, 18], [16, 31]]]]], [], []], "recordsTotalCount", ["subexpr", "@mut", [["get", "recordsTotalCount", ["loc", [null, [17, 22], [17, 39]]]]], [], []], "hasPreviousPage", ["subexpr", "@mut", [["get", "hasPreviousPage", ["loc", [null, [18, 20], [18, 35]]]]], [], []], "hasNextPage", ["subexpr", "@mut", [["get", "hasNextPage", ["loc", [null, [19, 16], [19, 27]]]]], [], []], "previousPage", ["subexpr", "action", ["previousPage"], [], ["loc", [null, [20, 17], [20, 40]]]], "gotoPage", ["subexpr", "action", ["gotoPage"], [], ["loc", [null, [21, 13], [21, 32]]]], "nextPage", ["subexpr", "action", ["nextPage"], [], ["loc", [null, [22, 13], [22, 32]]]], "componentName", "IISFlexberryGisTestStandRequestL"], ["loc", [null, [3, 2], [24, 4]]]]],
       locals: [],
       templates: []
     };
   })());
 });
-define("ember-app/templates/i-i-s-flexberry-gis-demo-request-l/loading", ["exports"], function (exports) {
+define("ember-app/templates/i-i-s-flexberry-gis-test-stand-request-l/loading", ["exports"], function (exports) {
   exports["default"] = Ember.HTMLBars.template((function () {
     return {
       meta: {
@@ -16713,7 +16713,7 @@ define("ember-app/templates/i-i-s-flexberry-gis-demo-request-l/loading", ["expor
             "column": 0
           }
         },
-        "moduleName": "ember-app/templates/i-i-s-flexberry-gis-demo-request-l/loading.hbs"
+        "moduleName": "ember-app/templates/i-i-s-flexberry-gis-test-stand-request-l/loading.hbs"
       },
       isEmpty: false,
       arity: 0,
@@ -20756,16 +20756,16 @@ define('ember-app/transforms/i-c-s-soft-s-t-o-r-m-n-e-t-business-audit-objects-t
     }
   });
 });
-define('ember-app/transforms/i-i-s-flexberry-gis-demo-t-gender', ['exports', 'ember-flexberry-data/transforms/flexberry-enum', 'ember-app/enums/i-i-s-flexberry-gis-demo-t-gender'], function (exports, _emberFlexberryDataTransformsFlexberryEnum, _emberAppEnumsIISFlexberryGisDemoTGender) {
+define('ember-app/transforms/i-i-s-flexberry-gis-test-stand-t-gender', ['exports', 'ember-flexberry-data/transforms/flexberry-enum', 'ember-app/enums/i-i-s-flexberry-gis-test-stand-t-gender'], function (exports, _emberFlexberryDataTransformsFlexberryEnum, _emberAppEnumsIISFlexberryGisTestStandTGender) {
   exports['default'] = _emberFlexberryDataTransformsFlexberryEnum['default'].extend({
-    'enum': _emberAppEnumsIISFlexberryGisDemoTGender['default'],
-    sourceType: 'IIS.FlexberryGisDemo.tGender'
+    'enum': _emberAppEnumsIISFlexberryGisTestStandTGender['default'],
+    sourceType: 'IIS.FlexberryGisTestStand.tGender'
   });
 });
-define('ember-app/transforms/i-i-s-flexberry-gis-demo-t-status', ['exports', 'ember-flexberry-data/transforms/flexberry-enum', 'ember-app/enums/i-i-s-flexberry-gis-demo-t-status'], function (exports, _emberFlexberryDataTransformsFlexberryEnum, _emberAppEnumsIISFlexberryGisDemoTStatus) {
+define('ember-app/transforms/i-i-s-flexberry-gis-test-stand-t-status', ['exports', 'ember-flexberry-data/transforms/flexberry-enum', 'ember-app/enums/i-i-s-flexberry-gis-test-stand-t-status'], function (exports, _emberFlexberryDataTransformsFlexberryEnum, _emberAppEnumsIISFlexberryGisTestStandTStatus) {
   exports['default'] = _emberFlexberryDataTransformsFlexberryEnum['default'].extend({
-    'enum': _emberAppEnumsIISFlexberryGisDemoTStatus['default'],
-    sourceType: 'IIS.FlexberryGisDemo.tStatus'
+    'enum': _emberAppEnumsIISFlexberryGisTestStandTStatus['default'],
+    sourceType: 'IIS.FlexberryGisTestStand.tStatus'
   });
 });
 define('ember-app/utils/deserialize-sorting-param', ['exports', 'ember-flexberry/utils/deserialize-sorting-param'], function (exports, _emberFlexberryUtilsDeserializeSortingParam) {
@@ -20863,7 +20863,7 @@ catch(err) {
 /* jshint ignore:start */
 
 if (!runningTests) {
-  require("ember-app/app")["default"].create({"name":"ember-app","backendUrl":"http://localhost:6500","backendUrls":{"root":"http://localhost:6500","api":"http://localhost:6500/odata"},"log":{"enabled":true,"storeErrorMessages":true,"storeWarnMessages":false,"storeLogMessages":true,"storeInfoMessages":false,"storeDebugMessages":false,"storeDeprecationMessages":false,"storePromiseErrors":true,"showPromiseErrors":true},"perf":{"enabled":false},"lock":{"enabled":true,"openReadOnly":true,"unlockObject":true},"useUserSettingsService":true,"offline":{"dbName":"ember-app","offlineEnabled":true,"modeSwitchOnErrorsEnabled":false,"syncDownWhenOnlineEnabled":false},"components":{"flexberryFile":{"uploadUrl":"http://localhost:6500/api/File","maxUploadFileSize":null,"uploadOnModelPreSave":true,"showUploadButton":true,"showModalDialogOnUploadError":true,"showModalDialogOnDownloadError":true}},"version":"0.0.0+c7b70396"});
+  require("ember-app/app")["default"].create({"name":"ember-app","backendUrl":"http://localhost:6500","backendUrls":{"root":"http://localhost:6500","api":"http://localhost:6500/odata"},"log":{"enabled":true,"storeErrorMessages":true,"storeWarnMessages":false,"storeLogMessages":true,"storeInfoMessages":false,"storeDebugMessages":false,"storeDeprecationMessages":false,"storePromiseErrors":true,"showPromiseErrors":true},"perf":{"enabled":false},"lock":{"enabled":true,"openReadOnly":true,"unlockObject":true},"useUserSettingsService":true,"offline":{"dbName":"ember-app","offlineEnabled":true,"modeSwitchOnErrorsEnabled":false,"syncDownWhenOnlineEnabled":false},"components":{"flexberryFile":{"uploadUrl":"http://localhost:6500/api/File","maxUploadFileSize":null,"uploadOnModelPreSave":true,"showUploadButton":true,"showModalDialogOnUploadError":true,"showModalDialogOnDownloadError":true}},"version":"0.0.0+339e389b"});
 }
 
 /* jshint ignore:end */
