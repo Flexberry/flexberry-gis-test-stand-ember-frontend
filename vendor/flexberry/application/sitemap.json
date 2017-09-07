@@ -1,29 +1,29 @@
 ﻿{
-  "applicationCaption": "Flexberry gis demo",
-  "applicationTitle": "Flexberry gis demo",
+  "applicationCaption": "Flexberry gis test stand",
+  "applicationTitle": "Flexberry gis test stand",
   "items": [
     {
       "link": null,
-      "menuName": "flexberry-gis-demo",
-      "caption": "FlexberryGisDemo",
-      "title": "FlexberryGisDemo",
+      "menuName": "flexberry-gis-test-stand",
+      "caption": "FlexberryGisTestStand",
+      "title": "FlexberryGisTestStand",
       "children": [
         {
-          "link": "i-i-s-flexberry-gis-demo-request-l",
+          "link": "i-i-s-flexberry-gis-test-stand-request-l",
           "menuName": null,
           "caption": "Request",
           "title": "",
           "children": null
         },
         {
-          "link": "i-i-s-flexberry-gis-demo-address-l",
+          "link": "i-i-s-flexberry-gis-test-stand-address-l",
           "menuName": null,
           "caption": "Address",
           "title": "",
           "children": null
         },
         {
-          "link": "i-i-s-flexberry-gis-demo-author-l",
+          "link": "i-i-s-flexberry-gis-test-stand-author-l",
           "menuName": null,
           "caption": "Author",
           "title": "",

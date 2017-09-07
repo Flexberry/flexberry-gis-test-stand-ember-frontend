@@ -1,0 +1,59 @@
+﻿{
+  "name": "IISFlexberryGisTestStandComment",
+  "modelName": "i-i-s-flexberry-gis-test-stand-comment",
+  "className": "Comment",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "text",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true
+    },
+    {
+      "name": "type",
+      "type": "i-i-s-flexberry-gis-test-stand-t-status",
+      "flexberryType": "tStatus",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "request",
+      "relatedTo": "i-i-s-flexberry-gis-test-stand-request",
+      "inverse": "comment"
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "CommentE",
+      "modelName": "i-i-s-flexberry-gis-test-stand-comment",
+      "attrs": [
+        {
+          "name": "text",
+          "caption": "Text",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "type",
+          "caption": "Type",
+          "hidden": false,
+          "index": 1
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true
+}

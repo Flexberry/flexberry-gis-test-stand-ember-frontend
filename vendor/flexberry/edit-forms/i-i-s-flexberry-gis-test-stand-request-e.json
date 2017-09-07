@@ -1,0 +1,30 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "Author",
+      "projection": "AuthorL",
+      "detailModelName": null
+    },
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "Address",
+      "projection": "AddressL",
+      "detailModelName": null
+    }
+  ],
+  "caption": "Request",
+  "name": "IISFlexberryGisTestStandRequestE",
+  "className": "RequestE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-flexberry-gis-test-stand-request",
+      "modelProjection": "RequestE"
+    }
+  ]
+}

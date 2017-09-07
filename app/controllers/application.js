@@ -13,22 +13,22 @@ export default Ember.Controller.extend({
           children: null
         }, {
           link: null,
-          caption: i18n.t('forms.application.sitemap.flexberry-gis-demo.caption'),
-          title: i18n.t('forms.application.sitemap.flexberry-gis-demo.title'),
+          caption: i18n.t('forms.application.sitemap.flexberry-gis-test-stand.caption'),
+          title: i18n.t('forms.application.sitemap.flexberry-gis-test-stand.title'),
           children: [{
-            link: 'i-i-s-flexberry-gis-demo-request-l',
-            caption: i18n.t('forms.application.sitemap.flexberry-gis-demo.i-i-s-flexberry-gis-demo-request-l.caption'),
-            title: i18n.t('forms.application.sitemap.flexberry-gis-demo.i-i-s-flexberry-gis-demo-request-l.title'),
+            link: 'i-i-s-flexberry-gis-test-stand-request-l',
+            caption: i18n.t('forms.application.sitemap.flexberry-gis-test-stand.i-i-s-flexberry-gis-test-stand-request-l.caption'),
+            title: i18n.t('forms.application.sitemap.flexberry-gis-test-stand.i-i-s-flexberry-gis-test-stand-request-l.title'),
             children: null
           }, {
-            link: 'i-i-s-flexberry-gis-demo-address-l',
-            caption: i18n.t('forms.application.sitemap.flexberry-gis-demo.i-i-s-flexberry-gis-demo-address-l.caption'),
-            title: i18n.t('forms.application.sitemap.flexberry-gis-demo.i-i-s-flexberry-gis-demo-address-l.title'),
+            link: 'i-i-s-flexberry-gis-test-stand-address-l',
+            caption: i18n.t('forms.application.sitemap.flexberry-gis-test-stand.i-i-s-flexberry-gis-test-stand-address-l.caption'),
+            title: i18n.t('forms.application.sitemap.flexberry-gis-test-stand.i-i-s-flexberry-gis-test-stand-address-l.title'),
             children: null
           }, {
-            link: 'i-i-s-flexberry-gis-demo-author-l',
-            caption: i18n.t('forms.application.sitemap.flexberry-gis-demo.i-i-s-flexberry-gis-demo-author-l.caption'),
-            title: i18n.t('forms.application.sitemap.flexberry-gis-demo.i-i-s-flexberry-gis-demo-author-l.title'),
+            link: 'i-i-s-flexberry-gis-test-stand-author-l',
+            caption: i18n.t('forms.application.sitemap.flexberry-gis-test-stand.i-i-s-flexberry-gis-test-stand-author-l.caption'),
+            title: i18n.t('forms.application.sitemap.flexberry-gis-test-stand.i-i-s-flexberry-gis-test-stand-author-l.title'),
             children: null
           }]
         }

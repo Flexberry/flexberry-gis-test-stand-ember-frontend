@@ -1,26 +1,26 @@
 import Ember from 'ember';
 import EmberFlexberryTranslations from 'ember-flexberry/locales/en/translations';
 
-import IISFlexberryGisDemoAddressLForm from './forms/i-i-s-flexberry-gis-demo-address-l';
-import IISFlexberryGisDemoAuthorLForm from './forms/i-i-s-flexberry-gis-demo-author-l';
-import IISFlexberryGisDemoRequestLForm from './forms/i-i-s-flexberry-gis-demo-request-l';
-import IISFlexberryGisDemoAddressEForm from './forms/i-i-s-flexberry-gis-demo-address-e';
-import IISFlexberryGisDemoAuthorEForm from './forms/i-i-s-flexberry-gis-demo-author-e';
-import IISFlexberryGisDemoRequestEForm from './forms/i-i-s-flexberry-gis-demo-request-e';
-import IISFlexberryGisDemoAddressModel from './models/i-i-s-flexberry-gis-demo-address';
-import IISFlexberryGisDemoAuthorModel from './models/i-i-s-flexberry-gis-demo-author';
-import IISFlexberryGisDemoCommentModel from './models/i-i-s-flexberry-gis-demo-comment';
-import IISFlexberryGisDemoRequestModel from './models/i-i-s-flexberry-gis-demo-request';
+import IISFlexberryGisTestStandAddressLForm from './forms/i-i-s-flexberry-gis-test-stand-address-l';
+import IISFlexberryGisTestStandAuthorLForm from './forms/i-i-s-flexberry-gis-test-stand-author-l';
+import IISFlexberryGisTestStandRequestLForm from './forms/i-i-s-flexberry-gis-test-stand-request-l';
+import IISFlexberryGisTestStandAddressEForm from './forms/i-i-s-flexberry-gis-test-stand-address-e';
+import IISFlexberryGisTestStandAuthorEForm from './forms/i-i-s-flexberry-gis-test-stand-author-e';
+import IISFlexberryGisTestStandRequestEForm from './forms/i-i-s-flexberry-gis-test-stand-request-e';
+import IISFlexberryGisTestStandAddressModel from './models/i-i-s-flexberry-gis-test-stand-address';
+import IISFlexberryGisTestStandAuthorModel from './models/i-i-s-flexberry-gis-test-stand-author';
+import IISFlexberryGisTestStandCommentModel from './models/i-i-s-flexberry-gis-test-stand-comment';
+import IISFlexberryGisTestStandRequestModel from './models/i-i-s-flexberry-gis-test-stand-request';
 
 const translations = {};
 Ember.$.extend(true, translations, EmberFlexberryTranslations);
 
 Ember.$.extend(true, translations, {
   models: {
-    'i-i-s-flexberry-gis-demo-address': IISFlexberryGisDemoAddressModel,
-    'i-i-s-flexberry-gis-demo-author': IISFlexberryGisDemoAuthorModel,
-    'i-i-s-flexberry-gis-demo-comment': IISFlexberryGisDemoCommentModel,
-    'i-i-s-flexberry-gis-demo-request': IISFlexberryGisDemoRequestModel,
+    'i-i-s-flexberry-gis-test-stand-address': IISFlexberryGisTestStandAddressModel,
+    'i-i-s-flexberry-gis-test-stand-author': IISFlexberryGisTestStandAuthorModel,
+    'i-i-s-flexberry-gis-test-stand-comment': IISFlexberryGisTestStandCommentModel,
+    'i-i-s-flexberry-gis-test-stand-request': IISFlexberryGisTestStandRequestModel,
   },
 
   'application-name': 'Application caption',
@@ -87,22 +87,22 @@ Ember.$.extend(true, translations, {
           caption: 'Home',
           title: ''
         },
-        'flexberry-gis-demo': {
-          caption: 'flexberry-gis-demo',
-          title: 'flexberry-gis-demo',
-          'i-i-s-flexberry-gis-demo-request-l': {
-            caption: 'i-i-s-flexberry-gis-demo-request-l',
-            title: 'i-i-s-flexberry-gis-demo-request-l',
+        'flexberry-gis-test-stand': {
+          caption: 'flexberry-gis-test-stand',
+          title: 'flexberry-gis-test-stand',
+          'i-i-s-flexberry-gis-test-stand-request-l': {
+            caption: 'i-i-s-flexberry-gis-test-stand-request-l',
+            title: 'i-i-s-flexberry-gis-test-stand-request-l',
 
           },
-          'i-i-s-flexberry-gis-demo-address-l': {
-            caption: 'i-i-s-flexberry-gis-demo-address-l',
-            title: 'i-i-s-flexberry-gis-demo-address-l',
+          'i-i-s-flexberry-gis-test-stand-address-l': {
+            caption: 'i-i-s-flexberry-gis-test-stand-address-l',
+            title: 'i-i-s-flexberry-gis-test-stand-address-l',
 
           },
-          'i-i-s-flexberry-gis-demo-author-l': {
-            caption: 'i-i-s-flexberry-gis-demo-author-l',
-            title: 'i-i-s-flexberry-gis-demo-author-l',
+          'i-i-s-flexberry-gis-test-stand-author-l': {
+            caption: 'i-i-s-flexberry-gis-test-stand-author-l',
+            title: 'i-i-s-flexberry-gis-test-stand-author-l',
 
           }
         },
@@ -117,12 +117,12 @@ Ember.$.extend(true, translations, {
       'delete-success-message': 'Object deleted',
       'delete-error-message-caption': 'Delete operation failed'
     },
-    'i-i-s-flexberry-gis-demo-address-l': IISFlexberryGisDemoAddressLForm,
-    'i-i-s-flexberry-gis-demo-author-l': IISFlexberryGisDemoAuthorLForm,
-    'i-i-s-flexberry-gis-demo-request-l': IISFlexberryGisDemoRequestLForm,
-    'i-i-s-flexberry-gis-demo-address-e': IISFlexberryGisDemoAddressEForm,
-    'i-i-s-flexberry-gis-demo-author-e': IISFlexberryGisDemoAuthorEForm,
-    'i-i-s-flexberry-gis-demo-request-e': IISFlexberryGisDemoRequestEForm,
+    'i-i-s-flexberry-gis-test-stand-address-l': IISFlexberryGisTestStandAddressLForm,
+    'i-i-s-flexberry-gis-test-stand-author-l': IISFlexberryGisTestStandAuthorLForm,
+    'i-i-s-flexberry-gis-test-stand-request-l': IISFlexberryGisTestStandRequestLForm,
+    'i-i-s-flexberry-gis-test-stand-address-e': IISFlexberryGisTestStandAddressEForm,
+    'i-i-s-flexberry-gis-test-stand-author-e': IISFlexberryGisTestStandAuthorEForm,
+    'i-i-s-flexberry-gis-test-stand-request-e': IISFlexberryGisTestStandRequestEForm,
   },
 
 });

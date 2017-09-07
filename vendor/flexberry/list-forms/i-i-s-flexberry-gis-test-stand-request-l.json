@@ -1,0 +1,14 @@
+﻿{
+  "newForm": "i-i-s-flexberry-gis-test-stand-request-e",
+  "editForm": "i-i-s-flexberry-gis-test-stand-request-e",
+  "caption": "Request",
+  "name": "IISFlexberryGisTestStandRequestL",
+  "className": "RequestL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-flexberry-gis-test-stand-request",
+      "modelProjection": "RequestL"
+    }
+  ]
+}

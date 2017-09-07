@@ -6,21 +6,21 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function () {
-  this.route('i-i-s-flexberry-gis-demo-address-l');
-  this.route('i-i-s-flexberry-gis-demo-address-e',
-  { path: 'i-i-s-flexberry-gis-demo-address-e/:id' });
-  this.route('i-i-s-flexberry-gis-demo-address-e.new',
-  { path: 'i-i-s-flexberry-gis-demo-address-e/new' });
-  this.route('i-i-s-flexberry-gis-demo-author-l');
-  this.route('i-i-s-flexberry-gis-demo-author-e',
-  { path: 'i-i-s-flexberry-gis-demo-author-e/:id' });
-  this.route('i-i-s-flexberry-gis-demo-author-e.new',
-  { path: 'i-i-s-flexberry-gis-demo-author-e/new' });
-  this.route('i-i-s-flexberry-gis-demo-request-l');
-  this.route('i-i-s-flexberry-gis-demo-request-e',
-  { path: 'i-i-s-flexberry-gis-demo-request-e/:id' });
-  this.route('i-i-s-flexberry-gis-demo-request-e.new',
-  { path: 'i-i-s-flexberry-gis-demo-request-e/new' });
+  this.route('i-i-s-flexberry-gis-test-stand-address-l');
+  this.route('i-i-s-flexberry-gis-test-stand-address-e',
+  { path: 'i-i-s-flexberry-gis-test-stand-address-e/:id' });
+  this.route('i-i-s-flexberry-gis-test-stand-address-e.new',
+  { path: 'i-i-s-flexberry-gis-test-stand-address-e/new' });
+  this.route('i-i-s-flexberry-gis-test-stand-author-l');
+  this.route('i-i-s-flexberry-gis-test-stand-author-e',
+  { path: 'i-i-s-flexberry-gis-test-stand-author-e/:id' });
+  this.route('i-i-s-flexberry-gis-test-stand-author-e.new',
+  { path: 'i-i-s-flexberry-gis-test-stand-author-e/new' });
+  this.route('i-i-s-flexberry-gis-test-stand-request-l');
+  this.route('i-i-s-flexberry-gis-test-stand-request-e',
+  { path: 'i-i-s-flexberry-gis-test-stand-request-e/:id' });
+  this.route('i-i-s-flexberry-gis-test-stand-request-e.new',
+  { path: 'i-i-s-flexberry-gis-test-stand-request-e/new' });
 });
 
 export default Router;
