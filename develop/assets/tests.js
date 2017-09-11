@@ -219,6 +219,57 @@ define('ember-app/tests/controllers/i-i-s-flexberry-gis-test-stand-request-l.jsh
     assert.ok(true, 'controllers/i-i-s-flexberry-gis-test-stand-request-l.js should pass jshint.');
   });
 });
+define('ember-app/tests/controllers/map.jscs-test', ['exports'], function (exports) {
+  'use strict';
+
+  module('JSCS - controllers');
+  test('controllers/map.js should pass jscs', function () {
+    ok(true, 'controllers/map.js should pass jscs.');
+  });
+});
+define('ember-app/tests/controllers/map.jshint', ['exports'], function (exports) {
+  'use strict';
+
+  QUnit.module('JSHint - controllers/map.js');
+  QUnit.test('should pass jshint', function (assert) {
+    assert.expect(1);
+    assert.ok(true, 'controllers/map.js should pass jshint.');
+  });
+});
+define('ember-app/tests/controllers/map/new.jscs-test', ['exports'], function (exports) {
+  'use strict';
+
+  module('JSCS - controllers/map');
+  test('controllers/map/new.js should pass jscs', function () {
+    ok(true, 'controllers/map/new.js should pass jscs.');
+  });
+});
+define('ember-app/tests/controllers/map/new.jshint', ['exports'], function (exports) {
+  'use strict';
+
+  QUnit.module('JSHint - controllers/map/new.js');
+  QUnit.test('should pass jshint', function (assert) {
+    assert.expect(1);
+    assert.ok(true, 'controllers/map/new.js should pass jshint.');
+  });
+});
+define('ember-app/tests/controllers/maps.jscs-test', ['exports'], function (exports) {
+  'use strict';
+
+  module('JSCS - controllers');
+  test('controllers/maps.js should pass jscs', function () {
+    ok(true, 'controllers/maps.js should pass jscs.');
+  });
+});
+define('ember-app/tests/controllers/maps.jshint', ['exports'], function (exports) {
+  'use strict';
+
+  QUnit.module('JSHint - controllers/maps.js');
+  QUnit.test('should pass jshint', function (assert) {
+    assert.expect(1);
+    assert.ok(true, 'controllers/maps.js should pass jshint.');
+  });
+});
 define('ember-app/tests/controllers/sitemap-node.jscs-test', ['exports'], function (exports) {
   'use strict';
 
@@ -597,6 +648,40 @@ define('ember-app/tests/locales/en/forms/i-i-s-flexberry-gis-test-stand-request-
     assert.ok(true, 'locales/en/forms/i-i-s-flexberry-gis-test-stand-request-l.js should pass jshint.');
   });
 });
+define('ember-app/tests/locales/en/forms/map.jscs-test', ['exports'], function (exports) {
+  'use strict';
+
+  module('JSCS - locales/en/forms');
+  test('locales/en/forms/map.js should pass jscs', function () {
+    ok(true, 'locales/en/forms/map.js should pass jscs.');
+  });
+});
+define('ember-app/tests/locales/en/forms/map.jshint', ['exports'], function (exports) {
+  'use strict';
+
+  QUnit.module('JSHint - locales/en/forms/map.js');
+  QUnit.test('should pass jshint', function (assert) {
+    assert.expect(1);
+    assert.ok(true, 'locales/en/forms/map.js should pass jshint.');
+  });
+});
+define('ember-app/tests/locales/en/forms/maps.jscs-test', ['exports'], function (exports) {
+  'use strict';
+
+  module('JSCS - locales/en/forms');
+  test('locales/en/forms/maps.js should pass jscs', function () {
+    ok(true, 'locales/en/forms/maps.js should pass jscs.');
+  });
+});
+define('ember-app/tests/locales/en/forms/maps.jshint', ['exports'], function (exports) {
+  'use strict';
+
+  QUnit.module('JSHint - locales/en/forms/maps.js');
+  QUnit.test('should pass jshint', function (assert) {
+    assert.expect(1);
+    assert.ok(true, 'locales/en/forms/maps.js should pass jshint.');
+  });
+});
 define('ember-app/tests/locales/en/models/i-i-s-flexberry-gis-test-stand-address.jscs-test', ['exports'], function (exports) {
   'use strict';
 
@@ -784,6 +869,40 @@ define('ember-app/tests/locales/ru/forms/i-i-s-flexberry-gis-test-stand-request-
     assert.ok(true, 'locales/ru/forms/i-i-s-flexberry-gis-test-stand-request-l.js should pass jshint.');
   });
 });
+define('ember-app/tests/locales/ru/forms/map.jscs-test', ['exports'], function (exports) {
+  'use strict';
+
+  module('JSCS - locales/ru/forms');
+  test('locales/ru/forms/map.js should pass jscs', function () {
+    ok(true, 'locales/ru/forms/map.js should pass jscs.');
+  });
+});
+define('ember-app/tests/locales/ru/forms/map.jshint', ['exports'], function (exports) {
+  'use strict';
+
+  QUnit.module('JSHint - locales/ru/forms/map.js');
+  QUnit.test('should pass jshint', function (assert) {
+    assert.expect(1);
+    assert.ok(true, 'locales/ru/forms/map.js should pass jshint.');
+  });
+});
+define('ember-app/tests/locales/ru/forms/maps.jscs-test', ['exports'], function (exports) {
+  'use strict';
+
+  module('JSCS - locales/ru/forms');
+  test('locales/ru/forms/maps.js should pass jscs', function () {
+    ok(true, 'locales/ru/forms/maps.js should pass jscs.');
+  });
+});
+define('ember-app/tests/locales/ru/forms/maps.jshint', ['exports'], function (exports) {
+  'use strict';
+
+  QUnit.module('JSHint - locales/ru/forms/maps.js');
+  QUnit.test('should pass jshint', function (assert) {
+    assert.expect(1);
+    assert.ok(true, 'locales/ru/forms/maps.js should pass jshint.');
+  });
+});
 define('ember-app/tests/locales/ru/models/i-i-s-flexberry-gis-test-stand-address.jscs-test', ['exports'], function (exports) {
   'use strict';
 
@@ -867,6 +986,40 @@ define('ember-app/tests/locales/ru/translations.jshint', ['exports'], function (
   QUnit.test('should pass jshint', function (assert) {
     assert.expect(1);
     assert.ok(true, 'locales/ru/translations.js should pass jshint.');
+  });
+});
+define('ember-app/tests/mixins/edit-form-controller-operations-indication.jscs-test', ['exports'], function (exports) {
+  'use strict';
+
+  module('JSCS - mixins');
+  test('mixins/edit-form-controller-operations-indication.js should pass jscs', function () {
+    ok(true, 'mixins/edit-form-controller-operations-indication.js should pass jscs.');
+  });
+});
+define('ember-app/tests/mixins/edit-form-controller-operations-indication.jshint', ['exports'], function (exports) {
+  'use strict';
+
+  QUnit.module('JSHint - mixins/edit-form-controller-operations-indication.js');
+  QUnit.test('should pass jshint', function (assert) {
+    assert.expect(1);
+    assert.ok(true, 'mixins/edit-form-controller-operations-indication.js should pass jshint.');
+  });
+});
+define('ember-app/tests/mixins/edit-form-route-operations-indication.jscs-test', ['exports'], function (exports) {
+  'use strict';
+
+  module('JSCS - mixins');
+  test('mixins/edit-form-route-operations-indication.js should pass jscs', function () {
+    ok(true, 'mixins/edit-form-route-operations-indication.js should pass jscs.');
+  });
+});
+define('ember-app/tests/mixins/edit-form-route-operations-indication.jshint', ['exports'], function (exports) {
+  'use strict';
+
+  QUnit.module('JSHint - mixins/edit-form-route-operations-indication.js');
+  QUnit.test('should pass jshint', function (assert) {
+    assert.expect(1);
+    assert.ok(true, 'mixins/edit-form-route-operations-indication.js should pass jshint.');
   });
 });
 define('ember-app/tests/mixins/regenerated/models/i-i-s-flexberry-gis-test-stand-address.jscs-test', ['exports'], function (exports) {
@@ -1377,6 +1530,57 @@ define('ember-app/tests/routes/index.jshint', ['exports'], function (exports) {
   QUnit.test('should pass jshint', function (assert) {
     assert.expect(1);
     assert.ok(true, 'routes/index.js should pass jshint.');
+  });
+});
+define('ember-app/tests/routes/map.jscs-test', ['exports'], function (exports) {
+  'use strict';
+
+  module('JSCS - routes');
+  test('routes/map.js should pass jscs', function () {
+    ok(true, 'routes/map.js should pass jscs.');
+  });
+});
+define('ember-app/tests/routes/map.jshint', ['exports'], function (exports) {
+  'use strict';
+
+  QUnit.module('JSHint - routes/map.js');
+  QUnit.test('should pass jshint', function (assert) {
+    assert.expect(1);
+    assert.ok(true, 'routes/map.js should pass jshint.');
+  });
+});
+define('ember-app/tests/routes/map/new.jscs-test', ['exports'], function (exports) {
+  'use strict';
+
+  module('JSCS - routes/map');
+  test('routes/map/new.js should pass jscs', function () {
+    ok(true, 'routes/map/new.js should pass jscs.');
+  });
+});
+define('ember-app/tests/routes/map/new.jshint', ['exports'], function (exports) {
+  'use strict';
+
+  QUnit.module('JSHint - routes/map/new.js');
+  QUnit.test('should pass jshint', function (assert) {
+    assert.expect(1);
+    assert.ok(true, 'routes/map/new.js should pass jshint.');
+  });
+});
+define('ember-app/tests/routes/maps.jscs-test', ['exports'], function (exports) {
+  'use strict';
+
+  module('JSCS - routes');
+  test('routes/maps.js should pass jscs', function () {
+    ok(true, 'routes/maps.js should pass jscs.');
+  });
+});
+define('ember-app/tests/routes/maps.jshint', ['exports'], function (exports) {
+  'use strict';
+
+  QUnit.module('JSHint - routes/maps.js');
+  QUnit.test('should pass jshint', function (assert) {
+    assert.expect(1);
+    assert.ok(true, 'routes/maps.js should pass jshint.');
   });
 });
 define('ember-app/tests/serializers/application-offline.jscs-test', ['exports'], function (exports) {

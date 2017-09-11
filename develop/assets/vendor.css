@@ -37338,21 +37338,26 @@ html.ios body {
     border: 1px solid gray;
     border-radius: 2px; }
 
-.layer-result-list .feature-result-item-select.icon.item {
-  position: absolute;
-  left: 1.2em;
-  margin-top: .5em; }
+.layer-result-list .feature-result-item-group .ui.dropdown > .dropdown.icon {
+  margin: 0; }
 
-.layer-result-list .feature-result-item-title > * {
-  vertical-align: top;
-  display: inline-block; }
-
-.layer-result-list .feature-result-item-caption {
-  text-overflow: ellipsis;
-  max-width: 80%; }
-
-.layer-result-list-toggler .title .flexberry-toggler-caption {
-  margin-left: 1em; }
+.layer-result-list .feature-result-item {
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: column; }
+  .layer-result-list .feature-result-item-title {
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: row; }
+  .layer-result-list .feature-result-item-caption {
+    padding-left: 10px;
+    max-width: 350px;
+    min-width: 350px; }
+  .layer-result-list .feature-result-item .links ~ .feature-result-item-caption {
+    max-width: 300px;
+    min-width: 300px; }
+  .layer-result-list .feature-result-item-toolbar .ui.dropdown > .dropdown.icon {
+    margin: 0; }
 
 .flexberry-search-map-command-dialog-results {
   overflow: auto; }
@@ -37413,6 +37418,10 @@ html.ios body {
           padding-right: 0; }
     .ui.modal.flexberry-export-map-command-dialog > .content.flexberry-dialog-content > .ui.form > .ui.grid .flexberry-export-map-command-dialog-preview-column {
       box-shadow: none; }
+    .ui.modal.flexberry-export-map-command-dialog > .content.flexberry-dialog-content > .ui.form > .ui.grid .flexberry-export-map-command-dialog-paging-column {
+      box-shadow: none; }
+      .ui.modal.flexberry-export-map-command-dialog > .content.flexberry-dialog-content > .ui.form > .ui.grid .flexberry-export-map-command-dialog-paging-column .flexberry-button {
+        display: inline-block; }
 
 .flexberry-export-map-command-dialog-sheet-of-paper {
   background: white;
@@ -37421,7 +37430,8 @@ html.ios body {
   height: 100%;
   padding: 14px;
   margin: 0 auto;
-  display: block; }
+  display: block;
+  overflow: hidden; }
   .flexberry-export-map-command-dialog-sheet-of-paper .flexberry-export-map-command-dialog-sheet-of-paper-map-caption {
     margin-bottom: 14px;
     text-align: center; }
@@ -37446,6 +37456,29 @@ html.ios body {
       height: 100%; }
       .flexberry-export-map-command-dialog-sheet-of-paper.map-only-mode .flexberry-export-map-command-dialog-sheet-of-paper-map .flexberry-map .leaflet-control-container {
         display: none; }
+    .flexberry-export-map-command-dialog-sheet-of-paper.map-only-mode .flexberry-export-map-command-dialog-legend-control-map {
+      display: none;
+      padding-right: 0; }
+
+.flexberry-export-map-command-dialog-sheet-of-legend {
+  background: white;
+  border: 1px solid #d4d4d5;
+  width: 100%;
+  height: 100%;
+  padding: 14px;
+  margin: 0 auto;
+  display: block;
+  overflow: hidden; }
+
+.flexberry-export-map-command-dialog-sheet-of-paper .flexberry-export-map-command-dialog-legend-control-map {
+  margin-top: 10px; }
+
+.flexberry-export-map-command-dialog-legend-control-map .layer-legend-image-wrapper {
+  float: left;
+  height: inherit;
+  padding-right: 10px; }
+  .flexberry-export-map-command-dialog-legend-control-map .layer-legend-image-wrapper .layer-legend-image {
+    height: inherit; }
 
 .leaflet-control-zoomslider-wrap {
   box-sizing: content-box; }
