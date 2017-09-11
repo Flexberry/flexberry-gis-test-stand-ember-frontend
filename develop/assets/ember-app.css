@@ -48758,6 +48758,2005 @@ div.subMenu a {
     transform: scale3d(1, 1, 1);
   }
 }
+/* карта */
+.flexberry-map {
+  width: 100%;
+  height: calc(100vh - 140px);
+  background-color: #fff;
+}
+.flexberry-gis-map {
+  max-width: 100%;
+}
+/* внутри карты */
+.mappanel {
+  height: 100%;
+  min-height: 100%;
+  /* вложенные контейнеры*/
+  /* left control container */
+}
+.mappanel > div {
+  height: 100%;
+}
+.mappanel .leaflet-bar {
+  border: none;
+}
+.mappanel .leaflet-bar a {
+  font-weight: normal;
+  height: 36px;
+  width: 36px;
+  box-shadow: 0 0 4px #3C4F76;
+  color: #7ba7d9;
+  background: #fff;
+  font-size: 28px;
+}
+.mappanel .leaflet-bar a .icon {
+  padding: 3px;
+}
+.mappanel .leaflet-bar a .icon:before {
+  font-size: 1em;
+}
+.mappanel .leaflet-bar a.active,
+.mappanel .leaflet-bar a:hover,
+.mappanel .leaflet-bar a.active:hover,
+.mappanel .leaflet-bar a:hover:hover {
+  color: #7ba7d9;
+  background: #dbe9ee;
+  box-shadow: 0 0 4px #3C4F76;
+  height: 36px;
+  width: 36px;
+}
+.mappanel .leaflet-bar a.leaflet-disabled {
+  color: #e9e9e9;
+}
+.mappanel .leaflet-bar a.leaflet-disabled:hover {
+  color: #e9e9e9;
+  background: #fff;
+}
+.mappanel .leaflet-left.leaflet-top {
+  top: 50px;
+}
+.mappanel .leaflet-left .leaflet-control-zoom.leaflet-bar {
+  margin-top: 56px;
+}
+.mappanel .leaflet-left .leaflet-control-zoom.leaflet-bar a {
+  padding-top: 3px;
+}
+.mappanel .leaflet-left .leaflet-control-zoom.leaflet-bar a:first-child {
+  border-radius: 5px 5px 0px 0px;
+}
+.mappanel .leaflet-left .leaflet-control-zoom.leaflet-bar a:last-child {
+  border-radius: 0px 0px 5px 5px;
+}
+.mappanel .leaflet-right.leaflet-top {
+  left: 56px;
+  top: 10px;
+  right: auto;
+}
+.mappanel .leaflet-right.leaflet-top .history-control.leaflet-bar {
+  margin: 0;
+}
+.mappanel .leaflet-right.leaflet-top .history-control.leaflet-bar a {
+  border: none;
+}
+.mappanel .leaflet-right.leaflet-top .history-control.leaflet-bar a:first-child {
+  border-radius: 5px 0px 0px 5px;
+}
+.mappanel .leaflet-right.leaflet-top .history-control.leaflet-bar a:last-child {
+  border-radius: 0px 5px 5px 0px;
+}
+.mappanel .leaflet-bottom.leaflet-right {
+  padding-right: 5px;
+}
+.mappanel .leaflet-bottom.leaflet-right .leaflet-control {
+  margin: 0;
+}
+.mappanel .leaflet-bottom.leaflet-right .leaflet-control-container {
+  vertical-align: bottom;
+  text-align: right;
+}
+/* контейенры, внутри которых есть контролы */
+.mappanel,
+.sidebar-wrapper,
+.flexberry-export-map-command-dialog,
+.flexberry-search-map-command-dialog,
+.flexberry-go-to-map-command-dialog {
+  /* dropdown */
+  /* dropdown текущее значение */
+  /* выпадающий список в dropdown */
+  /* checkbox */
+  /* таблица */
+  /* контейнер контролов */
+}
+.mappanel .dropdown,
+.sidebar-wrapper .dropdown,
+.flexberry-export-map-command-dialog .dropdown,
+.flexberry-search-map-command-dialog .dropdown,
+.flexberry-go-to-map-command-dialog .dropdown {
+  /* стрелка раскрытия */
+  /* меню */
+}
+.mappanel .dropdown.icon:not(.flexberry-treenode-expand-collapse-icon),
+.sidebar-wrapper .dropdown.icon:not(.flexberry-treenode-expand-collapse-icon),
+.flexberry-export-map-command-dialog .dropdown.icon:not(.flexberry-treenode-expand-collapse-icon),
+.flexberry-search-map-command-dialog .dropdown.icon:not(.flexberry-treenode-expand-collapse-icon),
+.flexberry-go-to-map-command-dialog .dropdown.icon:not(.flexberry-treenode-expand-collapse-icon) {
+  padding: 1em .3em !important;
+}
+.mappanel .dropdown.icon:not(.flexberry-treenode-expand-collapse-icon):before,
+.sidebar-wrapper .dropdown.icon:not(.flexberry-treenode-expand-collapse-icon):before,
+.flexberry-export-map-command-dialog .dropdown.icon:not(.flexberry-treenode-expand-collapse-icon):before,
+.flexberry-search-map-command-dialog .dropdown.icon:not(.flexberry-treenode-expand-collapse-icon):before,
+.flexberry-go-to-map-command-dialog .dropdown.icon:not(.flexberry-treenode-expand-collapse-icon):before {
+  font-family: Icons;
+  font-size: 16px;
+  color: #4D5F82;
+}
+.mappanel .dropdown div.text,
+.sidebar-wrapper .dropdown div.text,
+.flexberry-export-map-command-dialog .dropdown div.text,
+.flexberry-search-map-command-dialog .dropdown div.text,
+.flexberry-go-to-map-command-dialog .dropdown div.text {
+  max-width: 100%;
+  text-align: left;
+  overflow: hidden;
+}
+.mappanel .dropdown .menu,
+.sidebar-wrapper .dropdown .menu,
+.flexberry-export-map-command-dialog .dropdown .menu,
+.flexberry-search-map-command-dialog .dropdown .menu,
+.flexberry-go-to-map-command-dialog .dropdown .menu {
+  /* элемент меню*/
+}
+.mappanel .dropdown .menu .item,
+.sidebar-wrapper .dropdown .menu .item,
+.flexberry-export-map-command-dialog .dropdown .menu .item,
+.flexberry-search-map-command-dialog .dropdown .menu .item,
+.flexberry-go-to-map-command-dialog .dropdown .menu .item {
+  color: #4D5F82;
+}
+.mappanel .dropdown .menu .item:hover,
+.sidebar-wrapper .dropdown .menu .item:hover,
+.flexberry-export-map-command-dialog .dropdown .menu .item:hover,
+.flexberry-search-map-command-dialog .dropdown .menu .item:hover,
+.flexberry-go-to-map-command-dialog .dropdown .menu .item:hover {
+  background-color: #fff;
+  color: #4D5F82;
+  opacity: 0.8;
+}
+.mappanel .dropdown .menu .item.selected,
+.sidebar-wrapper .dropdown .menu .item.selected,
+.flexberry-export-map-command-dialog .dropdown .menu .item.selected,
+.flexberry-search-map-command-dialog .dropdown .menu .item.selected,
+.flexberry-go-to-map-command-dialog .dropdown .menu .item.selected {
+  color: #3C4F76;
+}
+.mappanel .dropdown .active,
+.sidebar-wrapper .dropdown .active,
+.flexberry-export-map-command-dialog .dropdown .active,
+.flexberry-search-map-command-dialog .dropdown .active,
+.flexberry-go-to-map-command-dialog .dropdown .active {
+  color: #3C4F76;
+}
+.mappanel .ui.selection.dropdown,
+.sidebar-wrapper .ui.selection.dropdown,
+.flexberry-export-map-command-dialog .ui.selection.dropdown,
+.flexberry-search-map-command-dialog .ui.selection.dropdown,
+.flexberry-go-to-map-command-dialog .ui.selection.dropdown,
+.mappanel .ui.active.selection.dropdown,
+.sidebar-wrapper .ui.active.selection.dropdown,
+.flexberry-export-map-command-dialog .ui.active.selection.dropdown,
+.flexberry-search-map-command-dialog .ui.active.selection.dropdown,
+.flexberry-go-to-map-command-dialog .ui.active.selection.dropdown {
+  box-shadow: 0 0 4px #3C4F76;
+  color: #3C4F76 !important;
+  padding: 0.78571429em 1em 0.78571429em 1em;
+}
+.mappanel .ui.selection.dropdown:hover,
+.sidebar-wrapper .ui.selection.dropdown:hover,
+.flexberry-export-map-command-dialog .ui.selection.dropdown:hover,
+.flexberry-search-map-command-dialog .ui.selection.dropdown:hover,
+.flexberry-go-to-map-command-dialog .ui.selection.dropdown:hover,
+.mappanel .ui.active.selection.dropdown:hover,
+.sidebar-wrapper .ui.active.selection.dropdown:hover,
+.flexberry-export-map-command-dialog .ui.active.selection.dropdown:hover,
+.flexberry-search-map-command-dialog .ui.active.selection.dropdown:hover,
+.flexberry-go-to-map-command-dialog .ui.active.selection.dropdown:hover {
+  background-color: #dbe9ee;
+}
+.mappanel .ui.selection.dropdown .menu .selected.item,
+.sidebar-wrapper .ui.selection.dropdown .menu .selected.item,
+.flexberry-export-map-command-dialog .ui.selection.dropdown .menu .selected.item,
+.flexberry-search-map-command-dialog .ui.selection.dropdown .menu .selected.item,
+.flexberry-go-to-map-command-dialog .ui.selection.dropdown .menu .selected.item,
+.mappanel .ui.selection.dropdown .menu .item:hover,
+.sidebar-wrapper .ui.selection.dropdown .menu .item:hover,
+.flexberry-export-map-command-dialog .ui.selection.dropdown .menu .item:hover,
+.flexberry-search-map-command-dialog .ui.selection.dropdown .menu .item:hover,
+.flexberry-go-to-map-command-dialog .ui.selection.dropdown .menu .item:hover {
+  background: #fff !important;
+}
+.mappanel .ui.active.selection.dropdown,
+.sidebar-wrapper .ui.active.selection.dropdown,
+.flexberry-export-map-command-dialog .ui.active.selection.dropdown,
+.flexberry-search-map-command-dialog .ui.active.selection.dropdown,
+.flexberry-go-to-map-command-dialog .ui.active.selection.dropdown,
+.mappanel .ui.active.selection.dropdown:hover,
+.sidebar-wrapper .ui.active.selection.dropdown:hover,
+.flexberry-export-map-command-dialog .ui.active.selection.dropdown:hover,
+.flexberry-search-map-command-dialog .ui.active.selection.dropdown:hover,
+.flexberry-go-to-map-command-dialog .ui.active.selection.dropdown:hover {
+  border: 1px solid #4D5F82;
+  border-bottom: 0px;
+  box-shadow: none;
+  color: #3C4F76;
+}
+.mappanel .ui.selection.active,
+.sidebar-wrapper .ui.selection.active,
+.flexberry-export-map-command-dialog .ui.selection.active,
+.flexberry-search-map-command-dialog .ui.selection.active,
+.flexberry-go-to-map-command-dialog .ui.selection.active,
+.mappanel .ui.selection.active:hover,
+.sidebar-wrapper .ui.selection.active:hover,
+.flexberry-export-map-command-dialog .ui.selection.active:hover,
+.flexberry-search-map-command-dialog .ui.selection.active:hover,
+.flexberry-go-to-map-command-dialog .ui.selection.active:hover {
+  border: 1px solid #4D5F82;
+  border-top: 0;
+  background-color: #dbe9ee;
+  color: #3C4F76;
+  /* меню */
+}
+.mappanel .ui.selection.active .menu,
+.sidebar-wrapper .ui.selection.active .menu,
+.flexberry-export-map-command-dialog .ui.selection.active .menu,
+.flexberry-search-map-command-dialog .ui.selection.active .menu,
+.flexberry-go-to-map-command-dialog .ui.selection.active .menu,
+.mappanel .ui.selection.active:hover .menu,
+.sidebar-wrapper .ui.selection.active:hover .menu,
+.flexberry-export-map-command-dialog .ui.selection.active:hover .menu,
+.flexberry-search-map-command-dialog .ui.selection.active:hover .menu,
+.flexberry-go-to-map-command-dialog .ui.selection.active:hover .menu {
+  border-radius: 0px 0px 5px 5px;
+  border-color: #4D5F82;
+}
+.mappanel .ui.checkbox,
+.sidebar-wrapper .ui.checkbox,
+.flexberry-export-map-command-dialog .ui.checkbox,
+.flexberry-search-map-command-dialog .ui.checkbox,
+.flexberry-go-to-map-command-dialog .ui.checkbox {
+  /* рамка */
+  /* галочка */
+}
+.mappanel .ui.checkbox .box:before,
+.sidebar-wrapper .ui.checkbox .box:before,
+.flexberry-export-map-command-dialog .ui.checkbox .box:before,
+.flexberry-search-map-command-dialog .ui.checkbox .box:before,
+.flexberry-go-to-map-command-dialog .ui.checkbox .box:before,
+.mappanel .ui.checkbox label:before,
+.sidebar-wrapper .ui.checkbox label:before,
+.flexberry-export-map-command-dialog .ui.checkbox label:before,
+.flexberry-search-map-command-dialog .ui.checkbox label:before,
+.flexberry-go-to-map-command-dialog .ui.checkbox label:before,
+.mappanel .ui.checkbox .box:hover::before,
+.sidebar-wrapper .ui.checkbox .box:hover::before,
+.flexberry-export-map-command-dialog .ui.checkbox .box:hover::before,
+.flexberry-search-map-command-dialog .ui.checkbox .box:hover::before,
+.flexberry-go-to-map-command-dialog .ui.checkbox .box:hover::before,
+.mappanel .ui.checkbox label:hover::before,
+.sidebar-wrapper .ui.checkbox label:hover::before,
+.flexberry-export-map-command-dialog .ui.checkbox label:hover::before,
+.flexberry-search-map-command-dialog .ui.checkbox label:hover::before,
+.flexberry-go-to-map-command-dialog .ui.checkbox label:hover::before {
+  box-shadow: 0px 0 5px #3C4F76;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.mappanel .ui.checkbox input:checked ~ .box:after,
+.sidebar-wrapper .ui.checkbox input:checked ~ .box:after,
+.flexberry-export-map-command-dialog .ui.checkbox input:checked ~ .box:after,
+.flexberry-search-map-command-dialog .ui.checkbox input:checked ~ .box:after,
+.flexberry-go-to-map-command-dialog .ui.checkbox input:checked ~ .box:after,
+.mappanel .ui.checkbox input:checked ~ label:after,
+.sidebar-wrapper .ui.checkbox input:checked ~ label:after,
+.flexberry-export-map-command-dialog .ui.checkbox input:checked ~ label:after,
+.flexberry-search-map-command-dialog .ui.checkbox input:checked ~ label:after,
+.flexberry-go-to-map-command-dialog .ui.checkbox input:checked ~ label:after {
+  margin-top: 3px;
+  font-family: Crimean;
+  color: #3C4F76;
+  content: "\e805";
+  font-size: 16px;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.mappanel .ui.buttons .or,
+.sidebar-wrapper .ui.buttons .or,
+.flexberry-export-map-command-dialog .ui.buttons .or,
+.flexberry-search-map-command-dialog .ui.buttons .or,
+.flexberry-go-to-map-command-dialog .ui.buttons .or {
+  display: block;
+}
+.mappanel .ui.table,
+.sidebar-wrapper .ui.table,
+.flexberry-export-map-command-dialog .ui.table,
+.flexberry-search-map-command-dialog .ui.table,
+.flexberry-go-to-map-command-dialog .ui.table {
+  color: #6f9be3;
+  /* заголовок столбца */
+}
+.mappanel .ui.table thead th,
+.sidebar-wrapper .ui.table thead th,
+.flexberry-export-map-command-dialog .ui.table thead th,
+.flexberry-search-map-command-dialog .ui.table thead th,
+.flexberry-go-to-map-command-dialog .ui.table thead th {
+  color: #3C4F76;
+  background-color: #dbe9ee;
+}
+.mappanel .ui.table tbody td,
+.sidebar-wrapper .ui.table tbody td,
+.flexberry-export-map-command-dialog .ui.table tbody td,
+.flexberry-search-map-command-dialog .ui.table tbody td,
+.flexberry-go-to-map-command-dialog .ui.table tbody td {
+  color: #4D5F82;
+}
+.mappanel .segment,
+.sidebar-wrapper .segment,
+.flexberry-export-map-command-dialog .segment,
+.flexberry-search-map-command-dialog .segment,
+.flexberry-go-to-map-command-dialog .segment {
+  box-shadow: 0 0 4px #4D5F82;
+  border: none;
+  /* заголовок контейнера */
+  /* поле */
+}
+.mappanel .segment .header,
+.sidebar-wrapper .segment .header,
+.flexberry-export-map-command-dialog .segment .header,
+.flexberry-search-map-command-dialog .segment .header,
+.flexberry-go-to-map-command-dialog .segment .header {
+  color: #3C4F76;
+  font-size: 16px;
+}
+.mappanel .segment .field .input .ember-text-field,
+.sidebar-wrapper .segment .field .input .ember-text-field,
+.flexberry-export-map-command-dialog .segment .field .input .ember-text-field,
+.flexberry-search-map-command-dialog .segment .field .input .ember-text-field,
+.flexberry-go-to-map-command-dialog .segment .field .input .ember-text-field {
+  background-color: #fff;
+  border-radius: 5px;
+  border-bottom: 0px;
+}
+.mappanel .ui.form,
+.sidebar-wrapper .ui.form,
+.flexberry-export-map-command-dialog .ui.form,
+.flexberry-search-map-command-dialog .ui.form,
+.flexberry-go-to-map-command-dialog .ui.form {
+  /* поле */
+}
+.mappanel .ui.form .field,
+.sidebar-wrapper .ui.form .field,
+.flexberry-export-map-command-dialog .ui.form .field,
+.flexberry-search-map-command-dialog .ui.form .field,
+.flexberry-go-to-map-command-dialog .ui.form .field {
+  /* лейбл поля */
+  /* ввод поля */
+}
+.mappanel .ui.form .field > label,
+.sidebar-wrapper .ui.form .field > label,
+.flexberry-export-map-command-dialog .ui.form .field > label,
+.flexberry-search-map-command-dialog .ui.form .field > label,
+.flexberry-go-to-map-command-dialog .ui.form .field > label {
+  color: #4D5F82;
+  font-weight: bold;
+}
+.mappanel .ui.form .field > .input .ember-text-field,
+.sidebar-wrapper .ui.form .field > .input .ember-text-field,
+.flexberry-export-map-command-dialog .ui.form .field > .input .ember-text-field,
+.flexberry-search-map-command-dialog .ui.form .field > .input .ember-text-field,
+.flexberry-go-to-map-command-dialog .ui.form .field > .input .ember-text-field {
+  color: #3C4F76;
+  box-shadow: 0 0 4px #3C4F76;
+  border-radius: 5px;
+  border-bottom: 0px;
+}
+.mappanel .ui.form .field .flexberry-dropdown,
+.sidebar-wrapper .ui.form .field .flexberry-dropdown,
+.flexberry-export-map-command-dialog .ui.form .field .flexberry-dropdown,
+.flexberry-search-map-command-dialog .ui.form .field .flexberry-dropdown,
+.flexberry-go-to-map-command-dialog .ui.form .field .flexberry-dropdown {
+  border-radius: 5px;
+  border-bottom: 0px;
+}
+.mappanel .ui.form .field .flexberry-dropdown:focus,
+.sidebar-wrapper .ui.form .field .flexberry-dropdown:focus,
+.flexberry-export-map-command-dialog .ui.form .field .flexberry-dropdown:focus,
+.flexberry-search-map-command-dialog .ui.form .field .flexberry-dropdown:focus,
+.flexberry-go-to-map-command-dialog .ui.form .field .flexberry-dropdown:focus {
+  border-radius: 5px;
+}
+.mappanel .ui.small.fluid.buttons:not(.basic):not(.inverted) > .or::before,
+.sidebar-wrapper .ui.small.fluid.buttons:not(.basic):not(.inverted) > .or::before,
+.flexberry-export-map-command-dialog .ui.small.fluid.buttons:not(.basic):not(.inverted) > .or::before,
+.flexberry-search-map-command-dialog .ui.small.fluid.buttons:not(.basic):not(.inverted) > .or::before,
+.flexberry-go-to-map-command-dialog .ui.small.fluid.buttons:not(.basic):not(.inverted) > .or::before {
+  background: #e9e9e9;
+  color: #4D5F82;
+  box-shadow: 0 0 4px #4D5F82;
+}
+.mappanel .ui.small.fluid.buttons:not(.basic):not(.inverted) > .button.flexberry-button,
+.sidebar-wrapper .ui.small.fluid.buttons:not(.basic):not(.inverted) > .button.flexberry-button,
+.flexberry-export-map-command-dialog .ui.small.fluid.buttons:not(.basic):not(.inverted) > .button.flexberry-button,
+.flexberry-search-map-command-dialog .ui.small.fluid.buttons:not(.basic):not(.inverted) > .button.flexberry-button,
+.flexberry-go-to-map-command-dialog .ui.small.fluid.buttons:not(.basic):not(.inverted) > .button.flexberry-button {
+  background: #fff;
+  color: #3C4F76;
+  box-shadow: 0 0 4px #3C4F76;
+}
+.mappanel .ui.small.fluid.buttons:not(.basic):not(.inverted) > .button.flexberry-button.active,
+.sidebar-wrapper .ui.small.fluid.buttons:not(.basic):not(.inverted) > .button.flexberry-button.active,
+.flexberry-export-map-command-dialog .ui.small.fluid.buttons:not(.basic):not(.inverted) > .button.flexberry-button.active,
+.flexberry-search-map-command-dialog .ui.small.fluid.buttons:not(.basic):not(.inverted) > .button.flexberry-button.active,
+.flexberry-go-to-map-command-dialog .ui.small.fluid.buttons:not(.basic):not(.inverted) > .button.flexberry-button.active {
+  background: #dbe9ee !important;
+}
+.mappanel .ui.small.fluid.buttons:not(.basic):not(.inverted) > .button.flexberry-button:hover,
+.sidebar-wrapper .ui.small.fluid.buttons:not(.basic):not(.inverted) > .button.flexberry-button:hover,
+.flexberry-export-map-command-dialog .ui.small.fluid.buttons:not(.basic):not(.inverted) > .button.flexberry-button:hover,
+.flexberry-search-map-command-dialog .ui.small.fluid.buttons:not(.basic):not(.inverted) > .button.flexberry-button:hover,
+.flexberry-go-to-map-command-dialog .ui.small.fluid.buttons:not(.basic):not(.inverted) > .button.flexberry-button:hover {
+  opacity: 0.8;
+}
+.mappanel .ui.icon.button,
+.sidebar-wrapper .ui.icon.button,
+.flexberry-export-map-command-dialog .ui.icon.button,
+.flexberry-search-map-command-dialog .ui.icon.button,
+.flexberry-go-to-map-command-dialog .ui.icon.button {
+  border-radius: 5px;
+  font-weight: normal;
+  height: 40px;
+  width: 40px;
+  box-shadow: 0 0 4px #3C4F76;
+  display: inline-block;
+  color: #3C4F76;
+  background: #fff;
+  font-size: 16px;
+  margin-left: 0px;
+}
+.mappanel .ui.icon.button.active,
+.sidebar-wrapper .ui.icon.button.active,
+.flexberry-export-map-command-dialog .ui.icon.button.active,
+.flexberry-search-map-command-dialog .ui.icon.button.active,
+.flexberry-go-to-map-command-dialog .ui.icon.button.active,
+.mappanel .ui.icon.button:hover,
+.sidebar-wrapper .ui.icon.button:hover,
+.flexberry-export-map-command-dialog .ui.icon.button:hover,
+.flexberry-search-map-command-dialog .ui.icon.button:hover,
+.flexberry-go-to-map-command-dialog .ui.icon.button:hover,
+.mappanel .ui.icon.button.active:hover,
+.sidebar-wrapper .ui.icon.button.active:hover,
+.flexberry-export-map-command-dialog .ui.icon.button.active:hover,
+.flexberry-search-map-command-dialog .ui.icon.button.active:hover,
+.flexberry-go-to-map-command-dialog .ui.icon.button.active:hover,
+.mappanel .ui.icon.button:hover:hover,
+.sidebar-wrapper .ui.icon.button:hover:hover,
+.flexberry-export-map-command-dialog .ui.icon.button:hover:hover,
+.flexberry-search-map-command-dialog .ui.icon.button:hover:hover,
+.flexberry-go-to-map-command-dialog .ui.icon.button:hover:hover {
+  color: #3C4F76 !important;
+  background: #dbe9ee;
+  box-shadow: 0 0 4px #3C4F76;
+  opacity: 0.8;
+}
+.ember-view.ui.menu.flexberry-maptoolbar {
+  margin: 10px 10px 0px 10px;
+  background-color: transparent !important;
+  overflow: visible;
+  z-index: 999;
+  border: 0px !important;
+  position: absolute;
+  display: inline-block;
+  width: 0px;
+  /* элементы меню */
+  /* элементы меню */
+  /* элементы внутри выпадающих списков */
+  /* элементы меню при наведении */
+  /* выбранный элемент меню */
+  /* элементы меню внутри dropdown */
+  /* фон меню */
+  /* первый блок */
+  /* рука */
+  /* приблизить */
+  /* отдалить */
+  /* переход к точке */
+  /* сохранить */
+  /* поиск по карте */
+  /* раскрывающие списки */
+  /* показать слои */
+  /* иконки */
+  /* отступ в кнопках с иконками */
+  /* укрупненные иконки */
+  /* отображение слоёв */
+  /* рука */
+  /* + */
+  /* - */
+  /* перейти к точке */
+  /* отдалить на полную */
+  /* поиск по адресу */
+  /* идентифицировать слои */
+  /* все слои, дерево слоёв*/
+  /* видимые слои */
+  /* верхний видимый */
+  /* измерить */
+  /* координаты */
+  /* радиус */
+  /* расстояние */
+  /* площадь */
+  /* нарисовать */
+  /* линейка */
+  /* экспортировать */
+  /* изображение */
+  /* напечатать */
+  /* + в сайдбаре */
+  /* удаление */
+  /* сохранить */
+  /* поиск */
+  /* градсправка */
+  /* папка слоя */
+}
+.ember-view.ui.menu.flexberry-maptoolbar a.item,
+.ember-view.ui.menu.flexberry-maptoolbar .ui.dropdown .menu > a.item,
+.ember-view.ui.menu.flexberry-maptoolbar .ui.icon.button {
+  color: #3C4F76;
+  font-size: 0px;
+  background: #fff;
+}
+.ember-view.ui.menu.flexberry-maptoolbar .item {
+  border-radius: 5px !important;
+  padding: 4px 8px;
+  font-weight: normal;
+  height: 36px;
+  box-shadow: 0 0 4px #3C4F76;
+  margin-bottom: 10px;
+  width: 36px;
+  font-size: 12px;
+}
+.ember-view.ui.menu.flexberry-maptoolbar .ui.dropdown .menu {
+  margin-left: 52px;
+  margin-top: -31px;
+  box-shadow: 0 0 4px #3C4F76;
+  border: 1px solid #4D5F82;
+  border-radius: 0.285714rem;
+  border-top-left-radius: 0;
+}
+.ember-view.ui.menu.flexberry-maptoolbar .ui.dropdown .menu > a.item {
+  font-size: 13px !important;
+  width: auto;
+}
+.ember-view.ui.menu.flexberry-maptoolbar .item:hover,
+.ember-view.ui.menu.flexberry-maptoolbar .dropdown.item:hover,
+.ember-view.ui.menu.flexberry-maptoolbar .link.item:hover,
+.ember-view.ui.menu.flexberry-maptoolbar a.item:hover,
+.ember-view.ui.menu.flexberry-maptoolbar .active.item:hover,
+.ember-view.ui.menu.flexberry-maptoolbar .vertical .active.item:hover,
+.ember-view.ui.menu.flexberry-maptoolbar .ui.icon.button:hover,
+.ember-view.ui.menu.flexberry-maptoolbar .ui.dropdown .menu > .item:hover {
+  background-color: #dbe9ee;
+  color: #4D5F82;
+}
+.ember-view.ui.menu.flexberry-maptoolbar .active.item,
+.ember-view.ui.menu.flexberry-maptoolbar .vertical .active.item {
+  background-color: #dbe9ee;
+  color: #3C4F76;
+}
+.ember-view.ui.menu.flexberry-maptoolbar .ui.dropdown .menu > a.item,
+.ember-view.ui.menu.flexberry-maptoolbar .ui.dropdown .menu > a.item:hover {
+  color: #4D5F82 !important;
+}
+.ember-view.ui.menu.flexberry-maptoolbar .item:before {
+  background: none;
+}
+.ember-view.ui.menu.flexberry-maptoolbar .flexberry-zoom-in-map-tool,
+.ember-view.ui.menu.flexberry-maptoolbar .flexberry-zoom-out-map-tool,
+.ember-view.ui.menu.flexberry-maptoolbar .flexberry-identify-map-tool,
+.ember-view.ui.menu.flexberry-maptoolbar .flexberry-full-extent-map-command {
+  border-right: none;
+  border-left: none;
+  border-radius: 0px !important;
+  box-shadow: 0 0 4px #3C4F76;
+  position: absolute;
+  margin: 0px;
+}
+.ember-view.ui.menu.flexberry-maptoolbar .flexberry-drag-map-tool {
+  border-right: solid 1px #e9e9e9;
+  border-radius: 5px 0px 0px 5px !important;
+  position: absolute;
+  left: 130px;
+}
+.ember-view.ui.menu.flexberry-maptoolbar .flexberry-zoom-in-map-tool {
+  left: 166px;
+}
+.ember-view.ui.menu.flexberry-maptoolbar .flexberry-zoom-out-map-tool {
+  left: 202px;
+}
+.ember-view.ui.menu.flexberry-maptoolbar .flexberry-identify-map-tool {
+  border-radius: 0px 5px 5px 0px !important;
+  left: 238px;
+}
+.ember-view.ui.menu.flexberry-maptoolbar .flexberry-save-map-button {
+  left: 286px;
+  width: 76px;
+  box-shadow: 0 0 4px #3C4F76;
+  color: #7ba7d9;
+  background: #fff;
+  border-style: none;
+}
+.ember-view.ui.menu.flexberry-maptoolbar .flexberry-save-map-button:hover {
+  background: #dbe9ee;
+  color: #7ba7d9;
+}
+.ember-view.ui.menu.flexberry-maptoolbar .flexberry-save-map-button:focus {
+  outline: none;
+}
+.ember-view.ui.menu.flexberry-maptoolbar .flexberry-full-extent-map-command {
+  border-radius: 5px !important;
+}
+.ember-view.ui.menu.flexberry-maptoolbar .flexberry-go-to-map-command {
+  margin-top: 180px;
+}
+.ember-view.ui.menu.flexberry-maptoolbar .flexberry-search-map-command,
+.ember-view.ui.menu.flexberry-maptoolbar .flexberry-measure-map-tool,
+.ember-view.ui.menu.flexberry-maptoolbar .flexberry-draw-map-tool,
+.ember-view.ui.menu.flexberry-maptoolbar .flexberry-go-to-map-command,
+.ember-view.ui.menu.flexberry-maptoolbar .flexberry-export-map-command {
+  /* IE10+ фиксы */
+}
+.ember-view.ui.menu.flexberry-maptoolbar .flexberry-search-map-command i.flexberry-map-tool-submenu-icon.dropdown.icon,
+.ember-view.ui.menu.flexberry-maptoolbar .flexberry-measure-map-tool i.flexberry-map-tool-submenu-icon.dropdown.icon,
+.ember-view.ui.menu.flexberry-maptoolbar .flexberry-draw-map-tool i.flexberry-map-tool-submenu-icon.dropdown.icon,
+.ember-view.ui.menu.flexberry-maptoolbar .flexberry-go-to-map-command i.flexberry-map-tool-submenu-icon.dropdown.icon,
+.ember-view.ui.menu.flexberry-maptoolbar .flexberry-export-map-command i.flexberry-map-tool-submenu-icon.dropdown.icon,
+.ember-view.ui.menu.flexberry-maptoolbar .flexberry-search-map-command i.flexberry-map-command-submenu-icon.dropdown.icon,
+.ember-view.ui.menu.flexberry-maptoolbar .flexberry-measure-map-tool i.flexberry-map-command-submenu-icon.dropdown.icon,
+.ember-view.ui.menu.flexberry-maptoolbar .flexberry-draw-map-tool i.flexberry-map-command-submenu-icon.dropdown.icon,
+.ember-view.ui.menu.flexberry-maptoolbar .flexberry-go-to-map-command i.flexberry-map-command-submenu-icon.dropdown.icon,
+.ember-view.ui.menu.flexberry-maptoolbar .flexberry-export-map-command i.flexberry-map-command-submenu-icon.dropdown.icon {
+  display: none;
+}
+.ember-view.ui.menu.flexberry-maptoolbar .flexberry-search-map-command.active i.flexberry-map-tool-submenu-icon.dropdown.icon,
+.ember-view.ui.menu.flexberry-maptoolbar .flexberry-measure-map-tool.active i.flexberry-map-tool-submenu-icon.dropdown.icon,
+.ember-view.ui.menu.flexberry-maptoolbar .flexberry-draw-map-tool.active i.flexberry-map-tool-submenu-icon.dropdown.icon,
+.ember-view.ui.menu.flexberry-maptoolbar .flexberry-go-to-map-command.active i.flexberry-map-tool-submenu-icon.dropdown.icon,
+.ember-view.ui.menu.flexberry-maptoolbar .flexberry-export-map-command.active i.flexberry-map-tool-submenu-icon.dropdown.icon,
+.ember-view.ui.menu.flexberry-maptoolbar .flexberry-search-map-command.active i.flexberry-map-command-submenu-icon.dropdown.icon,
+.ember-view.ui.menu.flexberry-maptoolbar .flexberry-measure-map-tool.active i.flexberry-map-command-submenu-icon.dropdown.icon,
+.ember-view.ui.menu.flexberry-maptoolbar .flexberry-draw-map-tool.active i.flexberry-map-command-submenu-icon.dropdown.icon,
+.ember-view.ui.menu.flexberry-maptoolbar .flexberry-go-to-map-command.active i.flexberry-map-command-submenu-icon.dropdown.icon,
+.ember-view.ui.menu.flexberry-maptoolbar .flexberry-export-map-command.active i.flexberry-map-command-submenu-icon.dropdown.icon {
+  margin-left: 18px;
+  transform: rotate(90deg);
+  display: block;
+}
+.ember-view.ui.menu.flexberry-maptoolbar .flexberry-search-map-command.active i.flexberry-map-tool-submenu-icon.dropdown.icon:before,
+.ember-view.ui.menu.flexberry-maptoolbar .flexberry-measure-map-tool.active i.flexberry-map-tool-submenu-icon.dropdown.icon:before,
+.ember-view.ui.menu.flexberry-maptoolbar .flexberry-draw-map-tool.active i.flexberry-map-tool-submenu-icon.dropdown.icon:before,
+.ember-view.ui.menu.flexberry-maptoolbar .flexberry-go-to-map-command.active i.flexberry-map-tool-submenu-icon.dropdown.icon:before,
+.ember-view.ui.menu.flexberry-maptoolbar .flexberry-export-map-command.active i.flexberry-map-tool-submenu-icon.dropdown.icon:before,
+.ember-view.ui.menu.flexberry-maptoolbar .flexberry-search-map-command.active i.flexberry-map-command-submenu-icon.dropdown.icon:before,
+.ember-view.ui.menu.flexberry-maptoolbar .flexberry-measure-map-tool.active i.flexberry-map-command-submenu-icon.dropdown.icon:before,
+.ember-view.ui.menu.flexberry-maptoolbar .flexberry-draw-map-tool.active i.flexberry-map-command-submenu-icon.dropdown.icon:before,
+.ember-view.ui.menu.flexberry-maptoolbar .flexberry-go-to-map-command.active i.flexberry-map-command-submenu-icon.dropdown.icon:before,
+.ember-view.ui.menu.flexberry-maptoolbar .flexberry-export-map-command.active i.flexberry-map-command-submenu-icon.dropdown.icon:before {
+  font-size: 40px;
+}
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .ember-view.ui.menu.flexberry-maptoolbar .flexberry-search-map-command.active i.flexberry-map-tool-submenu-icon.dropdown.icon,
+  .ember-view.ui.menu.flexberry-maptoolbar .flexberry-measure-map-tool.active i.flexberry-map-tool-submenu-icon.dropdown.icon,
+  .ember-view.ui.menu.flexberry-maptoolbar .flexberry-draw-map-tool.active i.flexberry-map-tool-submenu-icon.dropdown.icon,
+  .ember-view.ui.menu.flexberry-maptoolbar .flexberry-go-to-map-command.active i.flexberry-map-tool-submenu-icon.dropdown.icon,
+  .ember-view.ui.menu.flexberry-maptoolbar .flexberry-export-map-command.active i.flexberry-map-tool-submenu-icon.dropdown.icon,
+  .ember-view.ui.menu.flexberry-maptoolbar .flexberry-search-map-command.active i.flexberry-map-command-submenu-icon.dropdown.icon,
+  .ember-view.ui.menu.flexberry-maptoolbar .flexberry-measure-map-tool.active i.flexberry-map-command-submenu-icon.dropdown.icon,
+  .ember-view.ui.menu.flexberry-maptoolbar .flexberry-draw-map-tool.active i.flexberry-map-command-submenu-icon.dropdown.icon,
+  .ember-view.ui.menu.flexberry-maptoolbar .flexberry-go-to-map-command.active i.flexberry-map-command-submenu-icon.dropdown.icon,
+  .ember-view.ui.menu.flexberry-maptoolbar .flexberry-export-map-command.active i.flexberry-map-command-submenu-icon.dropdown.icon {
+    margin-left: 50px;
+    margin-top: -20px;
+  }
+}
+.ember-view.ui.menu.flexberry-maptoolbar .flexberry-maplayers-show {
+  display: inline-flex;
+  top: 35px;
+  left: 240px;
+}
+.ember-view.ui.menu.flexberry-maptoolbar .flexberry-maplayers-show i.icon.list:before {
+  font-size: 20px;
+}
+.ember-view.ui.menu.flexberry-maptoolbar i.icon {
+  width: 20px;
+  height: 20px;
+}
+.ember-view.ui.menu.flexberry-maptoolbar i.icon:before {
+  font-family: Crimean;
+}
+.ember-view.ui.menu.flexberry-maptoolbar i.icon.dropdown:before {
+  font-family: Icons;
+}
+.ember-view.ui.menu.flexberry-maptoolbar .ui.icon.button {
+  padding: 5px;
+}
+.ember-view.ui.menu.flexberry-maptoolbar .flexberry-map-tool > i.icon:before,
+.ember-view.ui.menu.flexberry-maptoolbar .treeview > i.icon:before,
+.ember-view.ui.menu.flexberry-maptoolbar .flexberry-map-layers-add-button > i.plus.icon:before,
+.ember-view.ui.menu.flexberry-maptoolbar .icon.tpi {
+  font-size: 20px;
+}
+.ember-view.ui.menu.flexberry-maptoolbar i.icon.table:before {
+  content: "\e819";
+}
+.ember-view.ui.menu.flexberry-maptoolbar i.icon.hand.paper:before {
+  content: "\e823";
+}
+.ember-view.ui.menu.flexberry-maptoolbar i.icon.zoom:before {
+  content: "\e831";
+}
+.ember-view.ui.menu.flexberry-maptoolbar i.icon.zoom.out:before {
+  content: "\e832";
+}
+.ember-view.ui.menu.flexberry-maptoolbar i.icon.location.arrow:before {
+  content: "\e812";
+}
+.ember-view.ui.menu.flexberry-maptoolbar i.icon.globe:before {
+  content: "\e830";
+}
+.ember-view.ui.menu.flexberry-maptoolbar .address.search i.icon.address:before {
+  font-family: Icons;
+  content: "\f02d";
+  font-size: 20px;
+}
+.ember-view.ui.menu.flexberry-maptoolbar i.icon.info.circle {
+  margin-left: -4px;
+  margin-right: 4px;
+}
+.ember-view.ui.menu.flexberry-maptoolbar i.icon.info.circle:before {
+  content: "\e827";
+}
+.ember-view.ui.menu.flexberry-maptoolbar i.icon.square.outline:before,
+.ember-view.ui.menu.flexberry-maptoolbar i.icon.list:before {
+  font-family: Crimean;
+  content: "\e825";
+}
+.ember-view.ui.menu.flexberry-maptoolbar i.icon.checkmark.box:before {
+  content: "\e829";
+}
+.ember-view.ui.menu.flexberry-maptoolbar i.icon.chevron.up:before {
+  content: "\e828";
+}
+.ember-view.ui.menu.flexberry-maptoolbar i.icon.wizard {
+  margin-right: 2px;
+}
+.ember-view.ui.menu.flexberry-maptoolbar i.icon.wizard:before {
+  content: "\e82a";
+}
+.ember-view.ui.menu.flexberry-maptoolbar i.icon.marker:before {
+  content: "\e812";
+}
+.ember-view.ui.menu.flexberry-maptoolbar i.icon.circle:before {
+  content: "\e82b";
+}
+.ember-view.ui.menu.flexberry-maptoolbar i.icon.empty.star:before {
+  font-family: Icons;
+  content: "\f065";
+}
+.ember-view.ui.menu.flexberry-maptoolbar i.icon.square:before {
+  font-family: Icons;
+  content: "\f248";
+}
+.ember-view.ui.menu.flexberry-maptoolbar i.icon.write:before,
+.ember-view.ui.menu.flexberry-maptoolbar i.icon.edit:before {
+  content: "\e810";
+}
+.ember-view.ui.menu.flexberry-maptoolbar i.icon.star:before {
+  content: "\e802";
+}
+.ember-view.ui.menu.flexberry-maptoolbar i.icon.external {
+  margin-left: -2px;
+  margin-right: 2px;
+}
+.ember-view.ui.menu.flexberry-maptoolbar i.icon.external:before {
+  content: "\e822";
+}
+.ember-view.ui.menu.flexberry-maptoolbar i.icon.download:before {
+  content: "\e824";
+}
+.ember-view.ui.menu.flexberry-maptoolbar i.icon.print:before {
+  content: "\e80f";
+}
+.ember-view.ui.menu.flexberry-maptoolbar i.icon.plus:before {
+  height: 26px;
+  color: #65A43F;
+  content: "\e833";
+}
+.ember-view.ui.menu.flexberry-maptoolbar i.icon.trash:before {
+  content: "\e814";
+}
+.ember-view.ui.menu.flexberry-maptoolbar i.icon.save:before {
+  content: "\e80c";
+}
+.ember-view.ui.menu.flexberry-maptoolbar i.icon.search:before {
+  content: "\e803";
+}
+.ember-view.ui.menu.flexberry-maptoolbar i.icon.tpi:before {
+  content: "\e836";
+}
+.ember-view.ui.menu.flexberry-maptoolbar i.icon.folder {
+  margin-right: 0px;
+  /* иконка */
+}
+.ember-view.ui.menu.flexberry-maptoolbar i.icon.folder:before {
+  font-size: 18px;
+  font-family: FontAwesome;
+  content: "\f114";
+}
+.treeview .ui.loading.form {
+  margin-top: 100px;
+}
+.ui.right.sidebar {
+  /* дерево слоёв */
+  /* элемент в сайдбаре с вложенными */
+}
+.ui.right.sidebar .ui.tab {
+  border-radius: 5px;
+}
+.ui.right.sidebar .ui.tab h3 {
+  margin: 7px 0px 13px 0px;
+}
+.ui.right.sidebar .flexberry-tree-header {
+  border-radius: 5px;
+  padding: 0.1em 0.75em 0.6em 0.75em;
+  position: absolute;
+  width: 100%;
+  top: 12px;
+  right: 0.75em;
+  /* + в сайдбаре */
+}
+.ui.right.sidebar .flexberry-tree-header .flexberry-maplayers-add-button {
+  height: 30px;
+  width: 30px;
+  padding: 7px 0;
+}
+.ui.right.sidebar .flexberry-tree-header .flexberry-maplayers-add-button .icon:before {
+  color: #65A43F !important;
+}
+.ui.right.sidebar .flexberry-maplayers.flexberry-tree-root {
+  overflow: auto;
+  /* нижняя граница */
+}
+.ui.right.sidebar .flexberry-maplayers.flexberry-tree-root > :last-child {
+  border-radius: 0px 0px 5px 5px;
+}
+.ui.right.sidebar .ui.styled.accordion {
+  box-shadow: none;
+  /* заголовок элемента */
+  /* отступ дочерних элементов */
+}
+.ui.right.sidebar .ui.styled.accordion .accordion {
+  margin: .5em 0;
+  border-radius: 5px 0px 0px 5px;
+}
+.ui.right.sidebar .ui.styled.accordion .accordion:first-child .title {
+  border-top: 1px solid rgba(34, 36, 38, 0.15);
+}
+.ui.right.sidebar .ui.styled.accordion .accordion .flexberry-treenode:first-child .title {
+  border-top: none;
+}
+.ui.right.sidebar .ui.styled.accordion .flexberry-treenode-header {
+  /* текст-заголовок элемента */
+}
+.ui.right.sidebar .ui.styled.accordion .flexberry-treenode-header.title,
+.ui.right.sidebar .ui.styled.accordion .flexberry-treenode-header.active.title {
+  vertical-align: middle;
+  font-weight: normal;
+  font-size: 14px;
+  color: #3C4F76;
+  padding: 12px 6px;
+  text-overflow: ellipsis;
+  line-height: 16px;
+}
+.ui.right.sidebar .ui.styled.accordion .flexberry-treenode-header.title:hover,
+.ui.right.sidebar .ui.styled.accordion .flexberry-treenode-header.active.title:hover {
+  color: #4D5F82;
+}
+.ui.right.sidebar .ui.styled.accordion .flexberry-treenode-header.title i.icon,
+.ui.right.sidebar .ui.styled.accordion .flexberry-treenode-header.active.title i.icon {
+  /* изображение */
+}
+.ui.right.sidebar .ui.styled.accordion .flexberry-treenode-header.title i.icon.image,
+.ui.right.sidebar .ui.styled.accordion .flexberry-treenode-header.active.title i.icon.image {
+  display: none;
+}
+.ui.right.sidebar .ui.styled.accordion .flexberry-treenode-header.title i.icon.folder:before,
+.ui.right.sidebar .ui.styled.accordion .flexberry-treenode-header.active.title i.icon.folder:before {
+  font-size: 20px;
+  content: '\f114';
+}
+.ui.right.sidebar .ui.styled.accordion .flexberry-treenode-header.title .flexberry-maplayer-caption-label,
+.ui.right.sidebar .ui.styled.accordion .flexberry-treenode-header.active.title .flexberry-maplayer-caption-label {
+  font-size: 12px;
+}
+.ui.right.sidebar .ui.styled.accordion .flexberry-treenode-header.title .button,
+.ui.right.sidebar .ui.styled.accordion .flexberry-treenode-header.active.title .button,
+.ui.right.sidebar .ui.styled.accordion .flexberry-treenode-header.title .flexberry-maplayer-opacity-label,
+.ui.right.sidebar .ui.styled.accordion .flexberry-treenode-header.active.title .flexberry-maplayer-opacity-label {
+  vertical-align: baseline;
+  color: #3C4F76;
+  background-color: #fff;
+  box-shadow: 0 0 4px #3C4F76;
+  width: 30px;
+  height: 30px;
+  padding: 7px 5px;
+  margin: -3px 5px 0px 0px;
+  /* иконки */
+}
+.ui.right.sidebar .ui.styled.accordion .flexberry-treenode-header.title .button:hover,
+.ui.right.sidebar .ui.styled.accordion .flexberry-treenode-header.active.title .button:hover,
+.ui.right.sidebar .ui.styled.accordion .flexberry-treenode-header.title .flexberry-maplayer-opacity-label:hover,
+.ui.right.sidebar .ui.styled.accordion .flexberry-treenode-header.active.title .flexberry-maplayer-opacity-label:hover {
+  background-color: #dbe9ee;
+}
+.ui.right.sidebar .ui.styled.accordion .flexberry-treenode-header.title .button i.icon:before,
+.ui.right.sidebar .ui.styled.accordion .flexberry-treenode-header.active.title .button i.icon:before,
+.ui.right.sidebar .ui.styled.accordion .flexberry-treenode-header.title .flexberry-maplayer-opacity-label i.icon:before,
+.ui.right.sidebar .ui.styled.accordion .flexberry-treenode-header.active.title .flexberry-maplayer-opacity-label i.icon:before {
+  font-size: 16px;
+  font-family: Crimean;
+}
+.ui.right.sidebar .ui.styled.accordion .flexberry-treenode-header.title .button i.icon.trash:before,
+.ui.right.sidebar .ui.styled.accordion .flexberry-treenode-header.active.title .button i.icon.trash:before,
+.ui.right.sidebar .ui.styled.accordion .flexberry-treenode-header.title .flexberry-maplayer-opacity-label i.icon.trash:before,
+.ui.right.sidebar .ui.styled.accordion .flexberry-treenode-header.active.title .flexberry-maplayer-opacity-label i.icon.trash:before {
+  content: "\e814";
+}
+.ui.right.sidebar .ui.styled.accordion .flexberry-treenode-header.title .button i.icon.edit:before,
+.ui.right.sidebar .ui.styled.accordion .flexberry-treenode-header.active.title .button i.icon.edit:before,
+.ui.right.sidebar .ui.styled.accordion .flexberry-treenode-header.title .flexberry-maplayer-opacity-label i.icon.edit:before,
+.ui.right.sidebar .ui.styled.accordion .flexberry-treenode-header.active.title .flexberry-maplayer-opacity-label i.icon.edit:before {
+  content: "\e810";
+}
+.ui.right.sidebar .ui.styled.accordion .flexberry-treenode-header.title .flexberry-maplayer-add-button,
+.ui.right.sidebar .ui.styled.accordion .flexberry-treenode-header.active.title .flexberry-maplayer-add-button {
+  padding: 7px 0;
+}
+.ui.right.sidebar .ui.styled.accordion .flexberry-treenode-header.title .flexberry-maplayer-opacity-label,
+.ui.right.sidebar .ui.styled.accordion .flexberry-treenode-header.active.title .flexberry-maplayer-opacity-label {
+  padding: 10px 0;
+}
+.ui.right.sidebar .ui.styled.accordion .content,
+.ui.right.sidebar .ui.styled.accordion .accordion .content {
+  padding: 0px 0px 8px 30px;
+}
+.ui.right.sidebar .ui.styled.accordion .content .flexberry-slider,
+.ui.right.sidebar .ui.styled.accordion .accordion .content .flexberry-slider {
+  margin: 5px 0px 0px 0px;
+}
+.ui.right.sidebar .ui.styled.accordion .content .flexberry-slider .ui-slider .slider.slider.slider-horizontal,
+.ui.right.sidebar .ui.styled.accordion .accordion .content .flexberry-slider .ui-slider .slider.slider.slider-horizontal {
+  height: 7px;
+}
+.ui.right.sidebar .ui.styled.accordion .content .flexberry-slider .ui-slider .slider.slider.slider-horizontal .slider-track,
+.ui.right.sidebar .ui.styled.accordion .accordion .content .flexberry-slider .ui-slider .slider.slider.slider-horizontal .slider-track {
+  height: 7px;
+}
+.ui.right.sidebar .ui.styled.accordion .content .flexberry-slider .ui-slider .slider.slider.slider-horizontal .slider-selection,
+.ui.right.sidebar .ui.styled.accordion .accordion .content .flexberry-slider .ui-slider .slider.slider.slider-horizontal .slider-selection {
+  background: #dbe9ee;
+}
+.ui.right.sidebar .ui.styled.accordion .content .flexberry-slider .ui-slider .slider .slider-handle,
+.ui.right.sidebar .ui.styled.accordion .accordion .content .flexberry-slider .ui-slider .slider .slider-handle {
+  background: #4D5F82;
+  margin-top: -3px;
+  width: 12px;
+  height: 12px;
+}
+.ui.right.sidebar .ui.styled.accordion .content .layer-legend,
+.ui.right.sidebar .ui.styled.accordion .accordion .content .layer-legend {
+  margin-top: 8px;
+}
+.ui.right.sidebar .ui.styled.accordion .content .layer-legend .flexberry-progressbar,
+.ui.right.sidebar .ui.styled.accordion .accordion .content .layer-legend .flexberry-progressbar {
+  margin-right: .7em;
+}
+.ui.right.sidebar .ui.styled.accordion .content .layer-legend .flexberry-progressbar div.bar,
+.ui.right.sidebar .ui.styled.accordion .accordion .content .layer-legend .flexberry-progressbar div.bar {
+  background: #4D5F82;
+}
+.ui.right.sidebar .ui.styled.accordion .content .layer-legend .flexberry-progressbar div.bar::after,
+.ui.right.sidebar .ui.styled.accordion .accordion .content .layer-legend .flexberry-progressbar div.bar::after {
+  background: #dbe9ee;
+}
+.ui.right.sidebar .ui.styled.accordion .content .layer-legend .flexberry-progressbar div.bar::before,
+.ui.right.sidebar .ui.styled.accordion .accordion .content .layer-legend .flexberry-progressbar div.bar::before {
+  background: #dbe9ee;
+}
+.ui.right.sidebar .ui.styled.accordion .content .layer-legend .flexberry-progressbar .label,
+.ui.right.sidebar .ui.styled.accordion .accordion .content .layer-legend .flexberry-progressbar .label {
+  color: #3C4F76;
+}
+.ui.right.sidebar .ui.styled.accordion .content .layer-legend .layer-legend-image-wrapper,
+.ui.right.sidebar .ui.styled.accordion .accordion .content .layer-legend .layer-legend-image-wrapper {
+  min-height: 27px;
+  font-size: 12px;
+  vertical-align: middle;
+  width: 100%;
+  display: flex;
+}
+.ui.right.sidebar .ui.styled.accordion .content .layer-legend .layer-legend-image-wrapper .layer-legend-image,
+.ui.right.sidebar .ui.styled.accordion .accordion .content .layer-legend .layer-legend-image-wrapper .layer-legend-image,
+.ui.right.sidebar .ui.styled.accordion .content .layer-legend .layer-legend-image-wrapper .layer-legend-caption,
+.ui.right.sidebar .ui.styled.accordion .accordion .content .layer-legend .layer-legend-image-wrapper .layer-legend-caption {
+  display: block;
+  float: left;
+}
+.ui.right.sidebar .ui.styled.accordion .content .layer-legend .layer-legend-image-wrapper .layer-legend-image,
+.ui.right.sidebar .ui.styled.accordion .accordion .content .layer-legend .layer-legend-image-wrapper .layer-legend-image {
+  max-height: 27px;
+  min-width: 34px;
+}
+.ui.right.sidebar .ui.styled.accordion .content .layer-legend .layer-legend-image-wrapper .layer-legend-caption,
+.ui.right.sidebar .ui.styled.accordion .accordion .content .layer-legend .layer-legend-image-wrapper .layer-legend-caption {
+  color: #4D5F82;
+  margin: 5px 0px 0px 5px;
+  max-width: 80%;
+  width: 80%;
+}
+/* всплывающие окна */
+.leaflet-popup {
+  /* закрыть всплывающее окно */
+  /* обёртка контента */
+  /* содержимое окна */
+}
+.leaflet-popup a.leaflet-popup-close-button {
+  color: #dbe9ee;
+}
+.leaflet-popup a.leaflet-popup-close-button:hover {
+  color: #dbe9ee;
+  opacity: 0.8;
+}
+.leaflet-popup-content-wrapper,
+.leaflet-popup-tip {
+  background: #3C4F76;
+  font-size: 13px;
+}
+.leaflet-popup-content {
+  max-height: 600px;
+  max-width: 800px;
+  margin: 20px 0px;
+  padding: 10px 20px;
+  background-color: #fff;
+}
+/* диалоговые окна */
+.ui.modal:not(.flexberry-file-error-modal-dialog) {
+  /* фон заголовка окна и панели кнопок */
+  /* иконка закрытия */
+  /* контент окна */
+  /* Кнопки с иконками */
+  /* кнопка ОК */
+  /* кнопка Отмена */
+  /* вкладки в модальных окнах */
+}
+.ui.modal:not(.flexberry-file-error-modal-dialog) > .header:not(.ui) {
+  color: #fff;
+  background-color: #3C4F76;
+  padding: 1rem;
+}
+.ui.modal:not(.flexberry-file-error-modal-dialog) .actions:not(.ui) {
+  border-top: none;
+  background-color: #dbe9ee;
+  padding: 1rem;
+  color: #fff;
+}
+.ui.modal:not(.flexberry-file-error-modal-dialog) .actions:not(.ui) .ui.button {
+  padding: .6em 2em;
+}
+.ui.modal:not(.flexberry-file-error-modal-dialog) .ui.error.message {
+  margin: 10px 0 0 0;
+}
+.ui.modal:not(.flexberry-file-error-modal-dialog) i.icon.close:before {
+  font-family: Crimean;
+  content: "\e806";
+}
+.ui.modal:not(.flexberry-file-error-modal-dialog) .flexberry-dialog-content {
+  padding: 0px 1.5rem !important;
+}
+.ui.modal:not(.flexberry-file-error-modal-dialog) .ui.icon.button {
+  font-weight: normal;
+  height: 36px;
+  width: 36px;
+  display: flex;
+  font-size: 15px;
+  margin: 0 2px;
+  box-shadow: 0 0 4px #3C4F76;
+}
+.ui.modal:not(.flexberry-file-error-modal-dialog) .ui.icon.button.active,
+.ui.modal:not(.flexberry-file-error-modal-dialog) .ui.icon.button:hover,
+.ui.modal:not(.flexberry-file-error-modal-dialog) .ui.icon.button.active:hover,
+.ui.modal:not(.flexberry-file-error-modal-dialog) .ui.icon.button:hover:hover {
+  color: #3C4F76 !important;
+  background: #dbe9ee !important;
+  box-shadow: 0 0 4px #3C4F76;
+}
+.ui.modal:not(.flexberry-file-error-modal-dialog) .ui.icon.button.active > i.icon:before,
+.ui.modal:not(.flexberry-file-error-modal-dialog) .ui.icon.button:hover > i.icon:before,
+.ui.modal:not(.flexberry-file-error-modal-dialog) .ui.icon.button.active:hover > i.icon:before,
+.ui.modal:not(.flexberry-file-error-modal-dialog) .ui.icon.button:hover:hover > i.icon:before {
+  color: #3C4F76 !important;
+}
+.ui.modal:not(.flexberry-file-error-modal-dialog) .ui.positive.button {
+  font-weight: normal;
+  background-color: #4D5F82 !important;
+  border: solid 1px #4D5F82 !important;
+  color: #fff;
+}
+.ui.modal:not(.flexberry-file-error-modal-dialog) .ui.positive.button:hover {
+  opacity: 0.8;
+}
+.ui.modal:not(.flexberry-file-error-modal-dialog) .ui.negative.button {
+  font-weight: normal;
+  background-color: #768CBB !important;
+  border: solid 1px #768CBB !important;
+  color: #fff;
+  margin-left: 0px;
+}
+.ui.modal:not(.flexberry-file-error-modal-dialog) .ui.negative.button:hover {
+  opacity: 0.8;
+}
+.ui.modal:not(.flexberry-file-error-modal-dialog) .ui.attached.menu {
+  background: #fff;
+}
+.ui.modal:not(.flexberry-file-error-modal-dialog) .ui.attached.segment {
+  width: calc(102%) !important;
+}
+.ui.modal:not(.flexberry-file-error-modal-dialog) .ui.attached.tab.segment .flexberry-button:hover {
+  color: #3C4F76 !important;
+}
+.ui.modal:not(.flexberry-file-error-modal-dialog) .ui.tab.segment,
+.ui.modal:not(.flexberry-file-error-modal-dialog) .ui.tabular.menu {
+  border-color: rgba(60, 79, 118, 0.5);
+  margin-bottom: 0px !important;
+}
+.ui.modal:not(.flexberry-file-error-modal-dialog) .ui.tab.segment.fluid,
+.ui.modal:not(.flexberry-file-error-modal-dialog) .ui.tabular.menu.fluid {
+  border-bottom: 1px solid rgba(60, 79, 118, 0.5) !important;
+  border-bottom-left-radius: 0px !important;
+  border-bottom-right-radius: 0px !important;
+}
+.ui.modal:not(.flexberry-file-error-modal-dialog) .ui.tab.segment.fluid.item:last-child,
+.ui.modal:not(.flexberry-file-error-modal-dialog) .ui.tabular.menu.fluid.item:last-child {
+  width: calc(17.75%);
+}
+.ui.modal:not(.flexberry-file-error-modal-dialog) .ui.tabular.menu .item {
+  color: #4D5F82;
+}
+.ui.modal:not(.flexberry-file-error-modal-dialog) .ui.tabular.menu .item.active {
+  border: 1px solid rgba(60, 79, 118, 0.5) !important;
+  border-bottom: none !important;
+  border-color: rgba(60, 79, 118, 0.5);
+  color: #3C4F76;
+}
+.ui.modal:not(.flexberry-file-error-modal-dialog) .ui.tabular.menu .item:hover {
+  color: #4D5F82;
+}
+.ui.modal:not(.flexberry-file-error-modal-dialog) .ui.tabular.menu .item.disabled i.icon:before {
+  color: #999 !important;
+}
+/* диалог поиска */
+.flexberry-search-map-command-dialog {
+  /* ширина внутренних блоков */
+  /* обёртка блоков */
+}
+.flexberry-search-map-command-dialog-settings {
+  width: 30% !important;
+}
+.flexberry-search-map-command-dialog-results {
+  width: 70% !important;
+}
+.flexberry-search-map-command-dialog .ui.celled.grid {
+  margin: 0px;
+  box-shadow: none;
+}
+.flexberry-search-map-command-dialog .ui.celled.grid .column {
+  padding: 2rem 1rem;
+}
+.flexberry-go-to-map-command-dialog {
+  width: 600px;
+}
+.flexberry-go-to-map-command-dialog .ui.form {
+  padding: 15px;
+}
+.flexberry-go-to-map-command-dialog .ui.form .goto.point .switch {
+  height: auto;
+  width: 30px;
+  top: 20px;
+  padding: 0;
+}
+.flexberry-go-to-map-command-dialog .ui.form .field {
+  padding-bottom: 1em;
+}
+.flexberry-go-to-map-command-dialog .ui.form .goto.point .field {
+  width: calc(100% - 40px);
+}
+.ui.modal.flexberry-add-layer-dialog > .flexberry-dialog-content.content form .ui.tabular.menu .item,
+.ui.modal.flexberry-edit-layer-dialog > .flexberry-dialog-content.content form .ui.tabular.menu .item {
+  min-height: 0;
+  display: flex;
+  justify-content: center;
+}
+.ui.modal.flexberry-add-layer-dialog .flexberry-dialog-content.content,
+.ui.modal.flexberry-edit-layer-dialog .flexberry-dialog-content.content {
+  min-height: 400px;
+  overflow: hidden !important;
+}
+.ui.modal.flexberry-add-layer-dialog .ui.form,
+.ui.modal.flexberry-edit-layer-dialog .ui.form {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.ui.modal.flexberry-add-layer-dialog .ui.form .ui.bottom.attached.tab.segment,
+.ui.modal.flexberry-edit-layer-dialog .ui.form .ui.bottom.attached.tab.segment {
+  border-radius: 0px 0px 5px 5px;
+}
+.ui.modal.flexberry-add-layer-dialog .flexberry-jsonarea div.row:first-child,
+.ui.modal.flexberry-edit-layer-dialog .flexberry-jsonarea div.row:first-child {
+  text-align: center;
+}
+.flexberry-export-map-command-dialog .flexberry-dropdown.dropdown {
+  padding: .8em .2em .4em .5em;
+}
+.flexberry-export-map-command-dialog .flexberry-dropdown.dropdown .dropdown.icon:before {
+  font-size: 13px;
+}
+.leaflet-legend-control {
+  max-width: 33%;
+  font-size: 8px;
+}
+.leaflet-legend-control .layer-legend {
+  margin: 0 !important;
+  display: inline-block;
+}
+.leaflet-legend-control .layer-legend .layer-legend-image-wrapper {
+  display: inline-block;
+  width: auto;
+  margin: .5em;
+  text-overflow: ellipsis;
+  word-break: break-all;
+}
+.ui.modal.flexberry-search-map-command-dialog > .content {
+  max-height: 400px;
+  min-height: 400px;
+}
+.ui.modal.flexberry-search-map-command-dialog > .content .ui.form {
+  height: 100%;
+}
+.ui.modal.flexberry-search-map-command-dialog > .content .ui.form .ui.two.column.celled.grid {
+  min-height: 400px;
+}
+.ui.modal.flexberry-search-map-command-dialog > .content .ui.form .flexberry-button.ui.button.icon {
+  height: 36px;
+  width: 36px;
+  padding: 12px 8px;
+}
+.ui.modal.flexberry-search-map-command-dialog > .content .ui.form i {
+  padding: 0;
+}
+.ui.modal.flexberry-search-map-command-dialog > .content .ui.form i.icon.map:before {
+  content: "\e812";
+  font-family: Crimean;
+}
+.sidebar-wrapper .tpi {
+  margin-right: 0px;
+  /* иконки */
+}
+.sidebar-wrapper .tpi .ui.button.flexberry-button {
+  padding: 12px 8px;
+  margin-right: 0px;
+}
+.sidebar-wrapper .tpi i.icon {
+  /* площадь */
+  /* лупа */
+  /* радиус */
+  /* перейти к точке */
+}
+.sidebar-wrapper .tpi i.icon:before {
+  font-family: Crimean;
+}
+.sidebar-wrapper .tpi i.icon.square.outline:before {
+  font-family: icomoon;
+  content: "\e900";
+}
+.sidebar-wrapper .tpi i.icon.zoom:before {
+  content: "\e831";
+}
+.sidebar-wrapper .tpi i.icon.circle:before {
+  content: "\e82b";
+}
+.sidebar-wrapper .tpi i.icon.location.arrow:before {
+  content: "\e812";
+}
+.sidebar-wrapper .tpi i.icon.remove:before {
+  content: "\e814";
+}
+.sidebar-wrapper .tpi i.icon.trash:before {
+  content: "\e814";
+}
+.sidebar-wrapper .tpi i.icon.write:before {
+  content: "\e810";
+}
+.sidebar-wrapper .tpi i.icon.keyboard:before {
+  font-family: FontAwesome;
+}
+.sidebar-wrapper .tpi i.icon.mouse:before {
+  content: "\e812";
+}
+.sidebar-wrapper .tpi i.icon.add {
+  color: #65A43F;
+  z-index: 1000;
+  cursor: pointer;
+}
+.sidebar-wrapper .tpi i.icon.add:before {
+  z-index: 1000;
+  content: "\e833";
+}
+.sidebar-wrapper .tpi .tpi-settings,
+.sidebar-wrapper .tpi .tpi-actions {
+  text-align: center;
+  display: block;
+  height: 40px;
+}
+.sidebar-wrapper .tpi .tpi-settings {
+  float: left;
+}
+.sidebar-wrapper .tpi .tpi-settings .ui.button.flexberry-button {
+  margin-right: -2px;
+  border-radius: 0px;
+}
+.sidebar-wrapper .tpi .tpi-settings .ui.button.flexberry-button:first-child {
+  border-radius: 5px 0px 0px 5px;
+}
+.sidebar-wrapper .tpi .tpi-settings .ui.button.flexberry-button:last-child {
+  border-radius: 0px 5px 5px 0px;
+}
+.sidebar-wrapper .tpi .tpi-actions {
+  float: right;
+}
+.sidebar-wrapper .tpi .tpi-textarea {
+  margin: 10px 0px;
+  width: 100%;
+  float: right;
+}
+.sidebar-wrapper .tpi .tpi-textarea textarea,
+.sidebar-wrapper .tpi .tpi-textarea .flexberry-textarea {
+  min-height: 400px;
+  border-radius: 5px;
+  min-width: 100%;
+  border: none;
+  background-color: #dbe9ee;
+}
+.sidebar-wrapper .tpi .tpi-textarea .checkbox.invert {
+  position: fixed;
+  top: 110px;
+  left: 20px;
+}
+.sidebar-wrapper .tpi .tpi-textarea .checkbox.invert .flexberry-checkbox-label {
+  color: #3C4F76;
+  font-size: 12px;
+}
+.sidebar-wrapper .tpi .tpi-textarea .checkbox.invert .ui.checkbox {
+  /* галочка */
+}
+.sidebar-wrapper .tpi .tpi-textarea .checkbox.invert .ui.checkbox input:checked ~ .box:after,
+.sidebar-wrapper .tpi .tpi-textarea .checkbox.invert .ui.checkbox input:checked ~ label:after {
+  margin-top: 0px;
+}
+.sidebar-wrapper .tpi .item.button.tpi-create {
+  float: right;
+  padding: 12px 8px;
+  box-shadow: 0 0 4px #3C4F76;
+  display: block;
+  color: #3C4F76;
+  background: #fff;
+  font-size: 16px;
+  margin-bottom: 10px;
+  width: 100%;
+}
+.sidebar-wrapper .tpi .item.button.tpi-create.active,
+.sidebar-wrapper .tpi .item.button.tpi-create:hover,
+.sidebar-wrapper .tpi .item.button.tpi-create.active:hover,
+.sidebar-wrapper .tpi .item.button.tpi-create:hover:hover {
+  color: #3C4F76;
+  background: #dbe9ee;
+  box-shadow: 0 0 4px #3C4F76;
+  opacity: 0.8;
+}
+.sidebar-wrapper .tpi .select-list {
+  overflow-y: auto;
+  padding: .1em;
+}
+.sidebar-wrapper .tpi .select-list .icon.caret {
+  font-size: 20px;
+  margin: 0;
+}
+.sidebar-wrapper .tpi .select-list .item-on-map {
+  display: inline-block;
+  cursor: pointer;
+  font-size: 1em;
+  padding: 3px 6px;
+  width: 90%;
+}
+.sidebar-wrapper .tpi .select-list .item-on-map:hover {
+  opacity: 0.8;
+}
+.sidebar-wrapper .tpi .select-list .item-on-map .item-on-map-name {
+  font-style: italic;
+}
+.sidebar-wrapper .tpi .select-list .item-on-map-wrapper {
+  vertical-align: middle;
+  border-radius: 5px;
+  box-shadow: 0 0 4px #3C4F76;
+  margin: 0px 3px 5px 3px;
+  line-height: 2em;
+}
+.sidebar-wrapper .tpi .select-list .ui.accordion .title .dropdown.icon {
+  padding: 0 !important;
+  display: block;
+  float: left;
+}
+.sidebar-wrapper .tpi .select-list .flexberry-toggler {
+  border-radius: 5px;
+  box-shadow: 0 0 4px #3C4F76;
+  padding: 5px;
+  margin-bottom: 5px;
+}
+.sidebar-wrapper .circle-settings,
+.sidebar-wrapper .select-list {
+  display: block;
+  float: right;
+  width: 100%;
+  margin-bottom: 10px;
+}
+.sidebar-wrapper .circle-settings-labels {
+  padding: 0px 5px;
+}
+.sidebar-wrapper .circle-settings-labels label:last-child {
+  margin-left: 31%;
+}
+.sidebar-wrapper .circle-settings-inputs {
+  text-align: center;
+}
+.sidebar-wrapper .circle-settings-inputs .x.tpi,
+.sidebar-wrapper .circle-settings-inputs .y.tpi,
+.sidebar-wrapper .circle-settings-inputs .r.tpi {
+  width: 32%;
+  height: 36px;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+div.sidebar.search div.item.expanded {
+  padding-bottom: 14px;
+}
+table.result.fields {
+  margin-bottom: 2px;
+}
+div.details {
+  border: 1px solid rgba(34, 36, 38, 0.1);
+  margin-bottom: 2px;
+}
+.details a.detail.caption {
+  padding: 6px 0px;
+  width: 100%;
+  display: block;
+}
+div.detail {
+  padding: 2px 0.7em;
+}
+.sidebar-wrapper {
+  width: 100%;
+  height: calc(100% - 60px);
+  position: absolute;
+  right: -400px;
+  transition: -webkit-transform 0.5s ease, right 0.5s ease;
+}
+.sidebar-wrapper.visible {
+  right: 0px;
+}
+.sidebar-wrapper.visible .ui.right.sidebar {
+  right: 10px !important;
+}
+.sidebar-wrapper.visible .ui.tabular.menu.flexberry-tab-bar {
+  right: 410px;
+}
+.sidebar-wrapper .ui.right.sidebar {
+  right: -2px !important;
+}
+.sidebar-wrapper .ui.right.sidebar,
+.sidebar-wrapper .ui.right.sidebar.visible {
+  top: 0px;
+  box-shadow: none;
+  background-color: white;
+  z-index: 900;
+  visibility: visible;
+  margin: 10px 0px !important;
+  max-height: calc(100% - 40px);
+  min-height: 250px;
+  height: auto !important;
+  border-radius: 0px 5px 5px 5px !important;
+  position: absolute;
+  box-shadow: 0 0 4px #3C4F76 !important;
+  transform: none;
+  transition: none;
+  width: 400px !important;
+}
+.sidebar-wrapper .ui.right.sidebar .ui.tab,
+.sidebar-wrapper .ui.right.sidebar.visible .ui.tab {
+  padding: 10px;
+  color: #3C4F76;
+}
+.sidebar-wrapper .ui.tabular.menu.flexberry-tab-bar {
+  top: 10px;
+  border: 0px;
+  box-shadow: -1px 0px 4px 0px #3C4F76 !important;
+  background-color: #fff;
+  border-radius: 5px 0px 0px 5px;
+  position: absolute;
+  right: 401px;
+  display: block;
+  z-index: 899;
+  overflow: visible;
+  /* идентифицировать слои */
+  /* все слои, дерево слоёв*/
+  /* поиск */
+  /* градсправка */
+  /* градсправка */
+}
+.sidebar-wrapper .ui.tabular.menu.flexberry-tab-bar > * {
+  width: 50px;
+  height: 50px;
+  display: block;
+}
+.sidebar-wrapper .ui.tabular.menu.flexberry-tab-bar .tab.item {
+  color: #3C4F76;
+  border: 0px;
+  border-radius: 0px;
+  box-shadow: 0px 0px 1px #3C4F76 !important;
+  margin: 0;
+  padding: 10px 15px;
+}
+.sidebar-wrapper .ui.tabular.menu.flexberry-tab-bar .tab.item.active.item {
+  border-radius: 0px !important;
+  background: #dbe9ee;
+  margin: 0;
+}
+.sidebar-wrapper .ui.tabular.menu.flexberry-tab-bar .tab.item .flexberry-tab-bar-tab-icon {
+  padding: 5px 5px 0px 0px;
+}
+.sidebar-wrapper .ui.tabular.menu.flexberry-tab-bar .tab.item.isogd-tpi-tab {
+  padding: 5px 10px;
+}
+.sidebar-wrapper .ui.tabular.menu.flexberry-tab-bar .tab.item:first-child {
+  border-top-left-radius: 5px;
+}
+.sidebar-wrapper .ui.tabular.menu.flexberry-tab-bar .tab.item:first-child.active.item {
+  border-top-left-radius: 5px !important;
+}
+.sidebar-wrapper .ui.tabular.menu.flexberry-tab-bar .tab.item:last-child {
+  border-bottom-left-radius: 5px;
+}
+.sidebar-wrapper .ui.tabular.menu.flexberry-tab-bar .tab.item:last-child.active.item {
+  border-bottom-left-radius: 5px !important;
+}
+.sidebar-wrapper .ui.tabular.menu.flexberry-tab-bar .tab.item.isogd-treeview-tab {
+  padding: 10px 12px;
+}
+.sidebar-wrapper .ui.tabular.menu.flexberry-tab-bar .tab.item.isogd-bookmarks-tab {
+  padding-right: 5px;
+  padding-left: 16px;
+}
+.sidebar-wrapper .ui.tabular.menu.flexberry-tab-bar i.icon:before {
+  font-family: Crimean;
+  font-size: 20px;
+}
+.sidebar-wrapper .ui.tabular.menu.flexberry-tab-bar i.icon.info.circle {
+  margin-left: -4px;
+  margin-right: 4px;
+}
+.sidebar-wrapper .ui.tabular.menu.flexberry-tab-bar i.icon.info.circle:before {
+  content: "\e827";
+}
+.sidebar-wrapper .ui.tabular.menu.flexberry-tab-bar i.icon.square.outline:before,
+.sidebar-wrapper .ui.tabular.menu.flexberry-tab-bar i.icon.list:before {
+  content: "\e825";
+}
+.sidebar-wrapper .ui.tabular.menu.flexberry-tab-bar i.icon.search:before {
+  content: "\e803";
+  font-weight: bold;
+}
+.sidebar-wrapper .ui.tabular.menu.flexberry-tab-bar i.icon.tpi:before {
+  content: "\e836";
+  font-size: 26px;
+  font-weight: 500;
+}
+.sidebar-wrapper .ui.tabular.menu.flexberry-tab-bar i.icon.bookmark:before {
+  font-family: icons;
+}
+.sidebar-wrapper .bookmark-block {
+  padding: 0;
+}
+.sidebar-wrapper .bookmark-block .ui.icon.button {
+  width: 100%;
+  text-align: left;
+}
+.sidebar-wrapper .bookmark-block > div:nth-child(1) {
+  padding-bottom: 7px;
+}
+.sidebar-wrapper .bookmark-block hr {
+  opacity: 0.8;
+  color: transparent;
+  border: none;
+  height: 1px;
+  box-shadow: 0 0 4px #4D5F82;
+}
+.sidebar-wrapper .bookmark-block .bookmark-item {
+  margin-bottom: 15px;
+}
+.sidebar-wrapper .bookmark-block .bookmark-item,
+.sidebar-wrapper .bookmark-block .bmrk-add-block {
+  border: none;
+  box-shadow: 0 0 4px #4D5F82;
+  border-radius: 5px;
+  height: 35px;
+}
+.sidebar-wrapper .bookmark-block .bookmark-item .ember-text-field,
+.sidebar-wrapper .bookmark-block .bmrk-add-block .ember-text-field {
+  width: 100%;
+  height: 36px;
+  padding-left: 5px;
+}
+.sidebar-wrapper .bookmark-block .bookmark-item .bookmark-item-title,
+.sidebar-wrapper .bookmark-block .bmrk-add-block .bookmark-item-title,
+.sidebar-wrapper .bookmark-block .bookmark-item .flexberry-textbox,
+.sidebar-wrapper .bookmark-block .bmrk-add-block .flexberry-textbox {
+  padding-left: 5px;
+  padding-right: 80px;
+  color: #3C4F76;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.sidebar-wrapper .bookmark-block .bookmark-item .flexberry-textbox,
+.sidebar-wrapper .bookmark-block .bmrk-add-block .flexberry-textbox {
+  padding: 0px;
+}
+.sidebar-wrapper .bookmark-block .bookmark-item .bmrk-add-block-buttons,
+.sidebar-wrapper .bookmark-block .bmrk-add-block .bmrk-add-block-buttons,
+.sidebar-wrapper .bookmark-block .bookmark-item-buttons,
+.sidebar-wrapper .bookmark-block .bmrk-add-block-buttons {
+  right: 3px;
+}
+.sidebar-wrapper .bookmark-block .bookmark-item .bmrk-add-block-buttons .ui.icon.button,
+.sidebar-wrapper .bookmark-block .bmrk-add-block .bmrk-add-block-buttons .ui.icon.button,
+.sidebar-wrapper .bookmark-block .bookmark-item-buttons .ui.icon.button,
+.sidebar-wrapper .bookmark-block .bmrk-add-block-buttons .ui.icon.button {
+  height: 35px;
+  width: 35px;
+  padding: 8px;
+  margin-right: -2px;
+}
+.sidebar-wrapper .bookmark-block .bookmark-item .bmrk-add-block-buttons .ui.icon.button:nth-child(1),
+.sidebar-wrapper .bookmark-block .bmrk-add-block .bmrk-add-block-buttons .ui.icon.button:nth-child(1),
+.sidebar-wrapper .bookmark-block .bookmark-item-buttons .ui.icon.button:nth-child(1),
+.sidebar-wrapper .bookmark-block .bmrk-add-block-buttons .ui.icon.button:nth-child(1) {
+  border-radius: 0px;
+}
+.sidebar-wrapper .bookmark-block .bookmark-item .bmrk-add-block-buttons .ui.icon.button:nth-child(2),
+.sidebar-wrapper .bookmark-block .bmrk-add-block .bmrk-add-block-buttons .ui.icon.button:nth-child(2),
+.sidebar-wrapper .bookmark-block .bookmark-item-buttons .ui.icon.button:nth-child(2),
+.sidebar-wrapper .bookmark-block .bmrk-add-block-buttons .ui.icon.button:nth-child(2) {
+  border-radius: 0px 5px 5px 0px;
+}
+.sidebar-wrapper .bookmark-block .bookmark-item .bmrk-add-block-buttons .ui.icon.button .icon:before,
+.sidebar-wrapper .bookmark-block .bmrk-add-block .bmrk-add-block-buttons .ui.icon.button .icon:before,
+.sidebar-wrapper .bookmark-block .bookmark-item-buttons .ui.icon.button .icon:before,
+.sidebar-wrapper .bookmark-block .bmrk-add-block-buttons .ui.icon.button .icon:before {
+  font-family: Crimean;
+}
+.sidebar-wrapper .bookmark-block .bookmark-item .bmrk-add-block-buttons .ui.icon.button .icon.minus:before,
+.sidebar-wrapper .bookmark-block .bmrk-add-block .bmrk-add-block-buttons .ui.icon.button .icon.minus:before,
+.sidebar-wrapper .bookmark-block .bookmark-item-buttons .ui.icon.button .icon.minus:before,
+.sidebar-wrapper .bookmark-block .bmrk-add-block-buttons .ui.icon.button .icon.minus:before,
+.sidebar-wrapper .bookmark-block .bookmark-item .bmrk-add-block-buttons .ui.icon.button .icon.remove:before,
+.sidebar-wrapper .bookmark-block .bmrk-add-block .bmrk-add-block-buttons .ui.icon.button .icon.remove:before,
+.sidebar-wrapper .bookmark-block .bookmark-item-buttons .ui.icon.button .icon.remove:before,
+.sidebar-wrapper .bookmark-block .bmrk-add-block-buttons .ui.icon.button .icon.remove:before {
+  content: '\e806';
+  font-size: 13px;
+}
+.sidebar-wrapper .bookmark-block .bookmark-item .bmrk-add-block-buttons .ui.icon.button .icon.zoom.in:before,
+.sidebar-wrapper .bookmark-block .bmrk-add-block .bmrk-add-block-buttons .ui.icon.button .icon.zoom.in:before,
+.sidebar-wrapper .bookmark-block .bookmark-item-buttons .ui.icon.button .icon.zoom.in:before,
+.sidebar-wrapper .bookmark-block .bmrk-add-block-buttons .ui.icon.button .icon.zoom.in:before {
+  content: "\e812";
+}
+.sidebar-wrapper .bookmark-block .bookmark-item .bmrk-add-block-buttons .ui.icon.button .icon.checkmark:before,
+.sidebar-wrapper .bookmark-block .bmrk-add-block .bmrk-add-block-buttons .ui.icon.button .icon.checkmark:before,
+.sidebar-wrapper .bookmark-block .bookmark-item-buttons .ui.icon.button .icon.checkmark:before,
+.sidebar-wrapper .bookmark-block .bmrk-add-block-buttons .ui.icon.button .icon.checkmark:before {
+  font-family: Icons;
+}
+.sidebar-wrapper .bookmark-block .bmrk-add-block {
+  padding: 0px;
+  margin-bottom: 15px;
+}
+.sidebar-wrapper .bookmark-block .bmrk-add-block .bmrk-add-block-buttons .ui.icon.button {
+  padding-top: 8px;
+}
+.error + .bmrk-add-block-buttons .ui.icon.button .sidebar-wrapper .bookmark-block .bmrk-add-block:nth-child(1) {
+  color: #444444;
+  background: #e9e9e9;
+}
+.error + .bmrk-add-block-buttons .ui.icon.button .sidebar-wrapper .bookmark-block .bmrk-add-block:nth-child(1):hover {
+  background: #e9e9e9;
+  opacity: 1;
+}
+.flexberry-identify-panel {
+  /* все слои, дерево слоёв*/
+  /* удаление */
+}
+.flexberry-identify-panel.celled.grid {
+  margin: 0;
+}
+.flexberry-identify-panel.celled.grid .ui.four.wide.column:last-child {
+  text-align: right;
+  float: right;
+  width: 39% !important;
+}
+.flexberry-identify-panel.celled.grid .ui.four.wide.column:last-child .button {
+  border-radius: 5px;
+}
+.flexberry-identify-panel .ui.icon.button {
+  border-radius: 0px;
+  padding: 12px 4px;
+  font-weight: normal;
+  height: 40px;
+  width: 40px;
+  box-shadow: 0 0 4px #3C4F76;
+  display: inline-block;
+  color: #3C4F76;
+  background: #fff;
+  font-size: 16px;
+  margin-right: -1px;
+}
+.flexberry-identify-panel .ui.icon.button.flexberry-identify-panel-all-layers-option,
+.flexberry-identify-panel .ui.icon.button.flexberry-identify-panel-rectangle-tools-option {
+  border-radius: 5px 0px 0px 5px;
+}
+.flexberry-identify-panel .ui.icon.button.flexberry-identify-panel-top-visible-layers-option,
+.flexberry-identify-panel .ui.icon.button.flexberry-identify-panel-polygon-tools-option {
+  border-radius: 0px 5px 5px 0px;
+}
+.flexberry-identify-panel i.icon {
+  font-family: rgis;
+}
+.flexberry-identify-panel,
+.flexberry-identify-panel-layers-options,
+.flexberry-identify-panel-tools-options,
+.flexberry-identify-panel > .ui.four.wide.column {
+  box-shadow: none !important;
+  padding: 0px !important;
+}
+.flexberry-identify-panel .flexberry-identify-panel-layers-options {
+  text-align: left;
+  /* видимые слои */
+  /* верхний видимый */
+}
+.flexberry-identify-panel .flexberry-identify-panel-layers-options[class*="eight wide"].column {
+  width: 35% !important;
+}
+.flexberry-identify-panel .flexberry-identify-panel-layers-options i.icon.square.outline:before,
+.flexberry-identify-panel .flexberry-identify-panel-layers-options i.icon.list:before {
+  font-family: Crimean;
+  content: "\e825";
+}
+.flexberry-identify-panel .flexberry-identify-panel-layers-options i.icon.checkmark.box:before {
+  font-family: Crimean;
+  content: "\e829";
+}
+.flexberry-identify-panel .flexberry-identify-panel-layers-options i.icon.chevron.up:before {
+  content: "\e828";
+}
+.flexberry-identify-panel .flexberry-identify-panel-tools-options {
+  text-align: left;
+  /* линейка */
+}
+.flexberry-identify-panel .flexberry-identify-panel-tools-options i.icon.square.outline:before {
+  font-family: Icons;
+  content: "\f248";
+}
+.flexberry-identify-panel .flexberry-identify-panel-tools-options i.icon.star:before {
+  font-family: Crimean;
+  content: "\e802";
+}
+.flexberry-identify-panel i.icon.remove:before {
+  content: "\e814";
+}
+.layer-result-list {
+  padding-top: 15px;
+  text-align: center;
+}
+.layer-result-list .icon:not(.caret) {
+  margin: 0;
+  font-size: 18px;
+}
+.layer-result-list .icon:not(.caret):before {
+  font-family: Crimean;
+}
+.layer-result-list .icon:not(.caret).hand.paper:before {
+  content: '\e823';
+}
+.layer-result-list .icon:not(.caret).marker:before {
+  content: "\e812";
+}
+.layer-result-list .icon:not(.caret).window:before {
+  font-family: FontAwesome;
+  content: "\f0f6";
+}
+.layer-result-list .icon:not(.caret).list:before {
+  font-family: FontAwesome;
+  content: "\f0ce";
+}
+.layer-result-list .icon.caret {
+  font-size: 20px;
+  margin: 0;
+}
+.layer-result-list .ui.active.inline.loader {
+  margin-top: 10px;
+  left: 45%;
+  display: block;
+  margin-bottom: 10px;
+}
+.layer-result-list .feature-result-item-caption {
+  max-width: 68%;
+  word-break: break-word;
+  word-wrap: break-word;
+}
+.layer-result-list .feature-result-item-select.icon.item {
+  margin-top: .7em;
+  left: 1.9em;
+}
+.layer-result-list .feature-result-item-group {
+  text-align: left;
+}
+.layer-result-list .feature-result-item-group > .icon.item {
+  color: #3C4F76;
+}
+.layer-result-list .feature-result-item-group > .icon.item.hover {
+  color: #768CBB;
+}
+.layer-result-list .ui.accordion .title .dropdown.icon {
+  padding: 0 !important;
+  display: block;
+  float: left;
+}
+.layer-result-list .ui.accordion .title .dropdown.icon:before {
+  font-size: 20px;
+}
+.layer-result-list .layer-result-list-toggler .title {
+  display: flex;
+}
+.layer-result-list .layer-result-list-toggler .title .flexberry-toggler-caption {
+  color: #3C4F76;
+  margin-left: 1.7em;
+  display: block;
+  float: left;
+  max-width: 80%;
+}
+.layer-result-list .flexberry-toggler {
+  border-radius: 5px;
+  box-shadow: 0 0 4px #3C4F76;
+  padding: 5px;
+  margin-bottom: 5px;
+}
+.layer-result-list .ui.accordion:not(.styled) .title ~ .content:not(.ui):last-child:not(.flexberry-toggler-content) {
+  padding: 5px;
+}
+.layer-result-list .flexberry-toggler-content {
+  border-radius: 5px;
+}
+.layer-result-list .flexberry-toggler-content .item:not(.icon) {
+  padding: 5px;
+  border-radius: 5px;
+  box-shadow: 0 0 4px #3C4F76;
+  margin-bottom: 5px;
+}
+.layer-result-list .flexberry-toggler-content .item:not(.icon) .ui.table {
+  color: #3C4F76;
+}
+.layer-result-list .flexberry-toggler-content .item:not(.icon) .ui.table tr th {
+  background: #dbe9ee;
+}
+.layer-result-list .flexberry-toggler-content .item:not(.icon) .ui.table td {
+  word-break: break-word;
+  word-wrap: break-word;
+  min-width: 80px;
+}
+.layer-result-list .flexberry-progressbar {
+  margin-top: .5em !important;
+  margin-right: .7em;
+}
+.layer-result-list .flexberry-progressbar div.bar {
+  background: #4D5F82;
+}
+.layer-result-list .flexberry-progressbar div.bar::after {
+  background: #dbe9ee;
+}
+.layer-result-list .flexberry-progressbar div.bar::before {
+  background: #dbe9ee;
+}
+.layer-result-list .flexberry-progressbar .label {
+  color: #3C4F76;
+}
+.details .detail.caption {
+  font-size: 14px;
+}
+.details .detail {
+  font-size: 13px;
+}
+.flexberry-search-panel .flexberry-search.ui.search {
+  display: block;
+}
+.flexberry-search-panel .flexberry-search.ui.search .prompt {
+  box-shadow: 0 0 4px #3C4F76;
+  width: 77.5% !important;
+  border: 0px;
+  color: #3C4F76;
+  height: 40px;
+}
+.flexberry-search-panel .flexberry-search.ui.search .ui.icon.button {
+  display: inline-block;
+  margin-right: -2px;
+  width: 40px;
+  height: 40px;
+  padding: 5px;
+}
+.flexberry-search-panel .flexberry-search.ui.search .ui.icon.button .icon:before {
+  font-family: Crimean;
+}
+.flexberry-search-panel .flexberry-search.ui.search .ui.icon.button .icon.remove:before {
+  content: '\e806';
+  font-size: 13px;
+}
+.flexberry-search-panel .flexberry-search.ui.search .ui.icon.button .icon.search:before {
+  content: "\e803";
+}
+.flexberry-search-panel .flexberry-search.ui.search:hover {
+  background: #fff;
+}
+.flexberry-search-panel .flexberry-search.ui.search > .button:nth-child(3) {
+  border-radius: 0px 5px 5px 0px;
+}
+.flexberry-search-panel .flexberry-search.ui.search .flexberry-search-results {
+  position: initial;
+}
+.flexberry-search-panel .flexberry-search.ui.search .dropdown {
+  background-color: #fff;
+}
+.flexberry-search-panel .flexberry-search.ui.search .dropdown.active {
+  background-color: #dbe9ee;
+}
+.flexberry-search-panel .flexberry-search.ui.search > .input .ember-text-field {
+  border-bottom-color: #4D5F82;
+  border-radius: 0px;
+  background-color: #dbe9ee;
+}
 /**
  * All ember-flexberry addon styles.
  */
