@@ -31,8 +31,12 @@ export default Ember.Controller.extend({
             title: i18n.t('forms.application.sitemap.flexberry-gis-test-stand.i-i-s-flexberry-gis-test-stand-author-l.title'),
             children: null
           }]
-        }
-      ]
+        }, {
+        link: 'maps',
+        caption: i18n.t('forms.application.sitemap.maps.caption'),
+        title: i18n.t('forms.application.sitemap.maps.title'),
+        children: null
+      }]
     };
   }),
 

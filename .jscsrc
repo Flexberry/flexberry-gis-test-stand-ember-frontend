@@ -1,16 +1,18 @@
 {
-  "excludeFiles": [ "tests/unit/models/*" ],
-  "esnext": true,
   "preset": "airbnb",
   "requirePaddingNewLinesAfterBlocks": {
     "allExcept": ["inCallExpressions", "inArrayExpressions", "inProperties"]
   },
+  "requireShorthandArrowFunctions": false,
   "requireCamelCaseOrUpperCaseIdentifiers": "ignoreProperties",
   "requireTrailingComma": null,
   "validateQuoteMarks": { "mark": "'", "escape": true },
   "requireSpacesInAnonymousFunctionExpression": null,
   "maximumLineLength": {
-    value: 160,
-    allExcept: ["regex", "comments", "urlComments"]
-  }
+    "value": 160,
+    "allExcept": ["regex", "comments", "urlComments"]
+  },
+  "disallowQuotedKeysInObjects": false,
+  "safeContextKeyword": null,
+  "disallowArrayDestructuringReturn": false
 }

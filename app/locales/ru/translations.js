@@ -1,5 +1,7 @@
 import Ember from 'ember';
 import EmberFlexberryTranslations from 'ember-flexberry/locales/ru/translations';
+import EmberFlexberryGisTranslations from 'ember-flexberry-gis/locales/ru/translations';
+import EmberFlexberryGisYandexTranslations from 'ember-flexberry-gis-yandex/locales/ru/translations';
 
 import IISFlexberryGisTestStandAddressLForm from './forms/i-i-s-flexberry-gis-test-stand-address-l';
 import IISFlexberryGisTestStandAuthorLForm from './forms/i-i-s-flexberry-gis-test-stand-author-l';
@@ -11,9 +13,11 @@ import IISFlexberryGisTestStandAddressModel from './models/i-i-s-flexberry-gis-t
 import IISFlexberryGisTestStandAuthorModel from './models/i-i-s-flexberry-gis-test-stand-author';
 import IISFlexberryGisTestStandCommentModel from './models/i-i-s-flexberry-gis-test-stand-comment';
 import IISFlexberryGisTestStandRequestModel from './models/i-i-s-flexberry-gis-test-stand-request';
+import MapForm from './forms/map';
+import MapsForm from './forms/maps';
 
 const translations = {};
-Ember.$.extend(true, translations, EmberFlexberryTranslations);
+Ember.$.extend(true, translations, EmberFlexberryTranslations, EmberFlexberryGisTranslations, EmberFlexberryGisYandexTranslations);
 
 Ember.$.extend(true, translations, {
   models: {
@@ -106,6 +110,10 @@ Ember.$.extend(true, translations, {
 
           }
         },
+        'maps': {
+          caption: 'Карты',
+          title: '',
+        }
       }
     },
 
@@ -123,6 +131,8 @@ Ember.$.extend(true, translations, {
     'i-i-s-flexberry-gis-test-stand-address-e': IISFlexberryGisTestStandAddressEForm,
     'i-i-s-flexberry-gis-test-stand-author-e': IISFlexberryGisTestStandAuthorEForm,
     'i-i-s-flexberry-gis-test-stand-request-e': IISFlexberryGisTestStandRequestEForm,
+    'map': MapForm,
+    'maps': MapsForm,
   },
 
 });

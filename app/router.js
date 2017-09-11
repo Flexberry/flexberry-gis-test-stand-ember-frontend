@@ -21,6 +21,10 @@ Router.map(function () {
   { path: 'i-i-s-flexberry-gis-test-stand-request-e/:id' });
   this.route('i-i-s-flexberry-gis-test-stand-request-e.new',
   { path: 'i-i-s-flexberry-gis-test-stand-request-e/new' });
+
+  this.route('maps');
+  this.route('map', { path: 'maps/:id' });
+  this.route('map.new', { path: 'maps/new' });
 });
 
 export default Router;
