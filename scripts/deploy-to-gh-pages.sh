@@ -4,7 +4,7 @@
 set -e
 
 # Define repository relative GitHub address.
-repositoryRelativeGitHubAddress="Flexberry/ember-flexberry-gis-test-stand"
+repositoryRelativeGitHubAddress="Flexberry/flexberry-gis-test-stand-ember-frontend"
 
 # Clone project into 'repository' subfolder && move to it.
 echo "Prepare for deploy to gh-pages."
@@ -80,7 +80,7 @@ do
     branchDescription="Temporal testing version"
   fi
 
-  branchLink="<a href=\"${branch}\/index.html\">http:\/\/flexberry.github.io\/ember-flexberry-gis-test-stand\/${branch}\/<\/a>"
+  branchLink="<a href=\"${branch}\/index.html\">http:\/\/flexberry.github.io\/flexberry-gis-test-stand-ember-frontend\/${branch}\/<\/a>"
   branchTableRow="<tr>\n<td>${branch}<\/td>\n<td>${branchDescription}<\/td>\n<td>${branchLink}<\/td>\n<\/tr>\n{{branches}}"
   sed -i -e "s/{{branches}}/${branchTableRow}/g" index.html
 done
