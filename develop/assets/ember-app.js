@@ -139,6 +139,14 @@ define('ember-app/components/flexberry-colorpicker', ['exports', 'ember-flexberr
     }
   });
 });
+define('ember-app/components/flexberry-csw', ['exports', 'ember-flexberry-gis-csw/components/flexberry-csw'], function (exports, _emberFlexberryGisCswComponentsFlexberryCsw) {
+  Object.defineProperty(exports, 'default', {
+    enumerable: true,
+    get: function get() {
+      return _emberFlexberryGisCswComponentsFlexberryCsw['default'];
+    }
+  });
+});
 define('ember-app/components/flexberry-datepicker', ['exports', 'ember-flexberry/components/flexberry-datepicker'], function (exports, _emberFlexberryComponentsFlexberryDatepicker) {
   exports['default'] = _emberFlexberryComponentsFlexberryDatepicker['default'];
 });
@@ -388,6 +396,14 @@ define('ember-app/components/layers-dialogs/add', ['exports', 'ember-flexberry-g
     enumerable: true,
     get: function get() {
       return _emberFlexberryGisComponentsLayersDialogsAdd['default'];
+    }
+  });
+});
+define('ember-app/components/layers-dialogs/edit-modes/csw', ['exports', 'ember-flexberry-gis-csw/components/layers-dialogs/edit-modes/csw'], function (exports, _emberFlexberryGisCswComponentsLayersDialogsEditModesCsw) {
+  Object.defineProperty(exports, 'default', {
+    enumerable: true,
+    get: function get() {
+      return _emberFlexberryGisCswComponentsLayersDialogsEditModesCsw['default'];
     }
   });
 });
@@ -1590,6 +1606,14 @@ define('ember-app/coordinate-reference-systems/simple', ['exports', 'ember-flexb
     }
   });
 });
+define('ember-app/edit-modes/csw', ['exports', 'ember-flexberry-gis-csw/edit-modes/csw'], function (exports, _emberFlexberryGisCswEditModesCsw) {
+  Object.defineProperty(exports, 'default', {
+    enumerable: true,
+    get: function get() {
+      return _emberFlexberryGisCswEditModesCsw['default'];
+    }
+  });
+});
 define('ember-app/enums/i-c-s-soft-s-t-o-r-m-n-e-t-business-audit-objects-t-execution-variant', ['exports', 'ember-flexberry-data/enums/i-c-s-soft-s-t-o-r-m-n-e-t-business-audit-objects-t-execution-variant'], function (exports, _emberFlexberryDataEnumsICSSoftSTORMNETBusinessAuditObjectsTExecutionVariant) {
   Object.defineProperty(exports, 'default', {
     enumerable: true,
@@ -2345,6 +2369,20 @@ define('ember-app/initializers/offline-globals', ['exports', 'ember-flexberry-da
     enumerable: true,
     get: function get() {
       return _emberFlexberryDataInitializersOfflineGlobals.initialize;
+    }
+  });
+});
+define('ember-app/initializers/ows4js', ['exports', 'ember-flexberry-gis-csw/initializers/ows4js'], function (exports, _emberFlexberryGisCswInitializersOws4js) {
+  Object.defineProperty(exports, 'default', {
+    enumerable: true,
+    get: function get() {
+      return _emberFlexberryGisCswInitializersOws4js['default'];
+    }
+  });
+  Object.defineProperty(exports, 'initialize', {
+    enumerable: true,
+    get: function get() {
+      return _emberFlexberryGisCswInitializersOws4js.initialize;
     }
   });
 });
@@ -4427,6 +4465,14 @@ define('ember-app/models/new-platform-flexberry-flexberry-user-setting', ['expor
     }
   });
 });
+define('ember-app/models/new-platform-flexberry-g-i-s-csw-connection', ['exports', 'ember-flexberry-gis-csw/models/new-platform-flexberry-g-i-s-csw-connection'], function (exports, _emberFlexberryGisCswModelsNewPlatformFlexberryGISCswConnection) {
+  Object.defineProperty(exports, 'default', {
+    enumerable: true,
+    get: function get() {
+      return _emberFlexberryGisCswModelsNewPlatformFlexberryGISCswConnection['default'];
+    }
+  });
+});
 define('ember-app/models/new-platform-flexberry-g-i-s-layer-link', ['exports', 'ember-flexberry-gis/models/new-platform-flexberry-g-i-s-layer-link'], function (exports, _emberFlexberryGisModelsNewPlatformFlexberryGISLayerLink) {
   Object.defineProperty(exports, 'default', {
     enumerable: true,
@@ -4969,6 +5015,14 @@ define('ember-app/serializers/new-platform-flexberry-flexberry-user-setting', ['
     enumerable: true,
     get: function get() {
       return _emberFlexberrySerializersNewPlatformFlexberryFlexberryUserSetting['default'];
+    }
+  });
+});
+define('ember-app/serializers/new-platform-flexberry-g-i-s-csw-connection', ['exports', 'ember-flexberry-gis-csw/serializers/new-platform-flexberry-g-i-s-csw-connection'], function (exports, _emberFlexberryGisCswSerializersNewPlatformFlexberryGISCswConnection) {
+  Object.defineProperty(exports, 'default', {
+    enumerable: true,
+    get: function get() {
+      return _emberFlexberryGisCswSerializersNewPlatformFlexberryGISCswConnection['default'];
     }
   });
 });
@@ -22570,7 +22624,7 @@ catch(err) {
 /* jshint ignore:start */
 
 if (!runningTests) {
-  require("ember-app/app")["default"].create({"name":"ember-app","backendUrl":"https://flexberry-gis-test-stand.azurewebsites.net","backendUrls":{"root":"https://flexberry-gis-test-stand.azurewebsites.net","api":"https://flexberry-gis-test-stand.azurewebsites.net/odata"},"log":{"enabled":true,"storeErrorMessages":true,"storeWarnMessages":false,"storeLogMessages":true,"storeInfoMessages":false,"storeDebugMessages":false,"storeDeprecationMessages":false,"storePromiseErrors":true,"showPromiseErrors":true},"perf":{"enabled":false},"lock":{"enabled":true,"openReadOnly":true,"unlockObject":true},"useUserSettingsService":true,"offline":{"dbName":"ember-app","offlineEnabled":true,"modeSwitchOnErrorsEnabled":false,"syncDownWhenOnlineEnabled":false},"components":{"flexberryFile":{"uploadUrl":"https://flexberry-gis-test-stand.azurewebsites.net/api/File","maxUploadFileSize":null,"uploadOnModelPreSave":true,"showUploadButton":true,"showModalDialogOnUploadError":true,"showModalDialogOnDownloadError":true}},"version":"0.0.0+0f480662"});
+  require("ember-app/app")["default"].create({"name":"ember-app","backendUrl":"https://flexberry-gis-test-stand.azurewebsites.net","backendUrls":{"root":"https://flexberry-gis-test-stand.azurewebsites.net","api":"https://flexberry-gis-test-stand.azurewebsites.net/odata"},"log":{"enabled":true,"storeErrorMessages":true,"storeWarnMessages":false,"storeLogMessages":true,"storeInfoMessages":false,"storeDebugMessages":false,"storeDeprecationMessages":false,"storePromiseErrors":true,"showPromiseErrors":true},"perf":{"enabled":false},"lock":{"enabled":true,"openReadOnly":true,"unlockObject":true},"useUserSettingsService":true,"offline":{"dbName":"ember-app","offlineEnabled":true,"modeSwitchOnErrorsEnabled":false,"syncDownWhenOnlineEnabled":false},"components":{"flexberryFile":{"uploadUrl":"https://flexberry-gis-test-stand.azurewebsites.net/api/File","maxUploadFileSize":null,"uploadOnModelPreSave":true,"showUploadButton":true,"showModalDialogOnUploadError":true,"showModalDialogOnDownloadError":true}},"version":"0.0.0+6c16ef8d"});
 }
 
 /* jshint ignore:end */
