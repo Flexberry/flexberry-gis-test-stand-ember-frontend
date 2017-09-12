@@ -11,7 +11,7 @@ module.exports = function(environment) {
 
 
   var ENV = {
-    repositoryName: 'ember-flexberry-gis-test-stand',
+    repositoryName: 'flexberry-gis-test-stand-ember-frontend',
     modulePrefix: 'ember-app',
     environment: environment,
     baseURL: '/',
