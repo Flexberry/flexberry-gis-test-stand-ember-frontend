@@ -1,6 +1,7 @@
 {
   "name": "ember-app",
   "dependencies": {
+    "ember": "ember-flexberry dependencies",
     "ember": "~2.4.3",
     "ember-cli-shims": "0.1.1",
     "ember-cli-test-loader": "0.2.2",
@@ -30,8 +31,11 @@
     "osmtogeojson": "2.2.12",
     "seiyria-bootstrap-slider": "~6.0.6",
     "js-beautify": "1.6.4",
+    "jquery-minicolors": "ember-flexberry-gis dependencies",
     "jquery-minicolors": "2.2.6",
-    "leaflet-plugins": "shramov/leaflet-plugins#master"
+    "leaflet-plugins": "shramov/leaflet-plugins#master",
+    "ows.js": "ember-flexberry-gis-csw dependencies",
+    "ows.js": "0.1.5"
   },
   "resolutions": {
     "leaflet": "1.0.1",
