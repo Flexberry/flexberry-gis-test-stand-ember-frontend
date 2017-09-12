@@ -2,7 +2,7 @@
 
 module.exports = function(environment) {
   // Replace this local address to remote when backed will be published.
-  var backendUrl = 'http://flexberry-gis-test-stand.azurewebsites.net';
+  var backendUrl = 'https://flexberry-gis-test-stand.azurewebsites.net';
 
   if (environment === 'development-loc') {
     // Use `ember s -e development-loc` command for local backend usage.
